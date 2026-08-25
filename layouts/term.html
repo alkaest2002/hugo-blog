@@ -1,14 +1,14 @@
 {{ define "title" }}{{ .Title }} &middot; {{ site.Title }}{{ end }}
 {{ define "main" }}
   <header class="py-14 sm:py-20">
-    <p class="text-sm text-mute">{{ T (.Data.Singular | humanize) }}</p>
+    <p class="text-sm text-mute">{{ T .Data.Plural }}</p>
     <h1 class="mt-2 font-display text-4xl font-semibold tracking-wide sm:text-6xl">{{ .Title }}</h1>
     {{ with .Description }}
       <p class="mt-4 text-lg text-mute">{{ . }}</p>
     {{ end }}
   </header>
 
-  <div class="flex items-baseline justify-between pb-3">
+  <div class="flex items-baseline justify-between border-b border-rule pb-3">
     <h2 class="text-sm font-medium">{{ T "posts" | title }}</h2>
     <span class="text-sm text-mute">{{ len .Pages }}</span>
   </div>

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ block "title" . }}{{ site.Title }}{{ end }}</title>
   {{ with or .Description site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
-  <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="canonical" href="{{ .Permalink }}">
   {{ with .OutputFormats.Get "rss" }}
     <link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ site.Title }}">
   {{ end }}
@@ -18,15 +18,14 @@
 </head>
 <body class="font-sans text-ink">
   <a href="#content" class="sr-only">Skip to content</a>
-
   <div class="mx-auto flex min-h-dvh max-w-4xl flex-col px-6">
-
-    {{ partial "header-nav.html" . }}
-
+      <div class="flex justify-between items-center">
+          {{ partial "header-logo.html" . }}
+          {{ partial "header-nav.html" . }}
+      </div>
     <main id="content" class="grow pb-20">
       {{ block "main" . }}{{ end }}
     </main>
-
     <footer class="border-t border-rule py-8 text-sm text-mute">
       <p>&copy; {{ now.Year }} {{ site.Title }}</p>
     </footer>
