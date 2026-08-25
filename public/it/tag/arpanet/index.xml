@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>ARPANET on Blog</title>
+		<link>//localhost:1313/it/tag/arpanet/</link>
+		<description>Recent content in ARPANET on Blog</description>
+		<generator>Hugo</generator>
+		<language>it</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 28 Jan 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/it/tag/arpanet/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Breve Storia di Internet</title>
+				<link>//localhost:1313/it/articoli/breve-storia-di-internet/</link>
+				<pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/breve-storia-di-internet/</guid>
+				<description>&lt;h2 id=&#34;non-fu-inventato-per-sopravvivere-a-una-guerra-nucleare&#34;&gt;Non Fu Inventato per Sopravvivere a una Guerra Nucleare&lt;/h2&gt;&#xA;&lt;p&gt;Questo è il mito, perlomeno. ARPANET — la rete di ricerca del Dipartimento della Difesa degli Stati Uniti che divenne l&amp;rsquo;antenato di Internet — era finanziata dall&amp;rsquo;esercito, ma i suoi veri progettisti erano ricercatori universitari che cercavano di risolvere un problema molto più prosaico: come condividere risorse informatiche costose tra diverse istituzioni senza doversi spostare fisicamente da un campus all&amp;rsquo;altro.&lt;/p&gt;&#xA;&lt;p&gt;Il primo messaggio su ARPANET fu inviato il 29 ottobre 1969, tra l&amp;rsquo;UCLA e lo Stanford Research Institute. Il messaggio previsto era &amp;ldquo;login&amp;rdquo;. Il sistema andò in crash dopo &amp;ldquo;lo&amp;rdquo;. Una prima parola accidentale per una rete che avrebbe finito per trasportare tutto.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

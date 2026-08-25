@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Fermentazione on Blog</title>
+		<link>//localhost:1313/it/tag/fermentazione/</link>
+		<description>Recent content in Fermentazione on Blog</description>
+		<generator>Hugo</generator>
+		<language>it</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 09 Oct 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/it/tag/fermentazione/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Fermentazione e Salute Intestinale</title>
+				<link>//localhost:1313/it/articoli/fermentazione-e-salute-intestinale/</link>
+				<pubDate>Wed, 09 Oct 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/fermentazione-e-salute-intestinale/</guid>
+				<description>&lt;h2 id=&#34;il-microbioma-intestinale-in-breve&#34;&gt;Il Microbioma Intestinale, in Breve&lt;/h2&gt;&#xA;&lt;p&gt;Il tratto gastrointestinale ospita circa 38 trilioni di microrganismi — batteri, archaea, funghi e virus — che insieme costituiscono il microbioma intestinale. Non si tratta di un passeggero passivo. Il microbioma influenza la funzione immunitaria, l&amp;rsquo;assorbimento dei nutrienti, la produzione di neurotrasmettitori e la risposta infiammatoria. I ricercatori hanno collegato la composizione del microbioma a condizioni che spaziano dalla malattia infiammatoria intestinale alla depressione.&lt;/p&gt;&#xA;&lt;p&gt;Quello che mangi plasma questa comunità. E gli alimenti fermentati potrebbero essere uno dei modi più diretti per sostenere la diversità microbica.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

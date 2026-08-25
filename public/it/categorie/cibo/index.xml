@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Cibo on Blog</title>
+		<link>//localhost:1313/it/categorie/cibo/</link>
+		<description>Recent content in Cibo on Blog</description>
+		<generator>Hugo</generator>
+		<language>it</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 27 Oct 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/it/categorie/cibo/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Metodi di Preparazione del Caffè a Confronto</title>
+				<link>//localhost:1313/it/articoli/metodi-di-preparazione-del-caff%C3%A8-a-confronto/</link>
+				<pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/metodi-di-preparazione-del-caff%C3%A8-a-confronto/</guid>
+				<description>&lt;h2 id=&#34;tutto-parte-dal-chicco&#34;&gt;Tutto Parte dal Chicco&lt;/h2&gt;&#xA;&lt;p&gt;Ogni metodo di preparazione amplifica certe caratteristiche del caffè che stai usando. Un&amp;rsquo;etiope natural, tostata chiara e vivace, avrà un sapore completamente diverso attraverso un Chemex rispetto a una macchina per espresso — non perché uno sia migliore, ma perché ogni metodo estrae in modo diverso. Capire questa relazione è più utile che inseguire il metodo &amp;ldquo;migliore&amp;rdquo;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;i-principali-contendenti&#34;&gt;I Principali Contendenti&lt;/h2&gt;&#xA;&lt;h3 id=&#34;french-press&#34;&gt;French Press&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Profilo:&lt;/strong&gt; Corposo, ricco, leggermente torbido.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Fermentazione e Salute Intestinale</title>
+				<link>//localhost:1313/it/articoli/fermentazione-e-salute-intestinale/</link>
+				<pubDate>Wed, 09 Oct 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/fermentazione-e-salute-intestinale/</guid>
+				<description>&lt;h2 id=&#34;il-microbioma-intestinale-in-breve&#34;&gt;Il Microbioma Intestinale, in Breve&lt;/h2&gt;&#xA;&lt;p&gt;Il tratto gastrointestinale ospita circa 38 trilioni di microrganismi — batteri, archaea, funghi e virus — che insieme costituiscono il microbioma intestinale. Non si tratta di un passeggero passivo. Il microbioma influenza la funzione immunitaria, l&amp;rsquo;assorbimento dei nutrienti, la produzione di neurotrasmettitori e la risposta infiammatoria. I ricercatori hanno collegato la composizione del microbioma a condizioni che spaziano dalla malattia infiammatoria intestinale alla depressione.&lt;/p&gt;&#xA;&lt;p&gt;Quello che mangi plasma questa comunità. E gli alimenti fermentati potrebbero essere uno dei modi più diretti per sostenere la diversità microbica.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Pasta Madre da Zero</title>
+				<link>//localhost:1313/it/articoli/pasta-madre-da-zero/</link>
+				<pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/pasta-madre-da-zero/</guid>
+				<description>&lt;h2 id=&#34;avviare-la-pasta-madre&#34;&gt;Avviare la Pasta Madre&lt;/h2&gt;&#xA;&lt;p&gt;La prima cosa da capire sul lievito naturale è che non riguarda davvero il pane — riguarda la costruzione di una coltura viva di lieviti selvatici e batteri. Prima di cuocere qualsiasi cosa, hai bisogno di una pasta madre: un impasto di farina e acqua che nutri ogni giorno finché non diventa stabilmente attivo.&lt;/p&gt;&#xA;&lt;p&gt;La mia ricetta è semplice. Mescola 50 g di farina integrale con 50 g di acqua a temperatura ambiente in un barattolo pulito. Coprilo in modo non ermetico e lascialo a temperatura ambiente. Ogni giorno, elimina tutto tranne 50 g del composto, poi rinfrescalo con 50 g di farina e 50 g di acqua. Dopo cinque o sette giorni vedrai bollicine regolari e un odore piacevolmente acido, quasi fruttato. La tua pasta madre è pronta.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

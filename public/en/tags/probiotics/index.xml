@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Probiotics on Blog</title>
+		<link>//localhost:1313/en/tags/probiotics/</link>
+		<description>Recent content in Probiotics on Blog</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 09 Oct 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/en/tags/probiotics/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Fermentation and Gut Health</title>
+				<link>//localhost:1313/en/posts/fermentation-and-gut-health/</link>
+				<pubDate>Wed, 09 Oct 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/en/posts/fermentation-and-gut-health/</guid>
+				<description>&lt;h2 id=&#34;the-gut-microbiome-briefly&#34;&gt;The Gut Microbiome, Briefly&lt;/h2&gt;&#xA;&lt;p&gt;Your gastrointestinal tract hosts roughly 38 trillion microorganisms — bacteria, archaea, fungi, and viruses — that collectively make up the gut microbiome. This isn&amp;rsquo;t a passive passenger. The microbiome influences immune function, nutrient absorption, neurotransmitter production, and inflammatory response. Researchers have linked microbiome composition to conditions ranging from inflammatory bowel disease to depression.&lt;/p&gt;&#xA;&lt;p&gt;What you eat shapes this community. And fermented foods may be one of the most direct ways to support microbial diversity.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

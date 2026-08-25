@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Distributed Systems on Blog</title>
+		<link>//localhost:1313/it/tag/distributed-systems/</link>
+		<description>Recent content in Distributed Systems on Blog</description>
+		<generator>Hugo</generator>
+		<language>it</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 10 Feb 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/it/tag/distributed-systems/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>L&#39;Avvento dell&#39;Edge Computing</title>
+				<link>//localhost:1313/it/articoli/lavvento-delledge-computing/</link>
+				<pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/lavvento-delledge-computing/</guid>
+				<description>&lt;h2 id=&#34;cosè-ledge-computing&#34;&gt;Cos&amp;rsquo;è l&amp;rsquo;Edge Computing?&lt;/h2&gt;&#xA;&lt;p&gt;Per anni, la storia dell&amp;rsquo;infrastruttura moderna è stata una storia di centralizzazione — spostare i dati verso enormi data center cloud dove possono essere elaborati su larga scala. L&amp;rsquo;edge computing ribalta questa narrazione. Invece di inviare dati grezzi a un server distante, l&amp;rsquo;edge computing sposta il carico di lavoro computazionale verso la &lt;em&gt;sorgente&lt;/em&gt; dei dati: un capannone industriale, un punto vendita, un&amp;rsquo;antenna cellulare o persino un dispositivo in tasca.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How LLMs Actually Work &middot; Blog</title>
+  <meta name="description" content="Large language models seem like magic, but the core mechanics are surprisingly graspable. Here&#39;s a plain-language breakdown of what&#39;s happening under the hood.">
+  <link rel="canonical" href="//localhost:1313/en/posts/how-llms-actually-work/">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Instrument+Sans:ital,wght@0,400..600;1,400..600&display=swap">
+  
+    
+  
+  
+    
+      <link rel="stylesheet" href="/css/main.css">
+    
+  
+
+
+  
+</head>
+<body class="font-sans text-ink">
+  <a href="#content" class="sr-only">Skip to content</a>
+
+  <div class="mx-auto flex min-h-dvh max-w-3xl flex-col px-6">
+
+    <header class="flex justify-end py-7">
+    <nav class="flex gap-6 text-sm">
+        <a href="/" class="font-display font-semibold hover:text-cobalt">Blog</a>
+        <a href="/en/categories/" class="font-display font-semibold hover:text-cobalt">Categories</a>
+        
+        <a href="/en/tags/" class="font-display font-semibold hover:text-cobalt">Tags</a>
+        
+        
+        <a href="/en/index.xml" class="font-display font-semibold hover:text-cobalt">RSS</a>
+        
+    </nav>
+</header>
+
+
+    <main id="content" class="grow pb-20">
+      
+
+    
+<article>
+    <header class="pt-8 pb-10 sm:pt-16">
+        <div class="flex gap-3 text-sm text-mute">
+            <time datetime="2024-07-14" class="tabular-nums">Sunday, July 14, 2024</time>
+            <span aria-hidden="true">/</span>
+            <span>2 minutes to read</span>
+        </div>
+        <h1 class="mt-4 font-display text-4xl font-semibold tracking-wide sm:text-6xl">How LLMs Actually Work</h1>
+            
+                <p class="mt-4 text-lg text-mute">Large language models seem like magic, but the core mechanics are surprisingly graspable. Here&#39;s a plain-language breakdown of what&#39;s happening under the hood.</p>
+            
+    </header>
+
+    
+
+    <details class="group mb-8 border border-rule rounded-sm">
+    <summary class="flex cursor-pointer list-none items-center justify-between px-4 py-3 text-sm font-display font-semibold tracking-wide select-none hover:text-cobalt [&::-webkit-details-marker]:hidden">
+        Table of Contents
+        <span class="text-mute transition-transform group-open:rotate-180" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 5L7 10L12 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        </span>
+    </summary>
+    <nav class="border-t border-rule px-4 py-3 text-sm
+        [&_ul]:space-y-1
+        [&_ul_ul]:mt-1 [&_ul_ul]:ml-4 [&_ul_ul]:border-l [&_ul_ul]:border-rule [&_ul_ul]:pl-3
+        [&_a]:block [&_a]:text-mute [&_a]:py-0.5 [&_a]:transition-colors [&_a]:hover:text-cobalt">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#tokens-not-words">Tokens, Not Words</a></li>
+    <li><a href="#the-transformer-architecture">The Transformer Architecture</a></li>
+    <li><a href="#training-predict-the-next-token">Training: Predict the Next Token</a></li>
+    <li><a href="#inference-is-autoregressive">Inference Is Autoregressive</a></li>
+  </ul>
+</nav>
+    </nav>
+    </details>
+
+
+
+
+    <div class="prose prose-neutral max-w-[68ch] border-t border-rule pt-10 prose-headings:font-display prose-headings:tracking-normal prose-a:text-cobalt prose-a:underline-offset-4 prose-code:rounded prose-code:bg-ink/5 prose-code:px-1.5 prose-code:py-0.5 prose-code:font-normal prose-code:before:content-none prose-code:after:content-none prose-pre:bg-ink prose-pre:text-paper [&_blockquote_p]:before:content-none [&_blockquote_p]:after:content-none">
+    <h2 id="tokens-not-words">Tokens, Not Words</h2>
+<p>The first thing to unlearn is that LLMs think in words. They don&rsquo;t. They operate on <em>tokens</em> — chunks of text that might be a whole word, a syllable, a punctuation mark, or a common multi-word phrase. The word &ldquo;unbelievable&rdquo; might be three tokens; &ldquo;cat&rdquo; is one. This tokenization step is where raw text gets converted into integers that the model can actually process.</p>
+<h2 id="the-transformer-architecture">The Transformer Architecture</h2>
+<p>Modern LLMs are built on the Transformer architecture, introduced in the 2017 paper <em>Attention Is All You Need</em>. The key innovation was the <em>attention mechanism</em>: a way for the model to weigh the relevance of every token in the context against every other token simultaneously.</p>
+<p>When you write &ldquo;The bank by the river was flooded,&rdquo; attention lets the model figure out that &ldquo;bank&rdquo; relates to &ldquo;river&rdquo; and &ldquo;flooded,&rdquo; not to finance. This happens across dozens or hundreds of parallel <em>attention heads</em>, each learning to track different kinds of relationships.</p>
+<h2 id="training-predict-the-next-token">Training: Predict the Next Token</h2>
+<p>LLMs are trained on a deceptively simple objective: given a sequence of tokens, predict the next one. Do this billions of times across hundreds of billions of words scraped from the internet, books, and code, and the model develops rich internal representations of grammar, facts, reasoning patterns, and even tone.</p>
+<p>The magic emerges from scale. Small models trained on this objective learn basic grammar. Large ones develop what researchers cautiously call <em>emergent capabilities</em> — few-shot reasoning, code generation, analogy-making — that weren&rsquo;t explicitly optimized for.</p>
+<h2 id="inference-is-autoregressive">Inference Is Autoregressive</h2>
+<p>When you chat with an LLM, it generates text one token at a time. Each new token is appended to the context, and the whole sequence is re-evaluated to produce the next one. This is why generation is sequential and why longer outputs take more time.</p>
+<p>Understanding this loop helps explain both why LLMs are impressive and where they slip up: they have no long-term memory, no access to external state (unless given tools), and they can confidently produce plausible-sounding nonsense.</p>
+
+    </div>
+</article>
+
+
+    
+        <div class="my-8 border-t border-rule pt-6">
+        <h2 class="mb-3 text-xl font-medium">Tags</h2>
+        <ul class="flex flex-wrap gap-3">
+            
+            <li>
+                <a href="/en/tags/ai/" class="rounded-full border border-rule px-4 py-1.5 text-sm hover:border-cobalt hover:text-cobalt">AI</a>
+            </li>
+            
+            <li>
+                <a href="/en/tags/machine-learning/" class="rounded-full border border-rule px-4 py-1.5 text-sm hover:border-cobalt hover:text-cobalt">Machine Learning</a>
+            </li>
+            
+            <li>
+                <a href="/en/tags/llm/" class="rounded-full border border-rule px-4 py-1.5 text-sm hover:border-cobalt hover:text-cobalt">LLM</a>
+            </li>
+            
+            <li>
+                <a href="/en/tags/transformers/" class="rounded-full border border-rule px-4 py-1.5 text-sm hover:border-cobalt hover:text-cobalt">Transformers</a>
+            </li>
+            
+            <li>
+                <a href="/en/tags/deep-learning/" class="rounded-full border border-rule px-4 py-1.5 text-sm hover:border-cobalt hover:text-cobalt">Deep Learning</a>
+            </li>
+            
+        </ul>
+        </div>
+    
+
+    
+    
+        <div class="my-8 border-t border-rule pt-6">
+        <h2 class="mb-4 text-xl font-medium">Related Articles</h2>
+        <ul class="list-disc">
+            
+            <li class="m-5">
+                <a href="/en/posts/building-a-home-lab/" class="group flex flex-col hover:text-cobalt">
+                <span class="font-display font-medium tracking-normal">Building a Home Lab</span>
+                <span class="mt-0.5 text-sm text-mute">A home lab is part playground, part learning environment. Here&#39;s how I set mine up and what I actually run on it.</span>
+                </a>
+            </li>
+            
+            <li class="m-5">
+                <a href="/en/posts/vim-motions-for-everyone/" class="group flex flex-col hover:text-cobalt">
+                <span class="font-display font-medium tracking-normal">Vim Motions for Everyone</span>
+                <span class="mt-0.5 text-sm text-mute">You don&#39;t need to use Vim full-time to benefit from Vim motions. Here&#39;s a practical introduction to the movements that will change how you edit text.</span>
+                </a>
+            </li>
+            
+            <li class="m-5">
+                <a href="/en/posts/typography-for-the-web/" class="group flex flex-col hover:text-cobalt">
+                <span class="font-display font-medium tracking-normal">Typography for the Web</span>
+                <span class="mt-0.5 text-sm text-mute">Good typography is mostly invisible. Bad typography is impossible to ignore. Here are the principles that keep type working in your favor.</span>
+                </a>
+            </li>
+            
+        </ul>
+        </div>
+    
+
+    
+    <nav class="mt-12 grid gap-8 border-t border-rule pt-8 text-sm sm:grid-cols-2">
+    <div>
+        
+        <a href="/en/posts/typography-for-the-web/" class="group block hover:text-cobalt">
+            <span class="text-mute">previous</span>
+            <span class="mt-1 block font-display text-lg font-medium tracking-normal">Typography for the Web</span>
+        </a>
+        
+    </div>
+    <div class="sm:text-right">
+        
+        <a href="/en/posts/minimalist-productivity-system/" class="group block hover:text-cobalt">
+            <span class="text-mute">next</span>
+            <span class="mt-1 block font-display text-lg font-medium tracking-normal">My Minimalist Productivity System</span>
+        </a>
+        
+    </div>
+    </nav>
+
+
+
+
+    </main>
+
+    <footer class="border-t border-rule py-8 text-sm text-mute">
+      <p>&copy; 2026 Blog</p>
+    </footer>
+  </div>
+</body>
+</html>

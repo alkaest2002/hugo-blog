@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Design tokens only — all styling lives in Tailwind utility classes. */
+@theme {
+  --color-paper: #fcfcfd;
+  --color-ink: #14151a;
+  --color-mute: #757c8a;
+  --color-rule: #e7e8ee;
+  --color-cobalt: #1f3ae0;
+  --color-void: #0b0c0f;
+
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+}
+@source "hugo_stats.json";

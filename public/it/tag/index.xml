@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tag on Blog</title>
+		<link>//localhost:1313/it/tag/</link>
+		<description>Recent content in Tag on Blog</description>
+		<generator>Hugo</generator>
+		<language>it</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 03 Feb 2025 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/it/tag/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Best Practice</title>
+				<link>//localhost:1313/it/tag/best-practice/</link>
+				<pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/best-practice/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Collaborazione</title>
+				<link>//localhost:1313/it/tag/collaborazione/</link>
+				<pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/collaborazione/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Controllo Versione</title>
+				<link>//localhost:1313/it/tag/controllo-versione/</link>
+				<pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/controllo-versione/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Flusso Di Lavoro per Sviluppatori</title>
+				<link>//localhost:1313/it/tag/flusso-di-lavoro-per-sviluppatori/</link>
+				<pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/flusso-di-lavoro-per-sviluppatori/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Git</title>
+				<link>//localhost:1313/it/tag/git/</link>
+				<pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/git/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Avventura</title>
+				<link>//localhost:1313/it/tag/avventura/</link>
+				<pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/avventura/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Cile</title>
+				<link>//localhost:1313/it/tag/cile/</link>
+				<pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/cile/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Natura</title>
+				<link>//localhost:1313/it/tag/natura/</link>
+				<pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/natura/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Patagonia</title>
+				<link>//localhost:1313/it/tag/patagonia/</link>
+				<pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/patagonia/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Trekking</title>
+				<link>//localhost:1313/it/tag/trekking/</link>
+				<pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/trekking/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Homelab</title>
+				<link>//localhost:1313/it/tag/homelab/</link>
+				<pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/homelab/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Infrastructure</title>
+				<link>//localhost:1313/it/tag/infrastructure/</link>
+				<pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/infrastructure/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Linux</title>
+				<link>//localhost:1313/it/tag/linux/</link>
+				<pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/linux/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Networking</title>
+				<link>//localhost:1313/it/tag/networking/</link>
+				<pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/networking/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Self-Hosting</title>
+				<link>//localhost:1313/it/tag/self-hosting/</link>
+				<pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/self-hosting/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Benessere</title>
+				<link>//localhost:1313/it/tag/benessere/</link>
+				<pubDate>Mon, 04 Nov 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/benessere/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Neuroscienze</title>
+				<link>//localhost:1313/it/tag/neuroscienze/</link>
+				<pubDate>Mon, 04 Nov 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/neuroscienze/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Ritmo Circadiano</title>
+				<link>//localhost:1313/it/tag/ritmo-circadiano/</link>
+				<pubDate>Mon, 04 Nov 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/ritmo-circadiano/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Salute</title>
+				<link>//localhost:1313/it/tag/salute/</link>
+				<pubDate>Mon, 04 Nov 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/salute/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Sonno</title>
+				<link>//localhost:1313/it/tag/sonno/</link>
+				<pubDate>Mon, 04 Nov 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/sonno/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Brewing</title>
+				<link>//localhost:1313/it/tag/brewing/</link>
+				<pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/brewing/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Coffee</title>
+				<link>//localhost:1313/it/tag/coffee/</link>
+				<pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/coffee/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Espresso</title>
+				<link>//localhost:1313/it/tag/espresso/</link>
+				<pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/espresso/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>French Press</title>
+				<link>//localhost:1313/it/tag/french-press/</link>
+				<pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/french-press/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Pour-Over</title>
+				<link>//localhost:1313/it/tag/pour-over/</link>
+				<pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/pour-over/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Fermentazione</title>
+				<link>//localhost:1313/it/tag/fermentazione/</link>
+				<pubDate>Wed, 09 Oct 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/fermentazione/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Microbioma</title>
+				<link>//localhost:1313/it/tag/microbioma/</link>
+				<pubDate>Wed, 09 Oct 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/microbioma/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Nutrizione</title>
+				<link>//localhost:1313/it/tag/nutrizione/</link>
+				<pubDate>Wed, 09 Oct 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/nutrizione/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Probiotici</title>
+				<link>//localhost:1313/it/tag/probiotici/</link>
+				<pubDate>Wed, 09 Oct 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/probiotici/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Salute Intestinale</title>
+				<link>//localhost:1313/it/tag/salute-intestinale/</link>
+				<pubDate>Wed, 09 Oct 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/salute-intestinale/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Allenamento</title>
+				<link>//localhost:1313/it/tag/allenamento/</link>
+				<pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/allenamento/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Corsa</title>
+				<link>//localhost:1313/it/tag/corsa/</link>
+				<pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/corsa/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Maratona</title>
+				<link>//localhost:1313/it/tag/maratona/</link>
+				<pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/maratona/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Resistenza</title>
+				<link>//localhost:1313/it/tag/resistenza/</link>
+				<pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/resistenza/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Editor</title>
+				<link>//localhost:1313/it/tag/editor/</link>
+				<pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/editor/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Neovim</title>
+				<link>//localhost:1313/it/tag/neovim/</link>
+				<pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/neovim/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Produttività</title>
+				<link>//localhost:1313/it/tag/produttivit%C3%A0/</link>
+				<pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/produttivit%C3%A0/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Strumenti</title>
+				<link>//localhost:1313/it/tag/strumenti/</link>
+				<pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/strumenti/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Vim</title>
+				<link>//localhost:1313/it/tag/vim/</link>
+				<pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/vim/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Abitudini</title>
+				<link>//localhost:1313/it/tag/abitudini/</link>
+				<pubDate>Sat, 03 Aug 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/abitudini/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Focus</title>
+				<link>//localhost:1313/it/tag/focus/</link>
+				<pubDate>Sat, 03 Aug 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/focus/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Minimalismo</title>
+				<link>//localhost:1313/it/tag/minimalismo/</link>
+				<pubDate>Sat, 03 Aug 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/minimalismo/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Pianificazione</title>
+				<link>//localhost:1313/it/tag/pianificazione/</link>
+				<pubDate>Sat, 03 Aug 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/pianificazione/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>AI</title>
+				<link>//localhost:1313/it/tag/ai/</link>
+				<pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/ai/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Deep Learning</title>
+				<link>//localhost:1313/it/tag/deep-learning/</link>
+				<pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/deep-learning/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>LLM</title>
+				<link>//localhost:1313/it/tag/llm/</link>
+				<pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/llm/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Machine Learning</title>
+				<link>//localhost:1313/it/tag/machine-learning/</link>
+				<pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/machine-learning/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Transformers</title>
+				<link>//localhost:1313/it/tag/transformers/</link>
+				<pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/transformers/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Font</title>
+				<link>//localhost:1313/it/tag/font/</link>
+				<pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/font/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Leggibilità</title>
+				<link>//localhost:1313/it/tag/leggibilit%C3%A0/</link>
+				<pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/leggibilit%C3%A0/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Tipografia</title>
+				<link>//localhost:1313/it/tag/tipografia/</link>
+				<pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/tipografia/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>UI</title>
+				<link>//localhost:1313/it/tag/ui/</link>
+				<pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/ui/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Web Design</title>
+				<link>//localhost:1313/it/tag/web-design/</link>
+				<pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/web-design/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Accessibilità</title>
+				<link>//localhost:1313/it/tag/accessibilit%C3%A0/</link>
+				<pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/accessibilit%C3%A0/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Colore</title>
+				<link>//localhost:1313/it/tag/colore/</link>
+				<pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/colore/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Dark Mode</title>
+				<link>//localhost:1313/it/tag/dark-mode/</link>
+				<pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/dark-mode/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>UI Design</title>
+				<link>//localhost:1313/it/tag/ui-design/</link>
+				<pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/ui-design/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Baking</title>
+				<link>//localhost:1313/it/tag/baking/</link>
+				<pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/baking/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Bread</title>
+				<link>//localhost:1313/it/tag/bread/</link>
+				<pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/bread/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Cooking</title>
+				<link>//localhost:1313/it/tag/cooking/</link>
+				<pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/cooking/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Fermentation</title>
+				<link>//localhost:1313/it/tag/fermentation/</link>
+				<pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/fermentation/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Sourdough</title>
+				<link>//localhost:1313/it/tag/sourdough/</link>
+				<pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/sourdough/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Fisica</title>
+				<link>//localhost:1313/it/tag/fisica/</link>
+				<pubDate>Tue, 07 May 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/fisica/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>GPS</title>
+				<link>//localhost:1313/it/tag/gps/</link>
+				<pubDate>Tue, 07 May 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/gps/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Navigazione</title>
+				<link>//localhost:1313/it/tag/navigazione/</link>
+				<pubDate>Tue, 07 May 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/navigazione/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Satelliti</title>
+				<link>//localhost:1313/it/tag/satelliti/</link>
+				<pubDate>Tue, 07 May 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/satelliti/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Tecnologia</title>
+				<link>//localhost:1313/it/tag/tecnologia/</link>
+				<pubDate>Tue, 07 May 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/tecnologia/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Culture</title>
+				<link>//localhost:1313/it/tag/culture/</link>
+				<pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/culture/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Japan</title>
+				<link>//localhost:1313/it/tag/japan/</link>
+				<pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/japan/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Kyoto</title>
+				<link>//localhost:1313/it/tag/kyoto/</link>
+				<pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/kyoto/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Temples</title>
+				<link>//localhost:1313/it/tag/temples/</link>
+				<pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/temples/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Travel</title>
+				<link>//localhost:1313/it/tag/travel/</link>
+				<pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/travel/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Containers</title>
+				<link>//localhost:1313/it/tag/containers/</link>
+				<pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/containers/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Deployment</title>
+				<link>//localhost:1313/it/tag/deployment/</link>
+				<pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/deployment/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Devops</title>
+				<link>//localhost:1313/it/tag/devops/</link>
+				<pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/devops/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Docker</title>
+				<link>//localhost:1313/it/tag/docker/</link>
+				<pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/docker/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Css</title>
+				<link>//localhost:1313/it/tag/css/</link>
+				<pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/css/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Design</title>
+				<link>//localhost:1313/it/tag/design/</link>
+				<pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/design/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Frontend</title>
+				<link>//localhost:1313/it/tag/frontend/</link>
+				<pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/frontend/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Layout</title>
+				<link>//localhost:1313/it/tag/layout/</link>
+				<pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/layout/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Sviluppo Web</title>
+				<link>//localhost:1313/it/tag/sviluppo-web/</link>
+				<pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/sviluppo-web/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Cloud</title>
+				<link>//localhost:1313/it/tag/cloud/</link>
+				<pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/cloud/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Distributed Systems</title>
+				<link>//localhost:1313/it/tag/distributed-systems/</link>
+				<pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/distributed-systems/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Edge Computing</title>
+				<link>//localhost:1313/it/tag/edge-computing/</link>
+				<pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/edge-computing/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>ARPANET</title>
+				<link>//localhost:1313/it/tag/arpanet/</link>
+				<pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/arpanet/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Internet</title>
+				<link>//localhost:1313/it/tag/internet/</link>
+				<pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/internet/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Reti</title>
+				<link>//localhost:1313/it/tag/reti/</link>
+				<pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/reti/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Storia</title>
+				<link>//localhost:1313/it/tag/storia/</link>
+				<pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/storia/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Beginner</title>
+				<link>//localhost:1313/it/tag/beginner/</link>
+				<pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/beginner/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Memory-Safety</title>
+				<link>//localhost:1313/it/tag/memory-safety/</link>
+				<pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/memory-safety/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Rust</title>
+				<link>//localhost:1313/it/tag/rust/</link>
+				<pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/rust/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Systems-Programming</title>
+				<link>//localhost:1313/it/tag/systems-programming/</link>
+				<pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/tag/systems-programming/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>

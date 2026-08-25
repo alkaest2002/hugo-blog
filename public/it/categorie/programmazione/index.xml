@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Programmazione on Blog</title>
+		<link>//localhost:1313/it/categorie/programmazione/</link>
+		<description>Recent content in Programmazione on Blog</description>
+		<generator>Hugo</generator>
+		<language>it</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 03 Feb 2025 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/it/categorie/programmazione/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Scrivere Messaggi di Commit Migliori</title>
+				<link>//localhost:1313/it/articoli/scrivere-messaggi-di-commit-migliori/</link>
+				<pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/scrivere-messaggi-di-commit-migliori/</guid>
+				<description>&lt;h2 id=&#34;il-costo-dei-messaggi-di-commit-scadenti&#34;&gt;Il Costo dei Messaggi di Commit Scadenti&lt;/h2&gt;&#xA;&lt;p&gt;Apri qualsiasi codebase longeva ed esegui &lt;code&gt;git log&lt;/code&gt;. Cosa vedi? &amp;ldquo;fix bug,&amp;rdquo; &amp;ldquo;wip,&amp;rdquo; &amp;ldquo;asdf,&amp;rdquo; &amp;ldquo;update,&amp;rdquo; &amp;ldquo;final,&amp;rdquo; &amp;ldquo;final2.&amp;rdquo; Questi messaggi non ti dicono nulla sul &lt;em&gt;perché&lt;/em&gt; una modifica è stata fatta, &lt;em&gt;quale problema&lt;/em&gt; ha risolto, né il &lt;em&gt;contesto&lt;/em&gt; che ti servirebbe per comprenderla sei mesi dopo.&lt;/p&gt;&#xA;&lt;p&gt;Quando stai facendo debug di una regressione a mezzanotte, un messaggio di commit come &amp;ldquo;fix null pointer in user session lookup after token expiry&amp;rdquo; vale infinitamente più di &amp;ldquo;bug fix.&amp;rdquo;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Vim Motions per Tutti</title>
+				<link>//localhost:1313/it/articoli/vim-motions-per-tutti/</link>
+				<pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/vim-motions-per-tutti/</guid>
+				<description>&lt;h2 id=&#34;il-modello-di-editing-modale&#34;&gt;Il Modello di Editing Modale&lt;/h2&gt;&#xA;&lt;p&gt;L&amp;rsquo;idea centrale di Vim è l&amp;rsquo;editing modale: la tastiera fa cose diverse a seconda della modalità in cui ti trovi. In &lt;em&gt;modalità Normal&lt;/em&gt;, i tasti sono comandi. In &lt;em&gt;modalità Insert&lt;/em&gt;, i tasti digitano testo. In &lt;em&gt;modalità Visual&lt;/em&gt;, i tasti selezionano il testo. All&amp;rsquo;inizio sembra strano, per qualche giorno, poi diventa difficile rinunciarci.&lt;/p&gt;&#xA;&lt;p&gt;Il vantaggio è che le mani raramente devono abbandonare la home row. Niente mouse. Niente frecce direzionali. Niente acrobazie con &lt;code&gt;Ctrl+Shift&lt;/code&gt; per selezionare una parola. La modifica del testo diventa un linguaggio componibile.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Capire CSS Grid</title>
+				<link>//localhost:1313/it/articoli/capire-css-grid/</link>
+				<pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/capire-css-grid/</guid>
+				<description>&lt;h2 id=&#34;il-problema-di-layout-che-grid-risolve&#34;&gt;Il Problema di Layout che Grid Risolve&lt;/h2&gt;&#xA;&lt;p&gt;Prima di Grid, i layout web erano una serie di hack creativi. Si facevano galleggiare elementi pensati per il testo, si abusava delle tabelle per la struttura e alla fine ci si affidava pesantemente a Flexbox — che, pur essendo eccellente, è fondamentalmente monodimensionale. CSS Grid è il primo sistema di layout nativo bidimensionale integrato nel browser, e cambia ciò che è possibile realizzare.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Iniziare con Rust: Una Guida per Principianti</title>
+				<link>//localhost:1313/it/articoli/iniziare-con-rust-una-guida-per-principianti/</link>
+				<pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/iniziare-con-rust-una-guida-per-principianti/</guid>
+				<description>&lt;p&gt;Rust ha conquistato il mondo della programmazione, dominando costantemente le classifiche di soddisfazione degli sviluppatori. Ma cosa lo rende davvero degno di essere imparato?&lt;/p&gt;&#xA;&lt;h2 id=&#34;perché-rust&#34;&gt;Perché Rust?&lt;/h2&gt;&#xA;&lt;p&gt;Rust risolve un problema che affligge i programmatori di sistemi da decenni: come si scrive codice veloce e di basso livello senza sacrificare la sicurezza della memoria? Linguaggi come C e C++ offrono prestazioni allo stato grezzo, ma ti lasciano responsabile di ogni allocazione e deallocazione. Un errore e ti ritrovi a fare debug di un segfault alle due di notte.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

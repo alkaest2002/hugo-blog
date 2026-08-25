@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Neuroscience on Blog</title>
+		<link>//localhost:1313/en/tags/neuroscience/</link>
+		<description>Recent content in Neuroscience on Blog</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 04 Nov 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/en/tags/neuroscience/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>The Science of Sleep</title>
+				<link>//localhost:1313/en/posts/the-science-of-sleep/</link>
+				<pubDate>Mon, 04 Nov 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/en/posts/the-science-of-sleep/</guid>
+				<description>&lt;h2 id=&#34;sleep-is-not-rest&#34;&gt;Sleep Is Not Rest&lt;/h2&gt;&#xA;&lt;p&gt;The popular image of sleep as a kind of nightly reboot — brain off, body idle — is wrong. During sleep, your brain is arguably more active in certain respects than during waking hours. It&amp;rsquo;s consolidating memories, clearing metabolic waste, regulating hormones, and running maintenance on neural connections. Far from downtime, sleep is when a lot of the important work happens.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-architecture-of-a-night&#34;&gt;The Architecture of a Night&lt;/h2&gt;&#xA;&lt;p&gt;Sleep cycles through two main phases, repeating roughly every 90 minutes:&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

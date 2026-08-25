@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Cooking on Blog</title>
+		<link>//localhost:1313/en/tags/cooking/</link>
+		<description>Recent content in Cooking on Blog</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 22 May 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/en/tags/cooking/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Sourdough From Scratch</title>
+				<link>//localhost:1313/en/posts/sourdough-from-scratch/</link>
+				<pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/en/posts/sourdough-from-scratch/</guid>
+				<description>&lt;h2 id=&#34;starting-the-starter&#34;&gt;Starting the Starter&lt;/h2&gt;&#xA;&lt;p&gt;The first thing to understand about sourdough is that it&amp;rsquo;s not really about bread — it&amp;rsquo;s about building a living culture of wild yeast and bacteria. Before you bake anything, you need a starter: a mixture of flour and water that you feed daily until it becomes reliably active.&lt;/p&gt;&#xA;&lt;p&gt;My recipe is simple. Mix 50g of whole wheat flour with 50g of room-temperature water in a clean jar. Cover loosely and leave it at room temperature. Each day, discard all but 50g of the mixture, then feed it with 50g flour and 50g water. After five to seven days you&amp;rsquo;ll see consistent bubbling and a pleasantly sour, almost fruity smell. Your starter is ready.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

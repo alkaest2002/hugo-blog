@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Running on Blog</title>
+		<link>//localhost:1313/en/tags/running/</link>
+		<description>Recent content in Running on Blog</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 15 Sep 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/en/tags/running/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Training for My First Marathon</title>
+				<link>//localhost:1313/en/posts/training-for-my-first-marathon/</link>
+				<pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/en/posts/training-for-my-first-marathon/</guid>
+				<description>&lt;h2 id=&#34;why-i-signed-up&#34;&gt;Why I Signed Up&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;d been running casually for two years — a few miles here, a 10K there — but never with a real goal. Signing up for a marathon was mostly an act of self-coercion. If I&amp;rsquo;d paid for a race, I&amp;rsquo;d actually train for it. The logic proved sound.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-training-plan&#34;&gt;The Training Plan&lt;/h2&gt;&#xA;&lt;p&gt;I followed a modified version of Hal Higdon&amp;rsquo;s Novice 1 plan, which peaks at a 20-mile long run and tops out around 40 miles per week. A few things I learned the hard way:&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

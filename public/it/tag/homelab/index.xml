@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Homelab on Blog</title>
+		<link>//localhost:1313/it/tag/homelab/</link>
+		<description>Recent content in Homelab on Blog</description>
+		<generator>Hugo</generator>
+		<language>it</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 01 Dec 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/it/tag/homelab/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Costruire un Home Lab</title>
+				<link>//localhost:1313/it/articoli/costruire-un-home-lab/</link>
+				<pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/costruire-un-home-lab/</guid>
+				<description>&lt;h2 id=&#34;perché-farselo&#34;&gt;Perché Farselo?&lt;/h2&gt;&#xA;&lt;p&gt;Gestire la propria infrastruttura a casa sembra un sacco di lavoro — perché a volte lo è davvero. Ma il guadagno è sostanziale: impari facendo cose che i servizi gestiti ti nascondono, controlli i tuoi dati e hai un sandbox che nessuno ti licenzierà per aver rotto.&lt;/p&gt;&#xA;&lt;p&gt;La mia motivazione era semplice: volevo capire Kubernetes sul serio, e farlo girare su un cluster reale (anche se piccolo) mi ha insegnato più in due settimane che mesi di lettura della documentazione.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

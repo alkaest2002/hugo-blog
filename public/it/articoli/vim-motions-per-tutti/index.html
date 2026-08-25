@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vim Motions per Tutti &middot; Blog</title>
+  <meta name="description" content="Non devi usare Vim a tempo pieno per trarre vantaggio dalle sue motion. Ecco un&#39;introduzione pratica ai movimenti che cambieranno il modo in cui modifichi il testo.">
+  <link rel="canonical" href="//localhost:1313/it/articoli/vim-motions-per-tutti/">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Instrument+Sans:ital,wght@0,400..600;1,400..600&display=swap">
+  
+    
+  
+  
+    
+      <link rel="stylesheet" href="/css/main.css">
+    
+  
+
+
+  
+</head>
+<body class="font-sans text-ink">
+  <a href="#content" class="sr-only">Skip to content</a>
+
+  <div class="mx-auto flex min-h-dvh max-w-3xl flex-col px-6">
+
+    <header class="flex justify-end py-7">
+    <nav class="flex gap-6 text-sm">
+        <a href="/" class="font-display font-semibold hover:text-cobalt">Blog</a>
+        <a href="/it/categorie/" class="font-display font-semibold hover:text-cobalt">Categorie</a>
+        
+        <a href="/it/tag/" class="font-display font-semibold hover:text-cobalt">Tag</a>
+        
+        
+        <a href="/it/index.xml" class="font-display font-semibold hover:text-cobalt">RSS</a>
+        
+    </nav>
+</header>
+
+
+    <main id="content" class="grow pb-20">
+      
+
+    
+<article>
+    <header class="pt-8 pb-10 sm:pt-16">
+        <div class="flex gap-3 text-sm text-mute">
+            <time datetime="2024-08-19" class="tabular-nums">lunedì 19 agosto 2024</time>
+            <span aria-hidden="true">/</span>
+            <span>2 minuti di lettura</span>
+        </div>
+        <h1 class="mt-4 font-display text-4xl font-semibold tracking-wide sm:text-6xl">Vim Motions per Tutti</h1>
+            
+                <p class="mt-4 text-lg text-mute">Non devi usare Vim a tempo pieno per trarre vantaggio dalle sue motion. Ecco un&#39;introduzione pratica ai movimenti che cambieranno il modo in cui modifichi il testo.</p>
+            
+    </header>
+
+    
+
+    <details class="group mb-8 border border-rule rounded-sm">
+    <summary class="flex cursor-pointer list-none items-center justify-between px-4 py-3 text-sm font-display font-semibold tracking-wide select-none hover:text-cobalt [&::-webkit-details-marker]:hidden">
+        Sommario
+        <span class="text-mute transition-transform group-open:rotate-180" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 5L7 10L12 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        </span>
+    </summary>
+    <nav class="border-t border-rule px-4 py-3 text-sm
+        [&_ul]:space-y-1
+        [&_ul_ul]:mt-1 [&_ul_ul]:ml-4 [&_ul_ul]:border-l [&_ul_ul]:border-rule [&_ul_ul]:pl-3
+        [&_a]:block [&_a]:text-mute [&_a]:py-0.5 [&_a]:transition-colors [&_a]:hover:text-cobalt">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#il-modello-di-editing-modale">Il Modello di Editing Modale</a></li>
+    <li><a href="#le-motion-che-contano-di-più">Le Motion Che Contano di Più</a></li>
+    <li><a href="#la-potenza-della-composizione">La Potenza della Composizione</a></li>
+    <li><a href="#non-devi-cambiare-editor">Non Devi Cambiare Editor</a></li>
+  </ul>
+</nav>
+    </nav>
+    </details>
+
+
+
+
+    <div class="prose prose-neutral max-w-[68ch] border-t border-rule pt-10 prose-headings:font-display prose-headings:tracking-normal prose-a:text-cobalt prose-a:underline-offset-4 prose-code:rounded prose-code:bg-ink/5 prose-code:px-1.5 prose-code:py-0.5 prose-code:font-normal prose-code:before:content-none prose-code:after:content-none prose-pre:bg-ink prose-pre:text-paper [&_blockquote_p]:before:content-none [&_blockquote_p]:after:content-none">
+    <h2 id="il-modello-di-editing-modale">Il Modello di Editing Modale</h2>
+<p>L&rsquo;idea centrale di Vim è l&rsquo;editing modale: la tastiera fa cose diverse a seconda della modalità in cui ti trovi. In <em>modalità Normal</em>, i tasti sono comandi. In <em>modalità Insert</em>, i tasti digitano testo. In <em>modalità Visual</em>, i tasti selezionano il testo. All&rsquo;inizio sembra strano, per qualche giorno, poi diventa difficile rinunciarci.</p>
+<p>Il vantaggio è che le mani raramente devono abbandonare la home row. Niente mouse. Niente frecce direzionali. Niente acrobazie con <code>Ctrl+Shift</code> per selezionare una parola. La modifica del testo diventa un linguaggio componibile.</p>
+<h2 id="le-motion-che-contano-di-più">Le Motion Che Contano di Più</h2>
+<p>Puoi imparare Vim in modo incrementale. Queste motion da sole cambieranno il modo in cui ti muovi in un file:</p>
+<ul>
+<li><code>h j k l</code> — Sinistra, giù, su, destra. Strano all&rsquo;inizio; naturale in fretta.</li>
+<li><code>w</code> / <code>b</code> — Avanza / torna indietro di una parola.</li>
+<li><code>e</code> — Vai alla fine della parola corrente.</li>
+<li><code>0</code> / <code>$</code> — Salta all&rsquo;inizio / alla fine della riga.</li>
+<li><code>gg</code> / <code>G</code> — Salta in cima / in fondo al file.</li>
+<li><code>{</code> / <code>}</code> — Vai al paragrafo precedente / successivo.</li>
+<li><code>f&lt;char&gt;</code> — Salta alla prossima occorrenza di <code>&lt;char&gt;</code> sulla riga corrente.</li>
+</ul>
+<h2 id="la-potenza-della-composizione">La Potenza della Composizione</h2>
+<p>Ciò che rende le motion potenti è come si combinano con gli operatori. <code>d</code> elimina, <code>c</code> cambia, <code>y</code> copia (yank). Quindi:</p>
+<ul>
+<li><code>dw</code> — Elimina una parola.</li>
+<li><code>ci&quot;</code> — Cambia tutto ciò che si trova all&rsquo;interno delle virgolette doppie più vicine.</li>
+<li><code>y$</code> — Copia dal cursore fino alla fine della riga.</li>
+</ul>
+<p>Non sono scorciatoie arbitrarie — sono una grammatica. Imparare la grammatica ti permette di formare nuove frasi senza memorizzare singoli comandi.</p>
+<h2 id="non-devi-cambiare-editor">Non Devi Cambiare Editor</h2>
+<p>La maggior parte degli editor più diffusi ha un&rsquo;ottima emulazione di Vim: VSCode ha <code>vscodevim</code>, i JetBrains IDE hanno <code>IdeaVim</code> e Zed ha la modalità Vim integrata. Ottieni il modello delle motion senza abbandonare il tuo ambiente attuale.</p>
+<p>Inizia con la navigazione in modalità normal. Aggiungi qualche operatore. Nel giro di una settimana ti sorprenderai a voler usare <code>ci&quot;</code> in contesti che non hanno nulla a che fare con Vim.</p>
+
+    </div>
+</article>
+
+
+    
+        <div class="my-8 border-t border-rule pt-6">
+        <h2 class="mb-3 text-xl font-medium">Tag</h2>
+        <ul class="flex flex-wrap gap-3">
+            
+            <li>
+                <a href="/it/tag/vim/" class="rounded-full border border-rule px-4 py-1.5 text-sm hover:border-cobalt hover:text-cobalt">Vim</a>
+            </li>
+            
+            <li>
+                <a href="/it/tag/neovim/" class="rounded-full border border-rule px-4 py-1.5 text-sm hover:border-cobalt hover:text-cobalt">Neovim</a>
+            </li>
+            
+            <li>
+                <a href="/it/tag/editor/" class="rounded-full border border-rule px-4 py-1.5 text-sm hover:border-cobalt hover:text-cobalt">Editor</a>
+            </li>
+            
+            <li>
+                <a href="/it/tag/produttivit%C3%A0/" class="rounded-full border border-rule px-4 py-1.5 text-sm hover:border-cobalt hover:text-cobalt">Produttività</a>
+            </li>
+            
+            <li>
+                <a href="/it/tag/strumenti/" class="rounded-full border border-rule px-4 py-1.5 text-sm hover:border-cobalt hover:text-cobalt">Strumenti</a>
+            </li>
+            
+        </ul>
+        </div>
+    
+
+    
+    
+        <div class="my-8 border-t border-rule pt-6">
+        <h2 class="mb-4 text-xl font-medium">Articoli Correlati</h2>
+        <ul class="list-disc">
+            
+            <li class="m-5">
+                <a href="/it/articoli/costruire-un-home-lab/" class="group flex flex-col hover:text-cobalt">
+                <span class="font-display font-medium tracking-normal">Costruire un Home Lab</span>
+                <span class="mt-0.5 text-sm text-mute">Un home lab è in parte un campo giochi, in parte un ambiente di apprendimento. Ecco come ho configurato il mio e cosa ci faccio girare davvero.</span>
+                </a>
+            </li>
+            
+            <li class="m-5">
+                <a href="/it/articoli/il-mio-sistema-di-produttivit%C3%A0-minimalista/" class="group flex flex-col hover:text-cobalt">
+                <span class="font-display font-medium tracking-normal">Il Mio Sistema di Produttività Minimalista</span>
+                <span class="mt-0.5 text-sm text-mute">Dopo anni passati a saltare tra app, framework e quaderni, ho trovato un sistema quasi imbarazzante nella sua semplicità — e che funziona davvero.</span>
+                </a>
+            </li>
+            
+            <li class="m-5">
+                <a href="/it/articoli/come-funzionano-davvero-i-llm/" class="group flex flex-col hover:text-cobalt">
+                <span class="font-display font-medium tracking-normal">Come Funzionano Davvero i LLM</span>
+                <span class="mt-0.5 text-sm text-mute">I modelli linguistici di grandi dimensioni sembrano magia, ma i meccanismi fondamentali sono sorprendentemente comprensibili. Ecco una spiegazione in linguaggio semplice di ciò che accade sotto il cofano.</span>
+                </a>
+            </li>
+            
+        </ul>
+        </div>
+    
+
+    
+    <nav class="mt-12 grid gap-8 border-t border-rule pt-8 text-sm sm:grid-cols-2">
+    <div>
+        
+        <a href="/it/articoli/il-mio-sistema-di-produttivit%C3%A0-minimalista/" class="group block hover:text-cobalt">
+            <span class="text-mute">precedente</span>
+            <span class="mt-1 block font-display text-lg font-medium tracking-normal">Il Mio Sistema di Produttività Minimalista</span>
+        </a>
+        
+    </div>
+    <div class="sm:text-right">
+        
+        <a href="/it/articoli/allenarmi-per-la-mia-prima-maratona/" class="group block hover:text-cobalt">
+            <span class="text-mute">successivo</span>
+            <span class="mt-1 block font-display text-lg font-medium tracking-normal">Allenarmi per la Mia Prima Maratona</span>
+        </a>
+        
+    </div>
+    </nav>
+
+
+
+
+    </main>
+
+    <footer class="border-t border-rule py-8 text-sm text-mute">
+      <p>&copy; 2026 Blog</p>
+    </footer>
+  </div>
+</body>
+</html>

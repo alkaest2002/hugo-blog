@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Rise of Edge Computing &middot; Blog</title>
+  <meta name="description" content="Edge computing is reshaping how we think about data processing by moving computation closer to where it&#39;s generated. Here&#39;s what you need to know.">
+  <link rel="canonical" href="//localhost:1313/en/posts/the-rise-of-edge-computing/">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Instrument+Sans:ital,wght@0,400..600;1,400..600&display=swap">
+  
+    
+  
+  
+    
+      <link rel="stylesheet" href="/css/main.css">
+    
+  
+
+
+  
+</head>
+<body class="font-sans text-ink">
+  <a href="#content" class="sr-only">Skip to content</a>
+
+  <div class="mx-auto flex min-h-dvh max-w-3xl flex-col px-6">
+
+    <header class="flex justify-end py-7">
+    <nav class="flex gap-6 text-sm">
+        <a href="/" class="font-display font-semibold hover:text-cobalt">Blog</a>
+        <a href="/en/categories/" class="font-display font-semibold hover:text-cobalt">Categories</a>
+        
+        <a href="/en/tags/" class="font-display font-semibold hover:text-cobalt">Tags</a>
+        
+        
+        <a href="/en/index.xml" class="font-display font-semibold hover:text-cobalt">RSS</a>
+        
+    </nav>
+</header>
+
+
+    <main id="content" class="grow pb-20">
+      
+
+    
+<article>
+    <header class="pt-8 pb-10 sm:pt-16">
+        <div class="flex gap-3 text-sm text-mute">
+            <time datetime="2024-02-10" class="tabular-nums">Saturday, February 10, 2024</time>
+            <span aria-hidden="true">/</span>
+            <span>2 minutes to read</span>
+        </div>
+        <h1 class="mt-4 font-display text-4xl font-semibold tracking-wide sm:text-6xl">The Rise of Edge Computing</h1>
+            
+                <p class="mt-4 text-lg text-mute">Edge computing is reshaping how we think about data processing by moving computation closer to where it&#39;s generated. Here&#39;s what you need to know.</p>
+            
+    </header>
+
+    
+
+    <details class="group mb-8 border border-rule rounded-sm">
+    <summary class="flex cursor-pointer list-none items-center justify-between px-4 py-3 text-sm font-display font-semibold tracking-wide select-none hover:text-cobalt [&::-webkit-details-marker]:hidden">
+        Table of Contents
+        <span class="text-mute transition-transform group-open:rotate-180" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 5L7 10L12 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        </span>
+    </summary>
+    <nav class="border-t border-rule px-4 py-3 text-sm
+        [&_ul]:space-y-1
+        [&_ul_ul]:mt-1 [&_ul_ul]:ml-4 [&_ul_ul]:border-l [&_ul_ul]:border-rule [&_ul_ul]:pl-3
+        [&_a]:block [&_a]:text-mute [&_a]:py-0.5 [&_a]:transition-colors [&_a]:hover:text-cobalt">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-edge-computing">What Is Edge Computing?</a></li>
+    <li><a href="#why-now">Why Now?</a></li>
+    <li><a href="#the-trade-offs">The Trade-offs</a></li>
+  </ul>
+</nav>
+    </nav>
+    </details>
+
+
+
+
+    <div class="prose prose-neutral max-w-[68ch] border-t border-rule pt-10 prose-headings:font-display prose-headings:tracking-normal prose-a:text-cobalt prose-a:underline-offset-4 prose-code:rounded prose-code:bg-ink/5 prose-code:px-1.5 prose-code:py-0.5 prose-code:font-normal prose-code:before:content-none prose-code:after:content-none prose-pre:bg-ink prose-pre:text-paper [&_blockquote_p]:before:content-none [&_blockquote_p]:after:content-none">
+    <h2 id="what-is-edge-computing">What Is Edge Computing?</h2>
+<p>For years, the story of modern infrastructure has been about centralization — moving data to massive cloud data centers where it can be processed at scale. Edge computing flips that narrative. Instead of shipping raw data to a distant server, edge computing moves the compute workload to the <em>source</em> of the data: a factory floor, a retail store, a cell tower, or even a device in your pocket.</p>
+<p>The core idea is simple: latency matters. When a self-driving car needs to decide whether to brake, it cannot afford to wait 80 milliseconds for a round-trip to the cloud. When a hospital monitor detects an anomaly, real-time local processing can be the difference between a timely alert and a missed one.</p>
+<h2 id="why-now">Why Now?</h2>
+<p>Several trends have converged to make edge computing viable at scale:</p>
+<ul>
+<li><strong>Cheaper hardware</strong> — ARM-based chips have made powerful, energy-efficient compute available in tiny form factors.</li>
+<li><strong>5G rollout</strong> — Higher bandwidth and lower latency at the network edge make hybrid edge/cloud architectures practical.</li>
+<li><strong>IoT explosion</strong> — Billions of connected devices generating petabytes of data have made centralized processing economically untenable.</li>
+<li><strong>Privacy regulation</strong> — GDPR and similar laws push organizations to process sensitive data locally rather than shipping it overseas.</li>
+</ul>
+<h2 id="the-trade-offs">The Trade-offs</h2>
+<p>Edge computing is not a silver bullet. Managing a fleet of distributed edge nodes is operationally complex. You lose the elasticity of the cloud, updates must propagate to hundreds or thousands of endpoints, and hardware failure becomes a local (rather than provider) problem.</p>
+<p>The most resilient architectures treat edge and cloud as complements. Time-sensitive inference and filtering happen at the edge; aggregation, model retraining, and long-term storage happen in the cloud.</p>
+<p>As hardware costs continue to fall and 5G matures, expect edge computing to become a first-class citizen in every infrastructure conversation.</p>
+
+    </div>
+</article>
+
+
+    
+        <div class="my-8 border-t border-rule pt-6">
+        <h2 class="mb-3 text-xl font-medium">Tags</h2>
+        <ul class="flex flex-wrap gap-3">
+            
+            <li>
+                <a href="/en/tags/edge-computing/" class="rounded-full border border-rule px-4 py-1.5 text-sm hover:border-cobalt hover:text-cobalt">Edge Computing</a>
+            </li>
+            
+            <li>
+                <a href="/en/tags/cloud/" class="rounded-full border border-rule px-4 py-1.5 text-sm hover:border-cobalt hover:text-cobalt">Cloud</a>
+            </li>
+            
+            <li>
+                <a href="/en/tags/infrastructure/" class="rounded-full border border-rule px-4 py-1.5 text-sm hover:border-cobalt hover:text-cobalt">Infrastructure</a>
+            </li>
+            
+            <li>
+                <a href="/en/tags/networking/" class="rounded-full border border-rule px-4 py-1.5 text-sm hover:border-cobalt hover:text-cobalt">Networking</a>
+            </li>
+            
+            <li>
+                <a href="/en/tags/distributed-systems/" class="rounded-full border border-rule px-4 py-1.5 text-sm hover:border-cobalt hover:text-cobalt">Distributed Systems</a>
+            </li>
+            
+        </ul>
+        </div>
+    
+
+    
+    
+        <div class="my-8 border-t border-rule pt-6">
+        <h2 class="mb-4 text-xl font-medium">Related Articles</h2>
+        <ul class="list-disc">
+            
+            <li class="m-5">
+                <a href="/en/posts/building-a-home-lab/" class="group flex flex-col hover:text-cobalt">
+                <span class="font-display font-medium tracking-normal">Building a Home Lab</span>
+                <span class="mt-0.5 text-sm text-mute">A home lab is part playground, part learning environment. Here&#39;s how I set mine up and what I actually run on it.</span>
+                </a>
+            </li>
+            
+            <li class="m-5">
+                <a href="/en/posts/vim-motions-for-everyone/" class="group flex flex-col hover:text-cobalt">
+                <span class="font-display font-medium tracking-normal">Vim Motions for Everyone</span>
+                <span class="mt-0.5 text-sm text-mute">You don&#39;t need to use Vim full-time to benefit from Vim motions. Here&#39;s a practical introduction to the movements that will change how you edit text.</span>
+                </a>
+            </li>
+            
+            <li class="m-5">
+                <a href="/en/posts/how-llms-actually-work/" class="group flex flex-col hover:text-cobalt">
+                <span class="font-display font-medium tracking-normal">How LLMs Actually Work</span>
+                <span class="mt-0.5 text-sm text-mute">Large language models seem like magic, but the core mechanics are surprisingly graspable. Here&#39;s a plain-language breakdown of what&#39;s happening under the hood.</span>
+                </a>
+            </li>
+            
+        </ul>
+        </div>
+    
+
+    
+    <nav class="mt-12 grid gap-8 border-t border-rule pt-8 text-sm sm:grid-cols-2">
+    <div>
+        
+        <a href="/en/posts/history-of-the-internet/" class="group block hover:text-cobalt">
+            <span class="text-mute">previous</span>
+            <span class="mt-1 block font-display text-lg font-medium tracking-normal">A Brief History of the Internet</span>
+        </a>
+        
+    </div>
+    <div class="sm:text-right">
+        
+        <a href="/en/posts/understanding-css-grid/" class="group block hover:text-cobalt">
+            <span class="text-mute">next</span>
+            <span class="mt-1 block font-display text-lg font-medium tracking-normal">Understanding CSS Grid</span>
+        </a>
+        
+    </div>
+    </nav>
+
+
+
+
+    </main>
+
+    <footer class="border-t border-rule py-8 text-sm text-mute">
+      <p>&copy; 2026 Blog</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Locale}}" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ block "title" . }}{{ site.Title }}{{ end }}</title>
+  {{ with or .Description site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ with .OutputFormats.Get "rss" }}
+    <link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ site.Title }}">
+  {{ end }}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Instrument+Sans:ital,wght@0,400..600;1,400..600&display=swap">
+  {{ with (templates.Defer (dict "key" "global")) }}
+    {{ partial "css.html" . }}
+  {{ end }}
+</head>
+<body class="font-sans text-ink">
+  <a href="#content" class="sr-only">Skip to content</a>
+
+  <div class="mx-auto flex min-h-dvh max-w-3xl flex-col px-6">
+
+    {{ partial "header-nav.html" . }}
+
+    <main id="content" class="grow pb-20">
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer class="border-t border-rule py-8 text-sm text-mute">
+      <p>&copy; {{ now.Year }} {{ site.Title }}</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{{- /* Pagination nav. Context: a Paginator object passed as . */ -}}
+{{- $p := . -}}
+{{- if gt $p.TotalPages 1 }}
+<nav aria-label="Pagination" class="mt-10 flex items-center justify-between text-sm">
+
+  {{- /* Prev */ -}}
+  {{ if $p.HasPrev }}
+    <a href="{{ $p.Prev.URL }}" class="flex items-center gap-1.5 font-medium hover:text-cobalt">
+      <span aria-hidden="true">&larr;</span> {{ T "newer" }}
+    </a>
+  {{ else }}
+    <span class="flex items-center gap-1.5 text-mute select-none">
+      <span aria-hidden="true">&larr;</span> {{ T "newer" }}
+    </span>
+  {{ end }}
+
+  {{- /* Page numbers */ -}}
+  <ol class="flex items-center gap-1" aria-label="Pages">
+    {{ range $p.Pagers }}
+    <li>
+      {{ if eq . $p }}
+        <span aria-current="page" class="flex h-8 w-8 items-center justify-center rounded bg-cobalt text-sm font-semibold text-white">{{ .PageNumber }}</span>
+      {{ else }}
+        <a href="{{ .URL }}" class="flex h-8 w-8 items-center justify-center rounded text-sm text-mute hover:text-ink">{{ .PageNumber }}</a>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ol>
+
+  {{- /* Next */ -}}
+  {{ if $p.HasNext }}
+    <a href="{{ $p.Next.URL }}" class="flex items-center gap-1.5 font-medium hover:text-cobalt">
+      {{ T "older" }} <span aria-hidden="true">&rarr;</span>
+    </a>
+  {{ else }}
+    <span class="flex items-center gap-1.5 text-mute select-none">
+      {{ T "older" }} <span aria-hidden="true">&rarr;</span>
+    </span>
+  {{ end }}
+
+</nav>
+{{- end }}

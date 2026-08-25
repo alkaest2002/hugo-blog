@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Strumenti on Blog</title>
+		<link>//localhost:1313/it/tag/strumenti/</link>
+		<description>Recent content in Strumenti on Blog</description>
+		<generator>Hugo</generator>
+		<language>it</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 19 Aug 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/it/tag/strumenti/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Vim Motions per Tutti</title>
+				<link>//localhost:1313/it/articoli/vim-motions-per-tutti/</link>
+				<pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/vim-motions-per-tutti/</guid>
+				<description>&lt;h2 id=&#34;il-modello-di-editing-modale&#34;&gt;Il Modello di Editing Modale&lt;/h2&gt;&#xA;&lt;p&gt;L&amp;rsquo;idea centrale di Vim è l&amp;rsquo;editing modale: la tastiera fa cose diverse a seconda della modalità in cui ti trovi. In &lt;em&gt;modalità Normal&lt;/em&gt;, i tasti sono comandi. In &lt;em&gt;modalità Insert&lt;/em&gt;, i tasti digitano testo. In &lt;em&gt;modalità Visual&lt;/em&gt;, i tasti selezionano il testo. All&amp;rsquo;inizio sembra strano, per qualche giorno, poi diventa difficile rinunciarci.&lt;/p&gt;&#xA;&lt;p&gt;Il vantaggio è che le mani raramente devono abbandonare la home row. Niente mouse. Niente frecce direzionali. Niente acrobazie con &lt;code&gt;Ctrl+Shift&lt;/code&gt; per selezionare una parola. La modifica del testo diventa un linguaggio componibile.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

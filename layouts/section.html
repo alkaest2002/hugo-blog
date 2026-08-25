@@ -1,0 +1,23 @@
+{{ define "title" }}{{ .Title }} &middot; {{ site.Title }}{{ end }}
+{{ define "main" }}
+{{ $paginator := .Paginate .Pages }}
+
+<header class="py-14 sm:py-20">
+    <h1 class="font-display text-4xl font-semibold tracking-wide sm:text-6xl">{{ .Title }}</h1>
+    {{ with .Content }}
+        <p class="mt-4 text-lg text-mute">{{ . }}</p>
+    {{ end }}
+</header>
+
+<div class="flex items-baseline justify-between pb-3">
+    <span class="text-sm text-mute">{{ len .Pages }}</span>
+</div>
+
+<ul>
+    {{ range $paginator.Pages }}
+    {{ partial "article-row.html" . }}
+    {{ end }}
+</ul>
+
+{{ partial "pagination.html" $paginator }}
+{{ end }}

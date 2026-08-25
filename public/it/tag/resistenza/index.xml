@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Resistenza on Blog</title>
+		<link>//localhost:1313/it/tag/resistenza/</link>
+		<description>Recent content in Resistenza on Blog</description>
+		<generator>Hugo</generator>
+		<language>it</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 15 Sep 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/it/tag/resistenza/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Allenarmi per la Mia Prima Maratona</title>
+				<link>//localhost:1313/it/articoli/allenarmi-per-la-mia-prima-maratona/</link>
+				<pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/allenarmi-per-la-mia-prima-maratona/</guid>
+				<description>&lt;h2 id=&#34;perché-mi-sono-iscritto&#34;&gt;Perché Mi Sono Iscritto&lt;/h2&gt;&#xA;&lt;p&gt;Correvo in modo occasionale da due anni — qualche chilometro qui, una 10K là — ma senza un vero obiettivo. Iscriversi a una maratona è stato, in fondo, un atto di auto-coercizione. Se avevo pagato per una gara, mi sarei allenato davvero. La logica si è rivelata giusta.&lt;/p&gt;&#xA;&lt;h2 id=&#34;il-piano-di-allenamento&#34;&gt;Il Piano di Allenamento&lt;/h2&gt;&#xA;&lt;p&gt;Ho seguito una versione modificata del piano Novice 1 di Hal Higdon, che prevede un lungo massimo di 32 chilometri e circa 65 chilometri a settimana nel picco di forma. Alcune cose imparate a mie spese:&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,16 @@
+it:
+  languageLabel: Italiano
+  contentDir: content/it
+  permalinks:
+    posts: articoli/:slug
+    categories: categorie/:slug
+    tags: tag/:slug
+  pagination:
+    path: pagina
+  weight: 1
+en:
+  languageLabel: English
+  contentDir: content/en
+  pagination:
+    path: page
+  weight: 2

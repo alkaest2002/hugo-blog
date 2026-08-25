@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Deep Learning on Blog</title>
+		<link>//localhost:1313/en/tags/deep-learning/</link>
+		<description>Recent content in Deep Learning on Blog</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 14 Jul 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/en/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>How LLMs Actually Work</title>
+				<link>//localhost:1313/en/posts/how-llms-actually-work/</link>
+				<pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/en/posts/how-llms-actually-work/</guid>
+				<description>&lt;h2 id=&#34;tokens-not-words&#34;&gt;Tokens, Not Words&lt;/h2&gt;&#xA;&lt;p&gt;The first thing to unlearn is that LLMs think in words. They don&amp;rsquo;t. They operate on &lt;em&gt;tokens&lt;/em&gt; — chunks of text that might be a whole word, a syllable, a punctuation mark, or a common multi-word phrase. The word &amp;ldquo;unbelievable&amp;rdquo; might be three tokens; &amp;ldquo;cat&amp;rdquo; is one. This tokenization step is where raw text gets converted into integers that the model can actually process.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-transformer-architecture&#34;&gt;The Transformer Architecture&lt;/h2&gt;&#xA;&lt;p&gt;Modern LLMs are built on the Transformer architecture, introduced in the 2017 paper &lt;em&gt;Attention Is All You Need&lt;/em&gt;. The key innovation was the &lt;em&gt;attention mechanism&lt;/em&gt;: a way for the model to weigh the relevance of every token in the context against every other token simultaneously.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

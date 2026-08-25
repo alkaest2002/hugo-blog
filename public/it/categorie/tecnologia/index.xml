@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tecnologia on Blog</title>
+		<link>//localhost:1313/it/categorie/tecnologia/</link>
+		<description>Recent content in Tecnologia on Blog</description>
+		<generator>Hugo</generator>
+		<language>it</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 03 Feb 2025 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/it/categorie/tecnologia/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Scrivere Messaggi di Commit Migliori</title>
+				<link>//localhost:1313/it/articoli/scrivere-messaggi-di-commit-migliori/</link>
+				<pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/scrivere-messaggi-di-commit-migliori/</guid>
+				<description>&lt;h2 id=&#34;il-costo-dei-messaggi-di-commit-scadenti&#34;&gt;Il Costo dei Messaggi di Commit Scadenti&lt;/h2&gt;&#xA;&lt;p&gt;Apri qualsiasi codebase longeva ed esegui &lt;code&gt;git log&lt;/code&gt;. Cosa vedi? &amp;ldquo;fix bug,&amp;rdquo; &amp;ldquo;wip,&amp;rdquo; &amp;ldquo;asdf,&amp;rdquo; &amp;ldquo;update,&amp;rdquo; &amp;ldquo;final,&amp;rdquo; &amp;ldquo;final2.&amp;rdquo; Questi messaggi non ti dicono nulla sul &lt;em&gt;perché&lt;/em&gt; una modifica è stata fatta, &lt;em&gt;quale problema&lt;/em&gt; ha risolto, né il &lt;em&gt;contesto&lt;/em&gt; che ti servirebbe per comprenderla sei mesi dopo.&lt;/p&gt;&#xA;&lt;p&gt;Quando stai facendo debug di una regressione a mezzanotte, un messaggio di commit come &amp;ldquo;fix null pointer in user session lookup after token expiry&amp;rdquo; vale infinitamente più di &amp;ldquo;bug fix.&amp;rdquo;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Costruire un Home Lab</title>
+				<link>//localhost:1313/it/articoli/costruire-un-home-lab/</link>
+				<pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/costruire-un-home-lab/</guid>
+				<description>&lt;h2 id=&#34;perché-farselo&#34;&gt;Perché Farselo?&lt;/h2&gt;&#xA;&lt;p&gt;Gestire la propria infrastruttura a casa sembra un sacco di lavoro — perché a volte lo è davvero. Ma il guadagno è sostanziale: impari facendo cose che i servizi gestiti ti nascondono, controlli i tuoi dati e hai un sandbox che nessuno ti licenzierà per aver rotto.&lt;/p&gt;&#xA;&lt;p&gt;La mia motivazione era semplice: volevo capire Kubernetes sul serio, e farlo girare su un cluster reale (anche se piccolo) mi ha insegnato più in due settimane che mesi di lettura della documentazione.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Vim Motions per Tutti</title>
+				<link>//localhost:1313/it/articoli/vim-motions-per-tutti/</link>
+				<pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/vim-motions-per-tutti/</guid>
+				<description>&lt;h2 id=&#34;il-modello-di-editing-modale&#34;&gt;Il Modello di Editing Modale&lt;/h2&gt;&#xA;&lt;p&gt;L&amp;rsquo;idea centrale di Vim è l&amp;rsquo;editing modale: la tastiera fa cose diverse a seconda della modalità in cui ti trovi. In &lt;em&gt;modalità Normal&lt;/em&gt;, i tasti sono comandi. In &lt;em&gt;modalità Insert&lt;/em&gt;, i tasti digitano testo. In &lt;em&gt;modalità Visual&lt;/em&gt;, i tasti selezionano il testo. All&amp;rsquo;inizio sembra strano, per qualche giorno, poi diventa difficile rinunciarci.&lt;/p&gt;&#xA;&lt;p&gt;Il vantaggio è che le mani raramente devono abbandonare la home row. Niente mouse. Niente frecce direzionali. Niente acrobazie con &lt;code&gt;Ctrl+Shift&lt;/code&gt; per selezionare una parola. La modifica del testo diventa un linguaggio componibile.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Come Funzionano Davvero i LLM</title>
+				<link>//localhost:1313/it/articoli/come-funzionano-davvero-i-llm/</link>
+				<pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/come-funzionano-davvero-i-llm/</guid>
+				<description>&lt;h2 id=&#34;token-non-parole&#34;&gt;Token, Non Parole&lt;/h2&gt;&#xA;&lt;p&gt;La prima cosa da disimparare è che i LLM ragionano in termini di parole. Non è così. Operano su &lt;em&gt;token&lt;/em&gt; — frammenti di testo che possono essere una parola intera, una sillaba, un segno di punteggiatura o una comune espressione composta. La parola &amp;ldquo;incredibile&amp;rdquo; potrebbe essere due o tre token; &amp;ldquo;gatto&amp;rdquo; è uno solo. Questo passaggio di tokenizzazione è il momento in cui il testo grezzo viene convertito in numeri interi che il modello può effettivamente elaborare.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Tipografia per il Web</title>
+				<link>//localhost:1313/it/articoli/tipografia-per-il-web/</link>
+				<pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/tipografia-per-il-web/</guid>
+				<description>&lt;h2 id=&#34;perché-la-tipografia-è-la-base-di-tutto&#34;&gt;Perché la Tipografia è la Base di Tutto&lt;/h2&gt;&#xA;&lt;p&gt;Prima del colore, prima del layout, prima delle immagini — una pagina web è testo. La maggior parte di ciò che il web comunica passa attraverso i caratteri. Fare bene la tipografia non significa scegliere un font bello; significa rendere la lettura senza sforzo. Quando funziona, chi legge non se ne accorge. Quando fallisce, abbandona la pagina.&lt;/p&gt;&#xA;&lt;h2 id=&#34;le-variabili-fondamentali&#34;&gt;Le Variabili Fondamentali&lt;/h2&gt;&#xA;&lt;h3 id=&#34;lunghezza-della-riga&#34;&gt;Lunghezza della Riga&lt;/h3&gt;&#xA;&lt;p&gt;La lunghezza ottimale per il corpo del testo è di 60–75 caratteri, spazi inclusi. Troppo larga e l&amp;rsquo;occhio fatica a tornare all&amp;rsquo;inizio della riga successiva. Troppo stretta e il salto continuo genera rumore visivo. In CSS, &lt;code&gt;max-width: 65ch&lt;/code&gt; sul contenitore del contenuto è un buon punto di partenza.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Principi di Design in Dark Mode</title>
+				<link>//localhost:1313/it/articoli/principi-di-design-in-dark-mode/</link>
+				<pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/principi-di-design-in-dark-mode/</guid>
+				<description>&lt;h2 id=&#34;la-dark-mode-non-è-uninversione&#34;&gt;La Dark Mode Non È un&amp;rsquo;Inversione&lt;/h2&gt;&#xA;&lt;p&gt;L&amp;rsquo;errore più comune è trattare la dark mode come un semplice ribaltamento dei colori: il bianco diventa nero, il nero diventa bianco. Il risultato assomiglia al negativo di una fotografia — straniante, piatto e difficile da leggere per periodi prolungati. Un vero design in dark mode richiede la costruzione di un sistema visivo parallelo.&lt;/p&gt;&#xA;&lt;p&gt;Il punto chiave è che luce e ombra funzionano diversamente su sfondi scuri. Su una tela bianca, gli elementi acquistano profondità scurendosi (ombre, bordi, luminanza ridotta). Su una tela scura, gli elementi acquistano profondità &lt;em&gt;schiarendosi&lt;/em&gt; — le superfici leggermente più elevate appaiono più vicine all&amp;rsquo;osservatore.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Come Funziona il GPS</title>
+				<link>//localhost:1313/it/articoli/come-funziona-il-gps/</link>
+				<pubDate>Tue, 07 May 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/come-funziona-il-gps/</guid>
+				<description>&lt;h2 id=&#34;trenta-satelliti-una-posizione&#34;&gt;Trenta Satelliti, Una Posizione&lt;/h2&gt;&#xA;&lt;p&gt;Il Sistema di Posizionamento Globale è composto da almeno 24 satelliti operativi in orbita terrestre media, distribuiti in modo che almeno quattro siano sopra l&amp;rsquo;orizzonte da qualsiasi punto del pianeta in qualsiasi momento. Ogni satellite trasmette continuamente un segnale che include due informazioni: la sua posizione precisa in orbita e l&amp;rsquo;ora esatta in cui il segnale è stato inviato.&lt;/p&gt;&#xA;&lt;p&gt;Il tuo ricevitore GPS ascolta questi segnali e misura quanto tempo ha impiegato ciascuno ad arrivare. Poiché le onde radio viaggiano alla velocità della luce (circa 299.792 km/s), tempo di percorrenza × velocità fornisce la distanza. Con le distanze da quattro o più satelliti, il ricevitore può calcolare tre coordinate spaziali più il proprio errore di orologio. Questo si chiama &lt;em&gt;trilaterazione&lt;/em&gt;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Introduzione a Docker</title>
+				<link>//localhost:1313/it/articoli/introduzione-a-docker/</link>
+				<pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/introduzione-a-docker/</guid>
+				<description>&lt;h2 id=&#34;il-problema-che-docker-risolve&#34;&gt;Il Problema che Docker Risolve&lt;/h2&gt;&#xA;&lt;p&gt;&amp;ldquo;Funziona sulla mia macchina&amp;rdquo; è una delle lamentele più antiche nello sviluppo software. Le differenze tra versioni di sistemi operativi, versioni di librerie, variabili d&amp;rsquo;ambiente e percorsi di file fanno sì che un software che gira perfettamente in sviluppo fallisca misteriosamente in produzione. Docker risolve questo problema impacchettando l&amp;rsquo;applicazione e tutto ciò di cui ha bisogno — runtime, librerie, configurazione — in un&amp;rsquo;unica unità portatile chiamata &lt;em&gt;container&lt;/em&gt;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Capire CSS Grid</title>
+				<link>//localhost:1313/it/articoli/capire-css-grid/</link>
+				<pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/capire-css-grid/</guid>
+				<description>&lt;h2 id=&#34;il-problema-di-layout-che-grid-risolve&#34;&gt;Il Problema di Layout che Grid Risolve&lt;/h2&gt;&#xA;&lt;p&gt;Prima di Grid, i layout web erano una serie di hack creativi. Si facevano galleggiare elementi pensati per il testo, si abusava delle tabelle per la struttura e alla fine ci si affidava pesantemente a Flexbox — che, pur essendo eccellente, è fondamentalmente monodimensionale. CSS Grid è il primo sistema di layout nativo bidimensionale integrato nel browser, e cambia ciò che è possibile realizzare.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>L&#39;Avvento dell&#39;Edge Computing</title>
+				<link>//localhost:1313/it/articoli/lavvento-delledge-computing/</link>
+				<pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/lavvento-delledge-computing/</guid>
+				<description>&lt;h2 id=&#34;cosè-ledge-computing&#34;&gt;Cos&amp;rsquo;è l&amp;rsquo;Edge Computing?&lt;/h2&gt;&#xA;&lt;p&gt;Per anni, la storia dell&amp;rsquo;infrastruttura moderna è stata una storia di centralizzazione — spostare i dati verso enormi data center cloud dove possono essere elaborati su larga scala. L&amp;rsquo;edge computing ribalta questa narrazione. Invece di inviare dati grezzi a un server distante, l&amp;rsquo;edge computing sposta il carico di lavoro computazionale verso la &lt;em&gt;sorgente&lt;/em&gt; dei dati: un capannone industriale, un punto vendita, un&amp;rsquo;antenna cellulare o persino un dispositivo in tasca.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Breve Storia di Internet</title>
+				<link>//localhost:1313/it/articoli/breve-storia-di-internet/</link>
+				<pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/breve-storia-di-internet/</guid>
+				<description>&lt;h2 id=&#34;non-fu-inventato-per-sopravvivere-a-una-guerra-nucleare&#34;&gt;Non Fu Inventato per Sopravvivere a una Guerra Nucleare&lt;/h2&gt;&#xA;&lt;p&gt;Questo è il mito, perlomeno. ARPANET — la rete di ricerca del Dipartimento della Difesa degli Stati Uniti che divenne l&amp;rsquo;antenato di Internet — era finanziata dall&amp;rsquo;esercito, ma i suoi veri progettisti erano ricercatori universitari che cercavano di risolvere un problema molto più prosaico: come condividere risorse informatiche costose tra diverse istituzioni senza doversi spostare fisicamente da un campus all&amp;rsquo;altro.&lt;/p&gt;&#xA;&lt;p&gt;Il primo messaggio su ARPANET fu inviato il 29 ottobre 1969, tra l&amp;rsquo;UCLA e lo Stanford Research Institute. Il messaggio previsto era &amp;ldquo;login&amp;rdquo;. Il sistema andò in crash dopo &amp;ldquo;lo&amp;rdquo;. Una prima parola accidentale per una rete che avrebbe finito per trasportare tutto.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Iniziare con Rust: Una Guida per Principianti</title>
+				<link>//localhost:1313/it/articoli/iniziare-con-rust-una-guida-per-principianti/</link>
+				<pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/iniziare-con-rust-una-guida-per-principianti/</guid>
+				<description>&lt;p&gt;Rust ha conquistato il mondo della programmazione, dominando costantemente le classifiche di soddisfazione degli sviluppatori. Ma cosa lo rende davvero degno di essere imparato?&lt;/p&gt;&#xA;&lt;h2 id=&#34;perché-rust&#34;&gt;Perché Rust?&lt;/h2&gt;&#xA;&lt;p&gt;Rust risolve un problema che affligge i programmatori di sistemi da decenni: come si scrive codice veloce e di basso livello senza sacrificare la sicurezza della memoria? Linguaggi come C e C++ offrono prestazioni allo stato grezzo, ma ti lasciano responsabile di ogni allocazione e deallocazione. Un errore e ti ritrovi a fare debug di un segfault alle due di notte.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

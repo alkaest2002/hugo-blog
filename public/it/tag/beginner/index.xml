@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Beginner on Blog</title>
+		<link>//localhost:1313/it/tag/beginner/</link>
+		<description>Recent content in Beginner on Blog</description>
+		<generator>Hugo</generator>
+		<language>it</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/it/tag/beginner/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Iniziare con Rust: Una Guida per Principianti</title>
+				<link>//localhost:1313/it/articoli/iniziare-con-rust-una-guida-per-principianti/</link>
+				<pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/iniziare-con-rust-una-guida-per-principianti/</guid>
+				<description>&lt;p&gt;Rust ha conquistato il mondo della programmazione, dominando costantemente le classifiche di soddisfazione degli sviluppatori. Ma cosa lo rende davvero degno di essere imparato?&lt;/p&gt;&#xA;&lt;h2 id=&#34;perché-rust&#34;&gt;Perché Rust?&lt;/h2&gt;&#xA;&lt;p&gt;Rust risolve un problema che affligge i programmatori di sistemi da decenni: come si scrive codice veloce e di basso livello senza sacrificare la sicurezza della memoria? Linguaggi come C e C++ offrono prestazioni allo stato grezzo, ma ti lasciano responsabile di ogni allocazione e deallocazione. Un errore e ti ritrovi a fare debug di un segfault alle due di notte.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

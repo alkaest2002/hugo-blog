@@ -1,0 +1,13 @@
+categories: categories
+empty: no content available
+next: next
+newer: newer
+previous: previous
+older: older
+posts: posts
+readingTime:
+  one: about one minute to read
+  other: '{{ .Count }} minutes to read'
+relatedArticles: related articles
+tags: tags
+toc: table of contents

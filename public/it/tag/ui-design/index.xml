@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>UI Design on Blog</title>
+		<link>//localhost:1313/it/tag/ui-design/</link>
+		<description>Recent content in UI Design on Blog</description>
+		<generator>Hugo</generator>
+		<language>it</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 08 Jun 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/it/tag/ui-design/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Principi di Design in Dark Mode</title>
+				<link>//localhost:1313/it/articoli/principi-di-design-in-dark-mode/</link>
+				<pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/it/articoli/principi-di-design-in-dark-mode/</guid>
+				<description>&lt;h2 id=&#34;la-dark-mode-non-è-uninversione&#34;&gt;La Dark Mode Non È un&amp;rsquo;Inversione&lt;/h2&gt;&#xA;&lt;p&gt;L&amp;rsquo;errore più comune è trattare la dark mode come un semplice ribaltamento dei colori: il bianco diventa nero, il nero diventa bianco. Il risultato assomiglia al negativo di una fotografia — straniante, piatto e difficile da leggere per periodi prolungati. Un vero design in dark mode richiede la costruzione di un sistema visivo parallelo.&lt;/p&gt;&#xA;&lt;p&gt;Il punto chiave è che luce e ombra funzionano diversamente su sfondi scuri. Su una tela bianca, gli elementi acquistano profondità scurendosi (ombre, bordi, luminanza ridotta). Su una tela scura, gli elementi acquistano profondità &lt;em&gt;schiarendosi&lt;/em&gt; — le superfici leggermente più elevate appaiono più vicine all&amp;rsquo;osservatore.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

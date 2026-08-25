@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Beginner on Blog</title>
+		<link>//localhost:1313/en/tags/beginner/</link>
+		<description>Recent content in Beginner on Blog</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/en/tags/beginner/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Getting Started with Rust: A Beginner&#39;s Guide</title>
+				<link>//localhost:1313/en/posts/getting-started-with-rust/</link>
+				<pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/en/posts/getting-started-with-rust/</guid>
+				<description>&lt;p&gt;Rust has taken the programming world by storm, consistently topping developer satisfaction surveys. But what makes it worth learning?&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-rust&#34;&gt;Why Rust?&lt;/h2&gt;&#xA;&lt;p&gt;Rust solves a problem that has plagued systems programmers for decades: how do you write fast, low-level code without sacrificing memory safety? Languages like C and C++ give you raw performance but leave you responsible for every allocation and deallocation. One mistake and you&amp;rsquo;re debugging a segfault at 2am.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

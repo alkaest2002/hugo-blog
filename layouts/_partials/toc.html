@@ -1,0 +1,20 @@
+{{ if and (gt .WordCount 120) (ne .Params.toc false) }}
+
+    <details class="group mb-8 border border-rule rounded-sm">
+    <summary class="flex cursor-pointer list-none items-center justify-between px-4 py-3 text-sm font-display font-semibold tracking-wide select-none hover:text-cobalt [&::-webkit-details-marker]:hidden">
+        {{ T "toc" | title }}
+        <span class="text-mute transition-transform group-open:rotate-180" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 5L7 10L12 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        </span>
+    </summary>
+    <nav class="border-t border-rule px-4 py-3 text-sm
+        [&_ul]:space-y-1
+        [&_ul_ul]:mt-1 [&_ul_ul]:ml-4 [&_ul_ul]:border-l [&_ul_ul]:border-rule [&_ul_ul]:pl-3
+        [&_a]:block [&_a]:text-mute [&_a]:py-0.5 [&_a]:transition-colors [&_a]:hover:text-cobalt">
+        {{ .TableOfContents }}
+    </nav>
+    </details>
+
+{{ end }}

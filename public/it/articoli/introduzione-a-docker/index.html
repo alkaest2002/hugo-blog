@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Introduzione a Docker &middot; Blog</title>
+  <meta name="description" content="Docker ha reso i container mainstream e ha cambiato il modo in cui il software viene costruito, distribuito ed eseguito. Ecco cosa bisogna sapere per iniziare.">
+  <link rel="canonical" href="//localhost:1313/it/articoli/introduzione-a-docker/">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Instrument+Sans:ital,wght@0,400..600;1,400..600&display=swap">
+  
+    
+  
+  
+    
+      <link rel="stylesheet" href="/css/main.css">
+    
+  
+
+
+  
+</head>
+<body class="font-sans text-ink">
+  <a href="#content" class="sr-only">Skip to content</a>
+
+  <div class="mx-auto flex min-h-dvh max-w-3xl flex-col px-6">
+
+    <header class="flex justify-end py-7">
+    <nav class="flex gap-6 text-sm">
+        <a href="/" class="font-display font-semibold hover:text-cobalt">Blog</a>
+        <a href="/it/categorie/" class="font-display font-semibold hover:text-cobalt">Categorie</a>
+        
+        <a href="/it/tag/" class="font-display font-semibold hover:text-cobalt">Tag</a>
+        
+        
+        <a href="/it/index.xml" class="font-display font-semibold hover:text-cobalt">RSS</a>
+        
+    </nav>
+</header>
+
+
+    <main id="content" class="grow pb-20">
+      
+
+    
+<article>
+    <header class="pt-8 pb-10 sm:pt-16">
+        <div class="flex gap-3 text-sm text-mute">
+            <time datetime="2024-03-20" class="tabular-nums">mercoledì 20 marzo 2024</time>
+            <span aria-hidden="true">/</span>
+            <span>2 minuti di lettura</span>
+        </div>
+        <h1 class="mt-4 font-display text-4xl font-semibold tracking-wide sm:text-6xl">Introduzione a Docker</h1>
+            
+                <p class="mt-4 text-lg text-mute">Docker ha reso i container mainstream e ha cambiato il modo in cui il software viene costruito, distribuito ed eseguito. Ecco cosa bisogna sapere per iniziare.</p>
+            
+    </header>
+
+    
+
+    <details class="group mb-8 border border-rule rounded-sm">
+    <summary class="flex cursor-pointer list-none items-center justify-between px-4 py-3 text-sm font-display font-semibold tracking-wide select-none hover:text-cobalt [&::-webkit-details-marker]:hidden">
+        Sommario
+        <span class="text-mute transition-transform group-open:rotate-180" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 5L7 10L12 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        </span>
+    </summary>
+    <nav class="border-t border-rule px-4 py-3 text-sm
+        [&_ul]:space-y-1
+        [&_ul_ul]:mt-1 [&_ul_ul]:ml-4 [&_ul_ul]:border-l [&_ul_ul]:border-rule [&_ul_ul]:pl-3
+        [&_a]:block [&_a]:text-mute [&_a]:py-0.5 [&_a]:transition-colors [&_a]:hover:text-cobalt">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#il-problema-che-docker-risolve">Il Problema che Docker Risolve</a></li>
+    <li><a href="#container-e-macchine-virtuali">Container e Macchine Virtuali</a></li>
+    <li><a href="#concetti-fondamentali">Concetti Fondamentali</a></li>
+    <li><a href="#comandi-utili-da-conoscere">Comandi Utili da Conoscere</a></li>
+    <li><a href="#passo-successivo-docker-compose">Passo Successivo: Docker Compose</a></li>
+  </ul>
+</nav>
+    </nav>
+    </details>
+
+
+
+
+    <div class="prose prose-neutral max-w-[68ch] border-t border-rule pt-10 prose-headings:font-display prose-headings:tracking-normal prose-a:text-cobalt prose-a:underline-offset-4 prose-code:rounded prose-code:bg-ink/5 prose-code:px-1.5 prose-code:py-0.5 prose-code:font-normal prose-code:before:content-none prose-code:after:content-none prose-pre:bg-ink prose-pre:text-paper [&_blockquote_p]:before:content-none [&_blockquote_p]:after:content-none">
+    <h2 id="il-problema-che-docker-risolve">Il Problema che Docker Risolve</h2>
+<p>&ldquo;Funziona sulla mia macchina&rdquo; è una delle lamentele più antiche nello sviluppo software. Le differenze tra versioni di sistemi operativi, versioni di librerie, variabili d&rsquo;ambiente e percorsi di file fanno sì che un software che gira perfettamente in sviluppo fallisca misteriosamente in produzione. Docker risolve questo problema impacchettando l&rsquo;applicazione e tutto ciò di cui ha bisogno — runtime, librerie, configurazione — in un&rsquo;unica unità portatile chiamata <em>container</em>.</p>
+<h2 id="container-e-macchine-virtuali">Container e Macchine Virtuali</h2>
+<p>Un equivoco comune è che i container siano macchine virtuali leggere. Non è così. Una VM include un sistema operativo completo, il che la rende lenta all&rsquo;avvio e pesante in termini di risorse. Un container condivide il kernel del sistema operativo host e isola solo il livello applicativo tramite i namespace e i cgroup di Linux. Questo fa sì che i container si avviino in millisecondi e consumino una frazione della memoria di una VM equivalente.</p>
+<h2 id="concetti-fondamentali">Concetti Fondamentali</h2>
+<p><strong>Image</strong> — Un template di sola lettura che descrive l&rsquo;applicazione e il suo ambiente. Costruita a partire da un <code>Dockerfile</code>.</p>
+<p><strong>Container</strong> — Un&rsquo;istanza in esecuzione di un&rsquo;image. È possibile eseguire simultaneamente molti container da una singola image.</p>
+<p><strong>Dockerfile</strong> — Un file di testo con le istruzioni per costruire un&rsquo;image:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> <span style="color:#e6db74">python:3.12-slim</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">WORKDIR</span> <span style="color:#e6db74">/app</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">COPY</span> requirements.txt .<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">RUN</span> pip install --no-cache-dir -r requirements.txt<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">COPY</span> . .<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">CMD</span> [<span style="color:#e6db74">&#34;python&#34;</span>, <span style="color:#e6db74">&#34;main.py&#34;</span>]<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p><strong>Registry</strong> — Un luogo in cui archiviare e distribuire le image. Docker Hub è il registry pubblico predefinito; la maggior parte dei team gestisce un registry privato in produzione.</p>
+<h2 id="comandi-utili-da-conoscere">Comandi Utili da Conoscere</h2>
+<ul>
+<li><code>docker build -t myapp .</code> — Costruisce un&rsquo;image dalla directory corrente.</li>
+<li><code>docker run -p 8080:8080 myapp</code> — Esegue un container mappando la porta 8080.</li>
+<li><code>docker ps</code> — Elenca i container in esecuzione.</li>
+<li><code>docker logs &lt;container_id&gt;</code> — Mostra l&rsquo;output di un container.</li>
+</ul>
+<h2 id="passo-successivo-docker-compose">Passo Successivo: Docker Compose</h2>
+<p>Per lo sviluppo locale con più servizi — un&rsquo;applicazione, un database, una cache — <code>docker compose</code> permette di definire e avviare tutto con un singolo file YAML e un solo comando. È lo strumento con cui la maggior parte dei team lavora quotidianamente.</p>
+
+    </div>
+</article>
+
+
+    
+        <div class="my-8 border-t border-rule pt-6">
+        <h2 class="mb-3 text-xl font-medium">Tag</h2>
+        <ul class="flex flex-wrap gap-3">
+            
+            <li>
+                <a href="/it/tag/docker/" class="rounded-full border border-rule px-4 py-1.5 text-sm hover:border-cobalt hover:text-cobalt">Docker</a>
+            </li>
+            
+            <li>
+                <a href="/it/tag/containers/" class="rounded-full border border-rule px-4 py-1.5 text-sm hover:border-cobalt hover:text-cobalt">Containers</a>
+            </li>
+            
+            <li>
+                <a href="/it/tag/devops/" class="rounded-full border border-rule px-4 py-1.5 text-sm hover:border-cobalt hover:text-cobalt">Devops</a>
+            </li>
+            
+            <li>
+                <a href="/it/tag/infrastructure/" class="rounded-full border border-rule px-4 py-1.5 text-sm hover:border-cobalt hover:text-cobalt">Infrastructure</a>
+            </li>
+            
+            <li>
+                <a href="/it/tag/deployment/" class="rounded-full border border-rule px-4 py-1.5 text-sm hover:border-cobalt hover:text-cobalt">Deployment</a>
+            </li>
+            
+        </ul>
+        </div>
+    
+
+    
+    
+        <div class="my-8 border-t border-rule pt-6">
+        <h2 class="mb-4 text-xl font-medium">Articoli Correlati</h2>
+        <ul class="list-disc">
+            
+            <li class="m-5">
+                <a href="/it/articoli/costruire-un-home-lab/" class="group flex flex-col hover:text-cobalt">
+                <span class="font-display font-medium tracking-normal">Costruire un Home Lab</span>
+                <span class="mt-0.5 text-sm text-mute">Un home lab è in parte un campo giochi, in parte un ambiente di apprendimento. Ecco come ho configurato il mio e cosa ci faccio girare davvero.</span>
+                </a>
+            </li>
+            
+            <li class="m-5">
+                <a href="/it/articoli/vim-motions-per-tutti/" class="group flex flex-col hover:text-cobalt">
+                <span class="font-display font-medium tracking-normal">Vim Motions per Tutti</span>
+                <span class="mt-0.5 text-sm text-mute">Non devi usare Vim a tempo pieno per trarre vantaggio dalle sue motion. Ecco un&#39;introduzione pratica ai movimenti che cambieranno il modo in cui modifichi il testo.</span>
+                </a>
+            </li>
+            
+            <li class="m-5">
+                <a href="/it/articoli/come-funzionano-davvero-i-llm/" class="group flex flex-col hover:text-cobalt">
+                <span class="font-display font-medium tracking-normal">Come Funzionano Davvero i LLM</span>
+                <span class="mt-0.5 text-sm text-mute">I modelli linguistici di grandi dimensioni sembrano magia, ma i meccanismi fondamentali sono sorprendentemente comprensibili. Ecco una spiegazione in linguaggio semplice di ciò che accade sotto il cofano.</span>
+                </a>
+            </li>
+            
+        </ul>
+        </div>
+    
+
+    
+    <nav class="mt-12 grid gap-8 border-t border-rule pt-8 text-sm sm:grid-cols-2">
+    <div>
+        
+        <a href="/it/articoli/capire-css-grid/" class="group block hover:text-cobalt">
+            <span class="text-mute">precedente</span>
+            <span class="mt-1 block font-display text-lg font-medium tracking-normal">Capire CSS Grid</span>
+        </a>
+        
+    </div>
+    <div class="sm:text-right">
+        
+        <a href="/it/articoli/la-mia-settimana-a-kyoto/" class="group block hover:text-cobalt">
+            <span class="text-mute">successivo</span>
+            <span class="mt-1 block font-display text-lg font-medium tracking-normal">La Mia Settimana a Kyoto</span>
+        </a>
+        
+    </div>
+    </nav>
+
+
+
+
+    </main>
+
+    <footer class="border-t border-rule py-8 text-sm text-mute">
+      <p>&copy; 2026 Blog</p>
+    </footer>
+  </div>
+</body>
+</html>

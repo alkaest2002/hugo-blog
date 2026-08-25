@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Programming on Blog</title>
+		<link>//localhost:1313/en/categories/programming/</link>
+		<description>Recent content in Programming on Blog</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 03 Feb 2025 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/en/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Writing Better Commit Messages</title>
+				<link>//localhost:1313/en/posts/writing-better-commit-messages/</link>
+				<pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/en/posts/writing-better-commit-messages/</guid>
+				<description>&lt;h2 id=&#34;the-cost-of-bad-commit-messages&#34;&gt;The Cost of Bad Commit Messages&lt;/h2&gt;&#xA;&lt;p&gt;Open any long-running codebase and run &lt;code&gt;git log&lt;/code&gt;. What do you see? &amp;ldquo;fix bug,&amp;rdquo; &amp;ldquo;wip,&amp;rdquo; &amp;ldquo;asdf,&amp;rdquo; &amp;ldquo;update,&amp;rdquo; &amp;ldquo;final,&amp;rdquo; &amp;ldquo;final2.&amp;rdquo; These messages tell you nothing about &lt;em&gt;why&lt;/em&gt; a change was made, &lt;em&gt;what problem&lt;/em&gt; it solved, or &lt;em&gt;what context&lt;/em&gt; you&amp;rsquo;d need to understand it six months later.&lt;/p&gt;&#xA;&lt;p&gt;When you&amp;rsquo;re debugging a regression at midnight, a commit message that reads &amp;ldquo;fix null pointer in user session lookup after token expiry&amp;rdquo; is worth considerably more than &amp;ldquo;bug fix.&amp;rdquo;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Vim Motions for Everyone</title>
+				<link>//localhost:1313/en/posts/vim-motions-for-everyone/</link>
+				<pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/en/posts/vim-motions-for-everyone/</guid>
+				<description>&lt;h2 id=&#34;the-modal-editing-model&#34;&gt;The Modal Editing Model&lt;/h2&gt;&#xA;&lt;p&gt;Vim&amp;rsquo;s central idea is modal editing: the keyboard does different things depending on which mode you&amp;rsquo;re in. In &lt;em&gt;Normal mode&lt;/em&gt;, keys are commands. In &lt;em&gt;Insert mode&lt;/em&gt;, keys type text. In &lt;em&gt;Visual mode&lt;/em&gt;, keys select text. This feels bizarre for the first few days and then becomes difficult to give up.&lt;/p&gt;&#xA;&lt;p&gt;The benefit is that your hands rarely need to leave the home row. No reaching for the mouse. No arrow keys. No &lt;code&gt;Ctrl+Shift&lt;/code&gt; gymnastics to select a word. Text editing becomes a composable language.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Understanding CSS Grid</title>
+				<link>//localhost:1313/en/posts/understanding-css-grid/</link>
+				<pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/en/posts/understanding-css-grid/</guid>
+				<description>&lt;h2 id=&#34;the-layout-problem-grid-solves&#34;&gt;The Layout Problem Grid Solves&lt;/h2&gt;&#xA;&lt;p&gt;Before Grid, web layouts were a series of creative hacks. We floated elements meant for text, abused tables for structure, and eventually leaned heavily on Flexbox — which, while excellent, is fundamentally one-dimensional. CSS Grid is the first native two-dimensional layout system built into the browser, and it changes what&amp;rsquo;s possible.&lt;/p&gt;&#xA;&lt;h2 id=&#34;core-concepts&#34;&gt;Core Concepts&lt;/h2&gt;&#xA;&lt;h3 id=&#34;defining-a-grid&#34;&gt;Defining a Grid&lt;/h3&gt;&#xA;&lt;p&gt;Everything starts with the container:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;container&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;display&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;grid&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;grid-template-columns&lt;/span&gt;: &lt;span style=&#34;color:#a6e22e&#34;&gt;repeat&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;fr);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;grid-template-rows&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;auto&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;gap&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1.5&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;rem&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;1fr&lt;/code&gt; is the key unit — it represents a &lt;em&gt;fraction&lt;/em&gt; of available space, letting the browser handle the math. The &lt;code&gt;gap&lt;/code&gt; property adds gutters between cells without you needing to fuss with margins.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Getting Started with Rust: A Beginner&#39;s Guide</title>
+				<link>//localhost:1313/en/posts/getting-started-with-rust/</link>
+				<pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/en/posts/getting-started-with-rust/</guid>
+				<description>&lt;p&gt;Rust has taken the programming world by storm, consistently topping developer satisfaction surveys. But what makes it worth learning?&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-rust&#34;&gt;Why Rust?&lt;/h2&gt;&#xA;&lt;p&gt;Rust solves a problem that has plagued systems programmers for decades: how do you write fast, low-level code without sacrificing memory safety? Languages like C and C++ give you raw performance but leave you responsible for every allocation and deallocation. One mistake and you&amp;rsquo;re debugging a segfault at 2am.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

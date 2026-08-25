@@ -1,0 +1,12 @@
+<header class="flex justify-end py-7">
+    <nav class="flex gap-6 text-sm">
+        <a href="{{ "/" | relURL }}" class="font-display font-semibold hover:text-cobalt">{{ site.Title | title }}</a>{{ with site.GetPage "/categories" }}
+        <a href="{{ .RelPermalink }}" class="font-display font-semibold hover:text-cobalt">{{ T "categories" | title }}</a>
+        {{ end }}{{ with site.GetPage "/tags" }}
+        <a href="{{ .RelPermalink }}" class="font-display font-semibold hover:text-cobalt">{{ T "tags" | title }}</a>
+        {{ end }}
+        {{ with site.Home.OutputFormats.Get "rss" }}
+        <a href="{{ .RelPermalink }}" class="font-display font-semibold hover:text-cobalt">RSS</a>
+        {{ end }}
+    </nav>
+</header>
