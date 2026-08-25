@@ -1,7 +1,7 @@
 {{ define "title" }}{{ .Title }} &middot; {{ site.Title }}{{ end }}
 {{ define "main" }}
   <header class="py-14 sm:py-20">
-    <p class="text-sm text-mute">{{ .Data.Singular | humanize }}</p>
+    <p class="text-sm text-mute">{{ T (.Data.Singular | humanize) }}</p>
     <h1 class="mt-2 font-display text-4xl font-semibold tracking-wide sm:text-6xl">{{ .Title }}</h1>
     {{ with .Description }}
       <p class="mt-4 text-lg text-mute">{{ . }}</p>

@@ -3,14 +3,8 @@
         {{ with site.GetPage "/posts" }}
             <a href="{{ .RelPermalink }}" class="font-display font-semibold hover:text-cobalt">{{ T "blog" | title }}</a>
         {{ end }}
-        {{ with site.GetPage "/categories" }}
-            <a href="{{ .RelPermalink }}" class="font-display font-semibold hover:text-cobalt">{{ T "categories" | title }}</a>
-        {{ end }}
-        {{ with site.GetPage "/tags" }}
-            <a href="{{ .RelPermalink }}" class="font-display font-semibold hover:text-cobalt">{{ T "tags" | title }}</a>
-        {{ end }}
-        {{ with site.Home.OutputFormats.Get "rss" }}
-            <a href="{{ .RelPermalink }}" class="font-display font-semibold hover:text-cobalt">RSS</a>
+        {{ with site.GetPage "/topics" }}
+            <a href="{{ .RelPermalink }}" class="font-display font-semibold hover:text-cobalt">{{ T "topics" | title }}</a>
         {{ end }}
     </nav>
 </header>

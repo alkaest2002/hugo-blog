@@ -1,0 +1,56 @@
+{{ define "title" }}{{ .Title }} &middot; {{ site.Title }}{{ end }}
+{{ define "main" }}
+  <header class="py-14 sm:py-20">
+    <h1 class="font-display text-4xl font-semibold tracking-wide sm:text-6xl">{{ .Title }}</h1>
+    {{ with .Content }}
+      <div class="mt-4 max-w-lg text-lg text-mute">{{ . }}</div>
+    {{ end }}
+  </header>
+
+  {{/* Both taxonomies on one page: categories as rows, tags as a cloud. */}}
+  {{ range slice "categories" "tags" }}
+    {{ $name  := . }}
+    {{ $terms := index site.Taxonomies $name }}
+
+    <section class="pb-14">
+      <div class="flex items-baseline justify-between border-b border-rule pb-3">
+        <h2 class="text-xs font-semibold uppercase tracking-widest text-mute">
+          {{ with site.GetPage (printf "/%s" $name) }}
+            <a href="{{ .RelPermalink }}" class="hover:text-cobalt">{{ T $name | title }}</a>
+          {{ else }}
+            {{ T $name | title }}
+          {{ end }}
+        </h2>
+        <span class="text-sm tabular-nums text-mute">{{ len $terms }}</span>
+      </div>
+
+      {{ if $terms }}
+        {{ if eq $name "categories" }}
+          <ul>
+            {{ range $terms.Alphabetical }}
+              <li class="border-b border-rule">
+                <a href="{{ .Page.RelPermalink }}" class="flex items-baseline justify-between gap-6 py-5 hover:text-cobalt">
+                  <span class="font-display text-xl font-medium tracking-normal">{{ .Page.Title }}</span>
+                  <span class="text-sm tabular-nums text-mute">{{ .Count }}</span>
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ else }}
+          <ul class="flex flex-wrap gap-2 pt-6">
+            {{ range $terms.Alphabetical }}
+              <li>
+                <a href="{{ .Page.RelPermalink }}" class="flex items-baseline gap-2 rounded-full border border-rule px-4 py-2 text-sm hover:border-cobalt hover:text-cobalt">
+                  {{ .Page.Title }}
+                  <span class="tabular-nums text-mute">{{ .Count }}</span>
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      {{ else }}
+        <p class="pt-6 text-mute">{{ T "empty" }}</p>
+      {{ end }}
+    </section>
+  {{ end }}
+{{ end }}

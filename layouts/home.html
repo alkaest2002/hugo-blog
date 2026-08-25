@@ -7,7 +7,7 @@
 {{ $rest     := after 4 $all }}
 
 {{/* ── Hero ── */}}
-<section class="py-20 sm:py-28">
+<section class="py-20 sm:py-20">
     <h1 class="font-display text-4xl font-semibold tracking-wide sm:text-6xl">{{ site.Title }}</h1>
     {{ with or site.Params.description .Content }}
         <p class="mt-5 max-w-lg text-lg text-mute">{{ . }}</p>
