@@ -2,9 +2,6 @@
 {{ define "main" }}
   <header class="py-14 sm:py-20">
     <h1 class="font-display text-4xl font-semibold tracking-wide sm:text-6xl">{{ .Title }}</h1>
-    {{ with .Content }}
-      <div class="mt-4 max-w-lg text-lg text-mute">{{ . }}</div>
-    {{ end }}
   </header>
 
   {{/* Both taxonomies on one page: categories as rows, tags as a cloud. */}}
