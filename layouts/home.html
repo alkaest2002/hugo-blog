@@ -1,31 +1,71 @@
 {{ define "title" }}{{ site.Title }}{{ end }}
 {{ define "main" }}
-{{ $pages := where .Site.RegularPages "Section" "posts" }}
-{{ $pages = $pages.ByDate.Reverse }}
-{{ $paginator := .Paginate $pages }}
+{{ $pages    := where .Site.RegularPages "Section" "posts" }}
+{{ $pages     = $pages.ByDate.Reverse }}
+{{ $all      := first 10 $pages }}
+{{ $featured := first 4 $all }}
+{{ $rest     := after 4 $all }}
 
-<section class="py-14 sm:py-20">
+{{/* ── Hero ── */}}
+<section class="py-20 sm:py-28">
     <h1 class="font-display text-4xl font-semibold tracking-wide sm:text-6xl">{{ site.Title }}</h1>
     {{ with or site.Params.description .Content }}
-        <p class="mt-4 text-lg text-mute">{{ . }}</p>
+        <p class="mt-5 max-w-lg text-lg text-mute">{{ . }}</p>
     {{ end }}
 </section>
 
-<div class="flex items-baseline justify-between border-b border-rule pb-3">
-    <h2 class="text-sm text-mute font-medium">{{ T "posts" | title }}</h2>
-    <span class="text-sm text-mute">{{ site.RegularPages.Len }}</span>
+{{/* ── Section label ── */}}
+<div class="flex items-center justify-between border-b border-rule pb-3">
+    <h2 class="text-xs font-semibold uppercase tracking-widest text-mute">{{ T "posts" | title }}</h2>
+    <span class="text-sm tabular-nums text-mute">{{ site.RegularPages.Len }}</span>
 </div>
 
-{{ with $paginator.Pages }}
-    <ul>
-        {{ range . }}
-            {{ partial "article-row.html" . }}
-        {{ end }}
-    </ul>
-    {{ partial "pagination.html" $paginator }}
+{{ with $all }}
+
+    {{/* ── Featured 2×2 grid – first four articles ── */}}
+    {{ with $featured }}
+        <div class="grid grid-cols-1 gap-6 py-10 sm:grid-cols-2">
+            {{ range . }}
+                <a href="{{ .RelPermalink }}"
+                   class="flex min-h-52 flex-col gap-3 border border-rule p-7 transition-colors hover:border-cobalt hover:text-cobalt">
+                    {{ with .Date }}
+                        <time datetime="{{ .Format "2006-01-02" }}" class="text-xs text-mute">
+                            {{- time.Format ":date_medium" . -}}
+                        </time>
+                    {{ end }}
+                    <h3 class="font-display text-2xl font-semibold leading-snug tracking-normal sm:text-3xl">{{ .Title }}</h3>
+                    {{ with or .Description (.Summary | plainify) }}
+                        <p class="mt-auto pt-3 text-lg text-mute line-clamp-3">{{ . }}</p>
+                    {{ end }}
+                </a>
+            {{ end }}
+        </div>
+    {{ end }}
+
+    {{/* ── Remaining articles as a list ── */}}
+    {{ with $rest }}
+        <ul class="border-t border-rule">
+            {{ range . }}
+                {{ partial "article-row.html" . }}
+            {{ end }}
+        </ul>
+    {{ end }}
+
+    {{/* ── More button → full post archive ── */}}
+    {{ with site.GetPage "/posts" }}
+        <div class="flex justify-center pt-14">
+            <a href="{{ .RelPermalink }}"
+               class="group inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-cobalt via-iris to-flare px-8 py-4 font-display text-lg font-semibold text-paper shadow-lg shadow-iris/25 transition-all hover:shadow-xl hover:shadow-iris/40 hover:brightness-110">
+                {{ T "more" | title }}
+                <span aria-hidden="true" class="transition-transform group-hover:translate-x-1">&rarr;</span>
+            </a>
+        </div>
+    {{ end }}
+
 {{ else }}
-    <p class="border-b border-rule py-7 text-mute">
+    <p class="border-b border-rule py-8 text-mute">
         No posts yet. Add a Markdown file under <code class="font-mono text-sm">content/</code> and it will appear here.
     </p>
 {{ end }}
+
 {{ end }}
