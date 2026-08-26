@@ -1,16 +1,17 @@
+articles: articles
 blog: blog
 categories: categories
 empty: no content available
 more: read the blog
 next: next
 newer: newer
-articles: articles
-previous: previous
 older: older
+previous: previous
 readingTime:
   one: about one minute to read
   other: '{{ .Count }} minutes to read'
 relatedArticles: related articles
+search: search...
 tags: tags
 toc: table of contents
 topics: topics

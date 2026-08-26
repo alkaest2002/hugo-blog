@@ -1,16 +1,17 @@
+articles: articoli
 blog: blog
 categories: categorie
 empty: nessun contenuto disponibile
 more: leggi il blog
 next: successivo
 newer: più recenti
-articles: articoli
-previous: precedente
 older: meno recenti
+previous: precedente
 readingTime:
   one: circa un minuto di lettura
   other: '{{ .Count }} minuti di lettura'
 relatedArticles: articoli correlati
+search: cerca...
 tags: tag
 toc: sommario
 topics: argomenti
