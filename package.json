@@ -1,13 +1,11 @@
 {
   "name": "phoenix",
   "scripts": {
-    "build:js": "esbuild assets/js/search.js --bundle --outdir=assets/js/dist",
-    "dev": "npm run build:js -- --watch"
+    "index-pf": "npx pagefind --site public"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.3",
     "@tailwindcss/typography": "^0.5.20",
-    "esbuild": "^0.28.2",
     "tailwindcss": "^4.3.3"
   },
   "dependencies": {

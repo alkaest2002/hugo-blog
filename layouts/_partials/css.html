@@ -1,18 +1,9 @@
-{{/* Pagefind UI */}}
-{{ with resources.Get "js/dist/search.css" }}
-  {{ $opts := dict "minify" (not hugo.IsDevelopment) }}
-    {{ if hugo.IsDevelopment }}
-      <link rel="stylesheet" href="{{ .RelPermalink }}">
-    {{ else }}
-      {{ with . | fingerprint }}
-        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-      {{ end }}
-    {{ end }}
-{{ end }}
-
-{{/* Tailwind */}}
+{{/* Tailwind — also inlines the Pagefind UI stylesheet via @import in main.css */}}
 {{ with resources.Get "css/main.css" }}
-  {{ $opts := dict "minify" (not hugo.IsDevelopment) }}
+  {{ $opts := dict
+    "minify" (not hugo.IsDevelopment)
+    "skipInlineImportsNotFound" true
+  }}
   {{ with . | css.TailwindCSS $opts }}
     {{ if hugo.IsDevelopment }}
       <link rel="stylesheet" href="{{ .RelPermalink }}">

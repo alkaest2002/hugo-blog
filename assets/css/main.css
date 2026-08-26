@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "@pagefind/component-ui/css";
 @plugin "@tailwindcss/typography";
 
 /* Design tokens only — all styling lives in Tailwind utility classes. */
