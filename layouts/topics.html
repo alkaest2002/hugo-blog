@@ -34,12 +34,12 @@
             {{ end }}
           </ul>
         {{ else }}
-          <ul class="flex flex-wrap gap-2 pt-6">
+          <ul class="flex flex-wrap gap-3 pt-6">
             {{ range $terms.Alphabetical }}
               <li>
-                <a href="{{ .Page.RelPermalink }}" class="flex items-baseline gap-2 rounded-full border border-rule px-4 py-2 text-sm hover:border-cobalt hover:text-cobalt">
+                <a href="{{ .Page.RelPermalink }}" class="flex items-baseline gap-2 border rounded-full border-rule px-4 py-2 text-sm hover:border-cobalt hover:text-cobalt">
                   {{ .Page.Title }}
-                  <span class="tabular-nums text-mute">{{ .Count }}</span>
+                  <span class="tabular-nums text-gray-400">{{ .Count }}</span>
                 </a>
               </li>
             {{ end }}

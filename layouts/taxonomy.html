@@ -1,24 +1,26 @@
 {{ define "title" }}{{ .Title }} &middot; {{ site.Title }}{{ end }}
 {{ define "main" }}
-  <header class="py-14 sm:py-20">
-    <h1 class="font-display text-4xl font-semibold tracking-wide sm:text-6xl">{{ .Title }}</h1>
-    {{ with .Description }}
-      <p class="mt-4 text-lg text-mute">{{ . }}</p>
-    {{ end }}
-  </header>
 
-  {{ with .Pages }}
-    <ul class="flex flex-wrap gap-2 pt-6">
-      {{ range . }}
-        <li>
-          <a href="{{ .RelPermalink }}" class="flex items-baseline gap-2 rounded-full border border-rule px-4 py-2 text-sm hover:border-cobalt hover:text-cobalt">
-            {{ .Title }}
-            <span class="text-mute">{{ len .Pages }}</span>
-          </a>
-        </li>
-      {{ end }}
-    </ul>
-  {{ else }}
-    <p class="border-t border-rule pt-6 text-mute">{{ T "empty" }}</p>
-  {{ end }}
+    <header class="py-14 sm:py-20">
+        <h1 class="font-display text-4xl font-semibold tracking-wide sm:text-6xl">{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="mt-4 text-lg text-mute">{{ . }}</p>
+        {{ end }}
+    </header>
+
+    {{ with .Pages }}
+        <ul class="flex flex-wrap gap-2 pt-6">
+        {{ range . }}
+            <li>
+            <a href="{{ .RelPermalink }}" class="flex items-baseline gap-2 rounded-full border border-rule px-4 py-2 text-sm hover:border-cobalt hover:text-cobalt">
+                {{ .Title }}
+                <span class="text-gray-400">{{ len .Pages }}</span>
+            </a>
+            </li>
+        {{ end }}
+        </ul>
+    {{ else }}
+        <p class="border-t border-rule pt-6 text-mute">{{ T "empty" }}</p>
+    {{ end }}
+
 {{ end }}
