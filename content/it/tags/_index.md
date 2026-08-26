@@ -1,4 +1,8 @@
 ---
 title: Tag
-url: tag
+url: argomenti/tag
+build:
+  render: never
+cascade:
+  url: argomenti/tag/:slug
 ---

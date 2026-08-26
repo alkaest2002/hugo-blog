@@ -2,12 +2,9 @@ it:
   languageLabel: Italiano
   contentDir: content/it
   permalinks:
-    section:
-      posts: posts
-    page:
-      posts: articoli/:slug
-      categories: categorie/:slug
-      tags: tag/:slug
+    posts: articoli/:slug
+    categories: categorie/:slug
+    tags: tag/:slug
   pagination:
     path: pagina
   weight: 1
