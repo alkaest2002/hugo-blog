@@ -13,9 +13,13 @@
         <span class="text-sm text-mute">{{ len .Pages }}</span>
     </div>
 
-    <ul>
-        {{ range .Pages }}
-        {{ partial "article-row.html" . }}
-        {{ end }}
-    </ul>
+    {{ with .Pages }}
+        <ul>
+            {{ range . }}
+                {{ partial "article-row.html" . }}
+            {{ end }}
+        </ul>
+    {{ else }}
+        {{ partial "empty.html" . }}
+    {{ end }}
 {{ end }}

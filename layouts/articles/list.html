@@ -1,5 +1,6 @@
 {{ define "title" }}{{ .Title }} &middot; {{ site.Title }}{{ end }}
 {{ define "main" }}
+
     {{ $pages := where .Site.RegularPages "Section" "articles" }}
     {{ $pages = $pages.ByDate.Reverse }}
     {{ $paginator := .Paginate $pages }}
@@ -16,11 +17,15 @@
         <span class="text-sm text-mute">{{ len .Pages }}</span>
     </div>
 
-    <ul>
-        {{ range $paginator.Pages }}
-        {{ partial "article-row.html" . }}
-        {{ end }}
-    </ul>
+    {{ with $paginator.Pages }}
+        <ul>
+            {{ range . }}
+                {{ partial "article-row.html" . }}
+            {{ end }}
+        </ul>
+        {{ partial "pagination.html" $paginator }}
+    {{ else }}
+        {{ partial "empty.html" . }}
+    {{ end }}
 
-    {{ partial "pagination.html" $paginator }}
 {{ end }}

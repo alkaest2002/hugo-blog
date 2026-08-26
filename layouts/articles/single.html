@@ -1,20 +1,24 @@
 {{ define "title" }}{{ .Title }} &middot; {{ site.Title }}{{ end }}
 {{ define "main" }}
 
-    {{ partial "article-content.html" . }}
+    <article>
 
-    {{ with .GetTerms "tags" }}
-        <div class="my-8 border-t border-rule pt-6">
-        <h2 class="mb-3 text-xl font-medium">{{ T "tags" | title }}</h2>
-        <ul class="flex flex-wrap gap-3">
-            {{ range . }}
-            <li>
-                <a href="{{ .RelPermalink }}" class="rounded-full border border-rule px-4 py-1.5 text-sm hover:border-cobalt hover:text-cobalt">{{ .Title }}</a>
-            </li>
-            {{ end }}
-        </ul>
-        </div>
-    {{ end }}
+        {{ partial "article-content.html" . }}
+
+        {{ with .GetTerms "tags" }}
+            <div class="my-8 border-t border-rule pt-6">
+            <h2 class="mb-3 text-xl font-medium">{{ T "tags" | title }}</h2>
+            <ul class="flex flex-wrap gap-3">
+                {{ range . }}
+                <li>
+                    <a href="{{ .RelPermalink }}" class="rounded-full border border-rule px-4 py-1.5 text-sm hover:border-cobalt hover:text-cobalt">{{ .Title }}</a>
+                </li>
+                {{ end }}
+            </ul>
+            </div>
+        {{ end }}
+
+    </article>
 
     {{ $related := where (site.RegularPages.Related .).ByDate.Reverse "RelPermalink" "ne" .RelPermalink | first 3 }}
     {{ with $related }}

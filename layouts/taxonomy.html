@@ -20,7 +20,7 @@
         {{ end }}
         </ul>
     {{ else }}
-        <p class="border-t border-rule pt-6 text-mute">{{ T "empty" }}</p>
+        {{ partial "empty.html" . }}
     {{ end }}
 
 {{ end }}
