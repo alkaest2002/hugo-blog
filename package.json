@@ -1,5 +1,5 @@
 {
-  "name": "blog",
+  "name": "phoenix",
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.3",
     "@tailwindcss/typography": "^0.5.20",

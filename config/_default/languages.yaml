@@ -2,7 +2,7 @@ it:
   languageLabel: Italiano
   contentDir: content/it
   permalinks:
-    posts: articoli/:slug
+    articles: articoli/:slug
     categories: categorie/:slug
     tags: tag/:slug
   pagination:

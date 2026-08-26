@@ -1,6 +1,6 @@
 {{ define "title" }}{{ .Title }} &middot; {{ site.Title }}{{ end }}
 {{ define "main" }}
-    {{ $pages := where .Site.RegularPages "Section" "posts" }}
+    {{ $pages := where .Site.RegularPages "Section" "articles" }}
     {{ $pages = $pages.ByDate.Reverse }}
     {{ $paginator := .Paginate $pages }}
 

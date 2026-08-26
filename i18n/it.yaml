@@ -4,9 +4,9 @@ empty: nessun contenuto disponibile
 more: leggi il blog
 next: successivo
 newer: più recenti
+articles: articoli
 previous: precedente
 older: meno recenti
-posts: articoli
 readingTime:
   one: circa un minuto di lettura
   other: '{{ .Count }} minuti di lettura'

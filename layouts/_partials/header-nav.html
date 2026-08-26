@@ -1,6 +1,6 @@
 <header class="flex justify-end py-7">
     <nav class="flex gap-6 text-sm">
-        {{ with site.GetPage "/posts" }}
+        {{ with site.GetPage "/articles" }}
             <a href="{{ .RelPermalink }}" class="font-display font-semibold hover:text-cobalt">{{ T "blog" | title }}</a>
         {{ end }}
         {{ with site.GetPage "/topics" }}

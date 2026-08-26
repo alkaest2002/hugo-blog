@@ -1,6 +1,6 @@
 {{ define "title" }}{{ site.Title }}{{ end }}
 {{ define "main" }}
-{{ $pages    := where .Site.RegularPages "Section" "posts" }}
+{{ $pages    := where .Site.RegularPages "Section" "articles" }}
 {{ $pages     = $pages.ByDate.Reverse }}
 {{ $all      := first 10 $pages }}
 {{ $featured := first 4 $all }}
@@ -13,7 +13,7 @@
 
 {{/* ── Section label ── */}}
 <div class="flex items-center justify-between border-b border-rule pb-3">
-    <h2 class="text-xs font-semibold uppercase tracking-widest text-mute">{{ T "posts" | title }}</h2>
+    <h2 class="text-xs font-semibold uppercase tracking-widest text-mute">{{ T "articles" | title }}</h2>
 </div>
 
 {{ with $all }}
@@ -48,7 +48,7 @@
     {{ end }}
 
     {{/* ── More button → full post archive ── */}}
-    {{ with site.GetPage "/posts" }}
+    {{ with site.GetPage "/articles" }}
         <div class="flex justify-center pt-14">
             <a href="{{ .RelPermalink }}"
                class="group inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-cobalt via-iris to-flare px-8 py-4 font-display text-lg font-semibold text-paper shadow-lg shadow-iris/25 transition-all hover:shadow-xl hover:shadow-iris/40 hover:brightness-110">
@@ -60,7 +60,7 @@
 
 {{ else }}
     <p class="border-b border-rule py-8 text-mute">
-        No posts yet. Add a Markdown file under <code class="font-mono text-sm">content/</code> and it will appear here.
+        No articles yet. Add a Markdown file under <code class="font-mono text-sm">content/</code> and it will appear here.
     </p>
 {{ end }}
 

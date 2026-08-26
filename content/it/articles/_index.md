@@ -1,7 +1,7 @@
 ---
 title: blog
-layout: posts
+layout: article
 url: articoli
 cascase:
-  layout: posts
+  layout: articles
 ---
