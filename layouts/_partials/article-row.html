@@ -1,8 +1,7 @@
-{{- /* One row of the dated index. Context: a Page. */ -}}
 <li class="border-b border-rule">
   <a href="{{ .RelPermalink }}" class="grid gap-x-6 gap-y-1 py-6 hover:text-cobalt sm:grid-cols-[7rem_1fr]">
     {{ with .Date }}
-      <time datetime="{{ .Format "2006-01-02" }}" class="text-sm text-mute sm:pt-1.5">{{ time.Format ":date_medium" . }}</time>
+        <time datetime="{{ .Format "2006-01-02" }}" class="text-sm text-mute sm:pt-1.5">{{ time.Format ":date_medium" . }}</time>
     {{ else }}
       <span aria-hidden="true"></span>
     {{ end }}
