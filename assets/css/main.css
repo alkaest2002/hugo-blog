@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "@pagefind/component-ui/css";
 @plugin "@tailwindcss/typography";
+@source "hugo_stats.json";
 
 /* Design tokens only — all styling lives in Tailwind utility classes. */
 @theme {
@@ -16,8 +17,7 @@
   --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
 }
-@source "hugo_stats.json";
-
+/* PageFinde custom vars */
 :root {
     --pf-searchbox-max-width: 100%;
     --pf-input-height: 48px;
