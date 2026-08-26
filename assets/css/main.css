@@ -16,3 +16,7 @@
   --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
 }
 @source "hugo_stats.json";
+
+:root {
+    --pf-searchbox-max-width: 100%;
+}

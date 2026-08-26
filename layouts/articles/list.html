@@ -12,6 +12,11 @@
         {{ end }}
     </header>
 
+    {{/* ── Search ── */}}
+    <div class="fullwidthi mb-6">
+        <pagefind-searchbox></pagefind-searchbox>
+    </div>
+
     <div class="flex items-baseline justify-between border-b border-rule pb-3">
         <h2 class="text-xs font-semibold uppercase tracking-widest text-mute">Articoli</h2>
         <span class="text-sm text-mute">{{ len .Pages }}</span>
