@@ -42,29 +42,26 @@
   {{/* Groups are named per level so a parent's hover never opens its grandchildren. */}}
   {{- $g := printf "lvl%d" (cond (gt $level 4) 4 $level) }}
   {{- range .menuEntries }}
-    {{- $name := .Name }}
-    {{- with .Identifier }}
-      {{- with T . }}
-        {{- $name = . }}
-      {{- end }}
-    {{- end }}
+
+    {{- $name := cond (and .Identifier (T .Identifier)) (T .Identifier) .Name }}
     {{- $children := .Children }}
     {{- $active := or ($page.IsMenuCurrent .Menu .) ($page.HasMenuCurrent .Menu .) }}
-
+    {{- $class := "" }}
     <li class="{{ with $children }}relative group/{{ $g }}{{ end }}">
-      {{- if eq $level 1 }}
-        {{- $class := "relative flex items-center gap-1.5 py-2 font-display text-sm font-semibold tracking-tight transition-colors hover:text-cobalt after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:origin-left after:scale-x-0 after:bg-cobalt after:transition-transform after:duration-200 hover:after:scale-x-100" }}
-        {{- if $active }}
-          {{- $class = printf "%s text-cobalt after:scale-x-100" $class }}
+
+        {{- if eq $level 1 }}
+            {{- $class = "relative flex items-center gap-1.5 py-2 font-display text-sm font-semibold tracking-tight transition-colors hover:text-cobalt after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:origin-left after:scale-x-0 after:bg-cobalt after:transition-transform after:duration-200 hover:after:scale-x-100" }}
+            {{- if $active }}
+                {{- $class = printf "%s text-cobalt after:scale-x-100" $class }}
+            {{- end }}
+        {{- else }}
+            {{- $class = "flex items-center justify-between gap-3 rounded-lg px-3 py-2 text-sm text-mute transition-colors hover:bg-rule/50 hover:text-cobalt" }}
+            {{- if $active }}
+                {{- $class = printf "%s bg-rule/40 text-cobalt" $class }}
         {{- end }}
-        {{- partial "inline/menu/link.html" (dict "entry" . "page" $page "name" $name "class" $class "level" $level "chevron" true) }}
-      {{- else }}
-        {{- $class := "flex items-center justify-between gap-3 rounded-lg px-3 py-2 text-sm text-mute transition-colors hover:bg-rule/50 hover:text-cobalt" }}
-        {{- if $active }}
-          {{- $class = printf "%s bg-rule/40 text-cobalt" $class }}
-        {{- end }}
-        {{- partial "inline/menu/link.html" (dict "entry" . "page" $page "name" $name "class" $class "level" $level "chevron" true) }}
       {{- end }}
+
+      {{- partial "inline/menu/link.html" (dict "entry" . "page" $page "name" $name "class" $class "level" $level "chevron" true) }}
 
       {{- with $children }}
         {{/* The padding on the wrapper bridges the gap so hover survives the trip. */}}
@@ -77,41 +74,37 @@
           </ul>
         </div>
       {{- end }}
+
     </li>
   {{- end }}
 {{- end }}
 
 {{- define "_partials/inline/menu/mobile.html" }}
-  {{- $page := .page }}
-  {{- $level := .level }}
-  {{- range .menuEntries }}
-    {{- $name := .Name }}
-    {{- with .Identifier }}
-      {{- with T . }}
-        {{- $name = . }}
-      {{- end }}
-    {{- end }}
-    {{- $children := .Children }}
-    {{- $active := or ($page.IsMenuCurrent .Menu .) ($page.HasMenuCurrent .Menu .) }}
-    {{- $class := "block rounded-lg px-3 py-2 transition-colors hover:bg-rule/50 hover:text-cobalt" }}
-    {{- if eq $level 1 }}
-      {{- $class = printf "%s font-display text-sm font-semibold tracking-tight" $class }}
-    {{- else }}
-      {{- $class = printf "%s text-sm text-mute" $class }}
-    {{- end }}
-    {{- if $active }}
-      {{- $class = printf "%s bg-rule/40 text-cobalt" $class }}
-    {{- end }}
 
-    <li>
-      {{- partial "inline/menu/link.html" (dict "entry" . "page" $page "name" $name "class" $class "level" $level "chevron" false) }}
-      {{- with $children }}
-        <ul class="ml-3 border-l border-rule pl-1">
-          {{- partial "inline/menu/mobile.html" (dict "page" $page "menuEntries" . "level" (add $level 1)) }}
-        </ul>
-      {{- end }}
-    </li>
-  {{- end }}
+    {{- $page := .page }}
+    {{- $level := .level }}
+    {{- range .menuEntries }}
+        {{- $name := cond (and .Identifier (T .Identifier)) (T .Identifier) .Name }}
+        {{- $children := .Children }}
+        {{- $active := or ($page.IsMenuCurrent .Menu .) ($page.HasMenuCurrent .Menu .) }}
+        {{- $class := "block rounded-lg px-3 py-2 transition-colors hover:bg-rule/50 hover:text-cobalt" }}
+        {{- if eq $level 1 }}
+            {{- $class = printf "%s font-display text-sm font-semibold tracking-tight" $class }}
+        {{- else }}
+            {{- $class = printf "%s text-sm text-mute" $class }}
+        {{- end }}
+        {{- if $active }}
+            {{- $class = printf "%s bg-rule/40 text-cobalt" $class }}
+            {{- end }}
+        <li>
+            {{- partial "inline/menu/link.html" (dict "entry" . "page" $page "name" $name "class" $class "level" $level "chevron" false) }}
+            {{- with $children }}
+                <ul class="ml-3 border-l border-rule pl-1">
+                    {{- partial "inline/menu/mobile.html" (dict "page" $page "menuEntries" . "level" (add $level 1)) }}
+                </ul>
+        {{- end }}
+        </li>
+    {{- end }}
 {{- end }}
 
 {{/* Renders an entry as a link, or as plain text when it is only a grouping label. */}}
