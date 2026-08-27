@@ -22,18 +22,7 @@
     {{ with $featured }}
         <div class="grid grid-cols-1 gap-6 py-10 sm:grid-cols-2">
             {{ range . }}
-                <a href="{{ .RelPermalink }}"
-                   class="flex min-h-52 flex-col gap-3 border border-rule p-7 transition-colors hover:border-cobalt hover:text-cobalt">
-                    {{ with .Date }}
-                        <time datetime="{{ .Format "2006-01-02" }}" class="text-xs text-mute">
-                            {{- time.Format ":date_medium" . -}}
-                        </time>
-                    {{ end }}
-                    <h3 class="font-display text-2xl font-semibold leading-snug tracking-normal sm:text-3xl">{{ .Title }}</h3>
-                    {{ with or .Description (.Summary | plainify) }}
-                        <p class="mt-auto pt-3 text-lg text-mute line-clamp-3">{{ . }}</p>
-                    {{ end }}
-                </a>
+                {{ partial "article-card.html" . }}
             {{ end }}
         </div>
     {{ end }}
