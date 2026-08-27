@@ -1,14 +1,15 @@
 {
   "name": "phoenix",
   "scripts": {
-    "index-pf": "npx pagefind --site public"
+    "pf": "pagefind --site public"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.3",
     "@tailwindcss/typography": "^0.5.20",
+    "pagefind": "1.5.2",
     "tailwindcss": "^4.3.3"
   },
   "dependencies": {
-    "@pagefind/component-ui": "^1.5.2"
+    "@pagefind/component-ui": "1.5.2"
   }
 }

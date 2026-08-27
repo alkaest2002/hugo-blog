@@ -19,7 +19,6 @@
 </head>
 <body class="bg-paper font-sans text-ink">
   <div class="mx-auto flex min-h-dvh max-w-4xl flex-col px-6">
-    {{/* Not cached: the menu marks the current entry, so output varies per page. */}}
     {{ partial "header.html" . }}
     <main id="content" class="grow pb-20">
       {{ block "main" . }}{{ end }}
