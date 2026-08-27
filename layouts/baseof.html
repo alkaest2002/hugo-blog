@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="{{ site.Language.Locale}}" class="scroll-smooth">
+{{/* scroll-pt keeps anchor targets clear of the sticky header. */}}
+<html lang="{{ site.Language.Locale}}" class="scroll-smooth scroll-pt-24">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,21 +17,14 @@
     {{ partial "css.html" . }}
   {{ end }}
 </head>
-<body class="font-sans text-ink">
-  <a href="#content" class="sr-only">Skip to content</a>
+<body class="bg-paper font-sans text-ink">
   <div class="mx-auto flex min-h-dvh max-w-4xl flex-col px-6">
-      <div class="flex justify-between items-center">
-          {{ partial "header-logo.html" . }}
-          <header class="flex justify-end py-7">
-              {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
-          </header>
-      </div>
+    {{/* Not cached: the menu marks the current entry, so output varies per page. */}}
+    {{ partial "header.html" . }}
     <main id="content" class="grow pb-20">
       {{ block "main" . }}{{ end }}
     </main>
-    <footer class="border-t border-rule py-8 text-sm text-mute">
-      <p>&copy; {{ now.Year }} {{ site.Title }}</p>
-    </footer>
+    {{ partialCached "footer.html" . }}
   </div>
 </body>
 {{ partial "js.html" . }}
