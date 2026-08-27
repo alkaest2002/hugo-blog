@@ -21,7 +21,9 @@
   <div class="mx-auto flex min-h-dvh max-w-4xl flex-col px-6">
       <div class="flex justify-between items-center">
           {{ partial "header-logo.html" . }}
-          {{ partial "header-nav.html" . }}
+          <header class="flex justify-end py-7">
+              {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+          </header>
       </div>
     <main id="content" class="grow pb-20">
       {{ block "main" . }}{{ end }}

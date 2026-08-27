@@ -1,0 +1,33 @@
+{{- $page := .page }}
+{{- $menuID := .menuID }}
+
+{{- with index site.Menus $menuID }}
+    <nav class="flex gap-6 text-sm">
+      {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+    </nav>
+{{- end }}
+
+{{- define "_partials/inline/menu/walk.html" }}
+  {{- $page := .page }}
+  {{- range .menuEntries }}
+  {{- $base_class := "font-display font-semibold hover:text-cobalt" }}
+    {{- $attrs := dict "href" .URL}}
+    {{- $attrs = merge $attrs (dict "class" $base_class )}}
+    {{- if $page.IsMenuCurrent .Menu . }}
+      {{- $attrs = merge $attrs (dict "class" (printf "%s %s" $base_class "underline underline-offset-9") "aria-current" "page") }}
+    {{- end }}
+    {{- $name := .Name }}
+    {{- with .Identifier }}
+      {{- with T . }}
+        {{- $name = . }}
+      {{- end }}
+    {{- end }}
+      <a
+        {{- range $k, $v := $attrs }}
+          {{- with $v }}
+            {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+          {{- end }}
+        {{- end -}}
+      >{{ $name }}</a>
+  {{- end }}
+{{- end }}
