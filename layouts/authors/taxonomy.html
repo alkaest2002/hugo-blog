@@ -20,14 +20,15 @@
         </div>
 
         {{/* Author cards, same border-and-hover idiom as article-card.html. Each card ends in a
-             stat footer so the counts line up across the grid and stay comparable. */}}
+             stat footer so the counts line up across the grid and stay comparable. Kept
+             identical to the category cards in topics.html — change both together. */}}
         <div class="grid grid-cols-1 gap-6 py-10 sm:grid-cols-2">
             {{ range $paginator.Pages }}
                 <a href="{{ .RelPermalink }}"
                    class="group flex min-h-64 flex-col border border-rule p-7 transition-colors hover:border-cobalt">
 
                     <div class="flex items-center gap-4">
-                        {{ partial "author-monogram.html" (dict "name" .Title "class" "size-12 text-sm") }}
+                        {{ partial "monogram.html" (dict "name" .Title "class" "size-12 text-sm") }}
                         <div class="min-w-0">
                             <h3 class="font-display text-xl font-semibold leading-snug tracking-normal transition-colors group-hover:text-cobalt sm:text-2xl">{{ .Title }}</h3>
                             {{ with .Params.role }}
@@ -40,7 +41,7 @@
                         <p class="mt-5 mb-6 text-mute line-clamp-3">{{ . }}</p>
                     {{ end }}
 
-                    <div class="mt-auto flex items-baseline justify-between gap-4 border-t border-rule pt-5">
+                    <div class="mt-auto flex items-baseline justify-between gap-4 pt-6">
                         <span class="flex items-baseline gap-2">
                             <span class="bg-linear-to-br from-cobalt via-iris to-flare bg-clip-text font-display text-4xl font-semibold leading-none tabular-nums text-transparent sm:text-5xl">
                                 {{- len .Pages -}}

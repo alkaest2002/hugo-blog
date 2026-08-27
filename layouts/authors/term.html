@@ -20,7 +20,7 @@
 
         <header class="flex flex-wrap items-start justify-between gap-x-8 gap-y-6">
             <div class="flex items-center gap-5">
-                {{ partial "author-monogram.html" (dict "name" .Title "class" "size-16 text-lg sm:size-20 sm:text-xl") }}
+                {{ partial "monogram.html" (dict "name" .Title "class" "size-16 text-lg sm:size-20 sm:text-xl") }}
                 <div class="min-w-0">
                     <h1 class="font-display text-3xl font-semibold tracking-wide sm:text-5xl">{{ .Title }}</h1>
                     {{ with .Params.role }}

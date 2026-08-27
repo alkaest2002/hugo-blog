@@ -1,4 +1,4 @@
-{{/* Initials badge for an author. Params: name (string), class (extra sizing/type classes). */}}
+{{/* Initials badge for an author or taxonomy term. Params: name (string), class (extra sizing/type classes). */}}
 {{- $initials := "" }}
 {{- range first 2 (split .name " ") }}
   {{- with . }}{{ $initials = printf "%s%s" $initials (substr . 0 1) }}{{ end }}
