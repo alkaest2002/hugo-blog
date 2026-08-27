@@ -12,15 +12,6 @@
         {{ end }}
     </header>
 
-    {{/* ── Search ── */}}
-    {{/* Pagefind hardcodes /pagefind/ when loaded as an ES module (document.currentScript
-         is null, so its script-path autodetection never runs), which 404s when the site is
-         served from a subpath. Result URLs are then derived from this same bundle path. */}}
-    <div class="fullwidthi mb-12">
-        <pagefind-config bundle-path="{{ "pagefind/" | relURL }}"></pagefind-config>
-        <pagefind-searchbox placeholder='{{ T "search" | title }}'></pagefind-searchbox>
-    </div>
-
     <div class="flex items-baseline justify-between border-b border-rule pb-3">
         <h2 class="text-xs font-semibold uppercase tracking-widest text-mute">Articoli</h2>
         <span class="text-sm text-mute">{{ len .Pages }}</span>

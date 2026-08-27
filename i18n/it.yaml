@@ -1,6 +1,7 @@
 articles: articoli
 blog: blog
 categories: categorie
+close: chiudi
 empty: nessun contenuto disponibile
 mainMenu: menu principale
 more: leggi il blog
@@ -13,6 +14,7 @@ readingTime:
   other: '{{ .Count }} minuti di lettura'
 relatedArticles: articoli correlati
 search: cerca...
+searchTitle: cerca
 tags: tag
 toc: sommario
 topics: argomenti
