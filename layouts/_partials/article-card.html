@@ -1,9 +1,9 @@
 <a href="{{ .RelPermalink }}"
 class="flex min-h-52 flex-col gap-3 border border-rule p-7 transition-colors hover:border-cobalt hover:text-cobalt">
     {{ with .Date }}
-    <time datetime="{{ .Format "2006-01-02" }}" class="text-xs text-mute">
-        {{- time.Format ":date_medium" . -}}
-    </time>
+        <time datetime="{{ .Format "2006-01-02" }}" class="text-xs text-mute">
+            {{- time.Format ":date_medium" . -}}
+        </time>
     {{ end }}
     <h3 class="font-display text-2xl font-semibold leading-snug tracking-normal sm:text-3xl">{{ .Title }}</h3>
     {{ with or .Description (.Summary | plainify) }}
