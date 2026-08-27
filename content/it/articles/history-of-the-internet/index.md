@@ -3,6 +3,7 @@ title: "Breve Storia di Internet"
 date: 2024-01-28
 draft: false
 categories: ["Tecnologia"]
+authors: ["Marcus Feldt"]
 tags: ["internet", "storia", "ARPANET", "reti", "tecnologia"]
 description: "Da ARPANET al web sociale, la storia delle origini di Internet è più strana e più umana di quanto la maggior parte delle persone immagini."
 ---

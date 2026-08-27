@@ -3,6 +3,7 @@ title: "My Minimalist Productivity System"
 date: 2024-08-03
 draft: false
 categories: ["Life"]
+authors: ["Priya Raghunathan"]
 tags: ["productivity", "minimalism", "focus", "planning", "habits"]
 description: "After years of bouncing between apps, frameworks, and notebooks, I landed on a system that's almost embarrassingly simple — and actually works."
 ---

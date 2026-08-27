@@ -3,6 +3,7 @@ title: "A Brief History of the Internet"
 date: 2024-01-28
 draft: false
 categories: ["Technology"]
+authors: ["Marcus Feldt"]
 tags: ["internet", "history", "ARPANET", "networking", "technology"]
 description: "From ARPANET to the social web, the internet's origin story is stranger and more human than most people realize."
 ---

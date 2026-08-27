@@ -3,6 +3,7 @@ title: "La Mia Settimana a Kyoto"
 date: 2024-04-18
 draft: false
 categories: ["Vita"]
+authors: ["Elena Moretti"]
 tags: ["japan", "kyoto", "travel", "culture", "temples"]
 description: "Una settimana a vagabondare tra le strade antiche, i boschetti di bambù e le case da tè di Kyoto mi ha fatto ripensare a cosa può essere una città."
 ---

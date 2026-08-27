@@ -3,6 +3,7 @@ title: "Capire CSS Grid"
 date: 2024-03-05
 draft: false
 categories: ["Tecnologia"]
+authors: ["Priya Raghunathan"]
 tags: ["css", "sviluppo web", "layout", "frontend", "design"]
 description: "CSS Grid è il sistema di layout più potente che il web abbia mai avuto. Questo articolo analizza i concetti fondamentali per usarlo con sicurezza."
 ---

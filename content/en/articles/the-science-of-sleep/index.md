@@ -3,6 +3,7 @@ title: "The Science of Sleep"
 date: 2024-11-04
 draft: false
 categories: ["Science"]
+authors: ["Elena Moretti"]
 tags: ["sleep", "health", "neuroscience", "circadian rhythm", "wellness"]
 description: "Sleep isn't passive downtime — it's an active, essential biological process. Here's what's actually happening while you're unconscious."
 ---

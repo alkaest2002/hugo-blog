@@ -3,6 +3,7 @@ title: "Training for My First Marathon"
 date: 2024-09-15
 draft: false
 categories: ["Life"]
+authors: ["Elena Moretti"]
 tags: ["running", "marathon", "training", "health", "endurance"]
 description: "Eighteen weeks of early mornings, long runs, and a whole lot of learning. Here's what actually prepared me to run 26.2 miles."
 ---

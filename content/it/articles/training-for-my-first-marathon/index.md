@@ -3,6 +3,7 @@ title: "Allenarmi per la Mia Prima Maratona"
 date: 2024-09-15
 draft: false
 categories: ["Vita"]
+authors: ["Elena Moretti"]
 tags: ["corsa", "maratona", "allenamento", "salute", "resistenza"]
 description: "Diciotto settimane di mattine all'alba, lunghe corse e tanto, tanto apprendimento. Ecco cosa mi ha davvero preparato a correre 42 chilometri."
 ---

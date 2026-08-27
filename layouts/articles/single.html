@@ -31,6 +31,16 @@
                 {{ end }}
                 <span aria-hidden="true">/</span>
                 <span>{{ T "readingTime" .ReadingTime }}</span>
+                {{ with .GetTerms "authors" }}
+                    <span aria-hidden="true">/</span>
+                    <span>
+                        {{ T "by" }}
+                        {{ range $i, $a := . }}
+                            {{ if $i }}, {{ end }}
+                            <a href="{{ $a.RelPermalink }}" class="text-ink hover:text-cobalt">{{ $a.Title }}</a>
+                        {{ end }}
+                    </span>
+                {{ end }}
             </div>
             <h1 class="mt-4 font-display text-4xl font-semibold tracking-wide sm:text-6xl">{{ .Title }}</h1>
                 {{ with .Description }}

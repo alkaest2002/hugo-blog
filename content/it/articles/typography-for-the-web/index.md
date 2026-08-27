@@ -3,6 +3,7 @@ title: "Tipografia per il Web"
 date: 2024-06-25
 draft: false
 categories: ["Tecnologia"]
+authors: ["Priya Raghunathan"]
 tags: ["tipografia", "web design", "font", "leggibilità", "UI"]
 description: "La buona tipografia è quasi invisibile. Quella cattiva è impossibile da ignorare. Ecco i principi che mantengono i caratteri dalla tua parte."
 ---

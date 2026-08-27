@@ -3,6 +3,7 @@ title: "Costruire un Home Lab"
 date: 2024-12-01
 draft: false
 categories: ["Tecnologia"]
+authors: ["Marcus Feldt"]
 tags: ["homelab", "self-hosting", "networking", "linux", "infrastructure"]
 description: "Un home lab è in parte un campo giochi, in parte un ambiente di apprendimento. Ecco come ho configurato il mio e cosa ci faccio girare davvero."
 ---

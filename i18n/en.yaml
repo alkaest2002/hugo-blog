@@ -1,5 +1,7 @@
 articles: articles
+authors: authors
 blog: blog
+by: by
 categories: categories
 close: close
 empty: no content available

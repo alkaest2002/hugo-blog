@@ -3,6 +3,7 @@ title: "Typography for the Web"
 date: 2024-06-25
 draft: false
 categories: ["Technology"]
+authors: ["Priya Raghunathan"]
 tags: ["typography", "web design", "fonts", "readability", "UI"]
 description: "Good typography is mostly invisible. Bad typography is impossible to ignore. Here are the principles that keep type working in your favor."
 ---

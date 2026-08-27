@@ -3,6 +3,7 @@ title: "Principi di Design in Dark Mode"
 date: 2024-06-08
 draft: false
 categories: ["Tecnologia"]
+authors: ["Priya Raghunathan"]
 tags: ["dark mode", "UI design", "accessibilità", "colore", "tipografia"]
 description: "La dark mode è molto più che invertire la palette di colori. Fatta bene, richiede di ripensare il contrasto, la gerarchia visiva e la psicologia della luce."
 ---

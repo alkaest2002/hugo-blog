@@ -3,6 +3,7 @@ title: "Getting Started with Rust: A Beginner's Guide"
 date: 2024-01-15
 draft: false
 categories: ["Technology"]
+authors: ["Marcus Feldt"]
 tags: ["rust", "systems-programming", "beginner", "memory-safety"]
 description: "A practical introduction to the Rust programming language for developers coming from other backgrounds."
 ---

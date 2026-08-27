@@ -3,6 +3,7 @@ title: "Sourdough From Scratch"
 date: 2024-05-22
 draft: false
 categories: ["Life"]
+authors: ["Elena Moretti"]
 tags: ["baking", "sourdough", "bread", "fermentation", "cooking"]
 description: "Making sourdough bread from a starter you built yourself is slow, a little unpredictable, and completely worth it."
 ---

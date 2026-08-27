@@ -3,6 +3,7 @@ title: "Come Funzionano Davvero i LLM"
 date: 2024-07-14
 draft: false
 categories: ["Tecnologia"]
+authors: ["Marcus Feldt"]
 tags: ["AI", "machine learning", "LLM", "transformers", "deep learning"]
 description: "I modelli linguistici di grandi dimensioni sembrano magia, ma i meccanismi fondamentali sono sorprendentemente comprensibili. Ecco una spiegazione in linguaggio semplice di ciò che accade sotto il cofano."
 ---

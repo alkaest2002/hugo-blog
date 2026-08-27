@@ -3,6 +3,7 @@ title: "Vim Motions per Tutti"
 date: 2024-08-19
 draft: false
 categories: ["Tecnologia"]
+authors: ["Priya Raghunathan"]
 tags: ["vim", "neovim", "editor", "produttività", "strumenti"]
 description: "Non devi usare Vim a tempo pieno per trarre vantaggio dalle sue motion. Ecco un'introduzione pratica ai movimenti che cambieranno il modo in cui modifichi il testo."
 ---

@@ -3,6 +3,7 @@ title: "How GPS Works"
 date: 2024-05-07
 draft: false
 categories: ["Technology"]
+authors: ["Marcus Feldt"]
 tags: ["GPS", "navigation", "satellites", "physics", "technology"]
 description: "Your phone knows where you are to within a few meters, anywhere on Earth. The mechanism behind that feat involves satellites, atomic clocks, and a counterintuitive trick from general relativity."
 ---

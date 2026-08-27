@@ -1,0 +1,9 @@
+{{/* Initials badge for an author. Params: name (string), class (extra sizing/type classes). */}}
+{{- $initials := "" }}
+{{- range first 2 (split .name " ") }}
+  {{- with . }}{{ $initials = printf "%s%s" $initials (substr . 0 1) }}{{ end }}
+{{- end }}
+<span aria-hidden="true"
+  class="grid shrink-0 place-items-center rounded-full bg-linear-to-br from-cobalt via-iris to-flare font-display font-semibold tracking-wide text-paper {{ .class }}">
+  {{- upper $initials -}}
+</span>

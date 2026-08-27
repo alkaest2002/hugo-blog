@@ -3,6 +3,7 @@ title: "Building a Home Lab"
 date: 2024-12-01
 draft: false
 categories: ["Technology"]
+authors: ["Marcus Feldt"]
 tags: ["homelab", "self-hosting", "networking", "linux", "infrastructure"]
 description: "A home lab is part playground, part learning environment. Here's how I set mine up and what I actually run on it."
 ---

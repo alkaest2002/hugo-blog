@@ -3,6 +3,7 @@ title: "Fermentation and Gut Health"
 date: 2024-10-09
 draft: false
 categories: ["Science"]
+authors: ["Elena Moretti"]
 tags: ["fermentation", "gut health", "probiotics", "microbiome", "nutrition"]
 description: "Fermented foods have been part of human diets for millennia. Modern science is finally catching up on why they matter so much."
 ---
