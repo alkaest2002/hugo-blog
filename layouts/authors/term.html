@@ -3,6 +3,7 @@
 
     {{ $articles := .Pages.ByDate.Reverse }}
     {{ $count := len $articles }}
+    {{ $paginator := .Paginate $articles }}
 
     <div class="pt-10 sm:pt-14">
         <p class="text-xs font-semibold uppercase tracking-widest text-mute">
@@ -56,12 +57,14 @@
         {{ end }}
     </div>
 
-    {{ with $articles }}
+    {{/* The stats above count every article; only the list itself is paginated. */}}
+    {{ with $paginator.Pages }}
         <ul>
             {{ range . }}
                 {{ partial "article-row.html" . }}
             {{ end }}
         </ul>
+        {{ partial "pagination.html" $paginator }}
     {{ else }}
         {{ partial "empty.html" . }}
     {{ end }}

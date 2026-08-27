@@ -8,9 +8,12 @@
         {{ end }}
     </header>
 
-    {{ with .Pages }}
+    {{ $authors := .Pages.ByTitle }}
+    {{ $paginator := .Paginate $authors }}
 
-        {{/* Section label mirrors the home page: name on the left, tally on the right. */}}
+    {{ with $authors }}
+
+        {{/* Section label mirrors the home page: name on the left, total (not page) count on the right. */}}
         <div class="flex items-center justify-between border-b border-rule pb-3">
             <h2 class="text-xs font-semibold uppercase tracking-widest text-mute">{{ T "authors" | title }}</h2>
             <span class="text-xs font-semibold uppercase tracking-widest tabular-nums text-mute">{{ len . }}</span>
@@ -19,7 +22,7 @@
         {{/* Author cards, same border-and-hover idiom as article-card.html. Each card ends in a
              stat footer so the counts line up across the grid and stay comparable. */}}
         <div class="grid grid-cols-1 gap-6 py-10 sm:grid-cols-2">
-            {{ range .ByTitle }}
+            {{ range $paginator.Pages }}
                 <a href="{{ .RelPermalink }}"
                    class="group flex min-h-64 flex-col border border-rule p-7 transition-colors hover:border-cobalt">
 
@@ -50,6 +53,9 @@
                 </a>
             {{ end }}
         </div>
+
+        {{/* Authors are alphabetical, so the date-flavoured default labels don't fit. */}}
+        {{ partial "pagination.html" (dict "paginator" $paginator "prevLabel" (T "previous") "nextLabel" (T "next")) }}
 
     {{ else }}
         {{ partial "empty.html" . }}
