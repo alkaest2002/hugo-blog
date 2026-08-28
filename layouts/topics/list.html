@@ -1,7 +1,3 @@
-{{ define "title" }}
-    {{ .Title }} &middot; {{ site.Title }}
-{{ end }}
-
 {{ define "main" }}
   {{ $cats := index site.Taxonomies "categories" }}
   {{ $tags := index site.Taxonomies "tags" }}

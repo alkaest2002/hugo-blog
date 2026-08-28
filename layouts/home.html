@@ -1,56 +1,55 @@
-{{ define "title" }}{{ site.Title }}{{ end }}
 {{ define "main" }}
-{{ $pages    := where .Site.RegularPages "Section" "articles" }}
-{{ $pages     = $pages.ByDate.Reverse }}
-{{ $all      := first 10 $pages }}
-{{ $featured := first 4 $all }}
-{{ $rest     := after 4 $all }}
+    {{ $pages    := where .Site.RegularPages "Section" "articles" }}
+    {{ $pages     = $pages.ByDate.Reverse }}
+    {{ $all      := first 10 $pages }}
+    {{ $featured := first 4 $all }}
+    {{ $rest     := after 4 $all }}
 
-{{/* ── Hero ── */}}
-<section class="py-20 sm:py-20">
-    <h1 class="font-display text-4xl font-semibold tracking-wide sm:text-6xl">{{ site.Title }}</h1>
-</section>
+    {{/* ── Hero ── */}}
+    <section class="py-20 sm:py-20">
+        <h1 class="font-display text-4xl font-semibold tracking-wide sm:text-6xl">{{ site.Title }}</h1>
+    </section>
 
-{{/* ── Section label ── */}}
-<div class="flex items-center justify-between border-b border-rule pb-3 mb-3">
-    <h2 class="text-xs font-semibold uppercase tracking-widest text-mute">{{ T "articles" | title }}</h2>
-</div>
+    {{/* ── Section label ── */}}
+    <div class="flex items-center justify-between border-b border-rule pb-3 mb-3">
+        <h2 class="text-xs font-semibold uppercase tracking-widest text-mute">{{ T "articles" | title }}</h2>
+    </div>
 
-{{ with $all }}
+    {{ with $all }}
 
-    {{/* ── Featured 2×2 grid – first four articles ── */}}
-    {{ with $featured }}
-        <div class="grid grid-cols-1 gap-6 py-10 sm:grid-cols-2">
-            {{ range . }}
-                {{ partial "article-card.html" . }}
-            {{ end }}
-        </div>
+        {{/* ── Featured 2×2 grid – first four articles ── */}}
+        {{ with $featured }}
+            <div class="grid grid-cols-1 gap-6 py-10 sm:grid-cols-2">
+                {{ range . }}
+                    {{ partial "article-card.html" . }}
+                {{ end }}
+            </div>
+        {{ end }}
+
+        {{/* ── Remaining articles as a list ── */}}
+        {{ with $rest }}
+            <ul class="border-t border-rule">
+                {{ range . }}
+                    {{ partial "article-row.html" . }}
+                {{ end }}
+            </ul>
+        {{ end }}
+
+        {{/* ── More button → full post archive ── */}}
+        {{ with site.GetPage "/articles" }}
+            <div class="flex justify-center pt-14">
+                <a href="{{ .RelPermalink }}"
+                class="group inline-flex items-center gap-3 rounded-full bg-linear-to-r from-cobalt via-iris to-flare px-8 py-4 font-display text-lg font-semibold text-paper shadow-lg shadow-iris/25 transition-all hover:shadow-xl hover:shadow-iris/40 hover:brightness-110">
+                    {{ T "more" | title }}
+                    <span aria-hidden="true" class="transition-transform group-hover:translate-x-1">&rarr;</span>
+                </a>
+            </div>
+        {{ end }}
+
+    {{ else }}
+        <p class="border-b border-rule py-8 text-mute">
+            No articles yet. Add a Markdown file under <code class="font-mono text-sm">content/</code> and it will appear here.
+        </p>
     {{ end }}
-
-    {{/* ── Remaining articles as a list ── */}}
-    {{ with $rest }}
-        <ul class="border-t border-rule">
-            {{ range . }}
-                {{ partial "article-row.html" . }}
-            {{ end }}
-        </ul>
-    {{ end }}
-
-    {{/* ── More button → full post archive ── */}}
-    {{ with site.GetPage "/articles" }}
-        <div class="flex justify-center pt-14">
-            <a href="{{ .RelPermalink }}"
-               class="group inline-flex items-center gap-3 rounded-full bg-linear-to-r from-cobalt via-iris to-flare px-8 py-4 font-display text-lg font-semibold text-paper shadow-lg shadow-iris/25 transition-all hover:shadow-xl hover:shadow-iris/40 hover:brightness-110">
-                {{ T "more" | title }}
-                <span aria-hidden="true" class="transition-transform group-hover:translate-x-1">&rarr;</span>
-            </a>
-        </div>
-    {{ end }}
-
-{{ else }}
-    <p class="border-b border-rule py-8 text-mute">
-        No articles yet. Add a Markdown file under <code class="font-mono text-sm">content/</code> and it will appear here.
-    </p>
-{{ end }}
 
 {{ end }}
