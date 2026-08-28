@@ -14,7 +14,7 @@
         </p>
     </div>
 
-    <article class="mt-4 border border-rule p-7 sm:p-10">
+    <article class="mt-4 mb-14 border border-rule p-7 sm:p-10">
 
         <header class="flex flex-wrap items-start justify-between gap-x-8 gap-y-6">
             <div class="flex items-center gap-5">
@@ -34,12 +34,7 @@
 
     </article>
 
-    <div class="mt-14 flex items-center justify-between border-b border-rule pb-3">
-        <h2 class="text-xs font-semibold uppercase tracking-widest text-mute">{{ T "articles" | title }}</h2>
-        <span class="text-sm font-semibold uppercase tracking-widest tabular-nums text-mute">
-            {{- $count -}}
-        </span>
-    </div>
+    {{ partial "list-header.html" (dict "label" "articles"  "count" $count) }}
 
     {{ with $paginator.Pages }}
         <ul>

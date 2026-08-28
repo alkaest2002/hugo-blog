@@ -12,10 +12,7 @@
         {{ end }}
     </header>
 
-    <div class="flex items-baseline justify-between border-b border-rule pb-3">
-        <h2 class="text-xs font-semibold uppercase tracking-widest text-mute">Articoli</h2>
-        <span class="text-sm font-semibold uppercase tracking-widest tabular-nums text-mute">{{ len .Pages }}</span>
-    </div>
+    {{ partial "list-header.html" (dict "label" "articles" "count" (len $pages)) }}
 
     {{ with $paginator.Pages }}
         <ul>

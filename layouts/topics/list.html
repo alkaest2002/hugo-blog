@@ -1,85 +1,104 @@
-{{ define "main" }}
-  {{ $cats := index site.Taxonomies "categories" }}
-  {{ $tags := index site.Taxonomies "tags" }}
+{{ define "main" }} {{ $cats := index site.Taxonomies "categories" }} {{ $tags
+:= index site.Taxonomies "tags" }}
 
-  <header class="py-14 sm:py-20">
-    <h1 class="font-display text-4xl font-semibold tracking-wide sm:text-6xl">{{ .Title }}</h1>
+<header class="py-14 sm:py-20">
+    <h1 class="font-display text-4xl font-semibold tracking-wide sm:text-6xl">
+        {{ .Title }}
+    </h1>
     {{ with .Description }}
-      <p class="mt-4 max-w-2xl text-lg text-mute">{{ . }}</p>
+    <p class="mt-4 max-w-2xl text-lg text-mute">{{ . }}</p>
     {{ end }}
-  </header>
+</header>
 
-  {{ range slice "categories" "tags" }}
+{{ range slice "categories" "tags" }} {{ $name := . }} {{ $terms := index
+site.Taxonomies $name }}
 
-    {{ $name  := . }}
-    {{ $terms := index site.Taxonomies $name }}
-
-    <section id="{{ $name }}" class="pb-14 sm:pb-20">
-      <div class="flex items-baseline justify-between gap-4 border-b border-rule pb-3">
-        {{ $url := "" }}
-        {{ with site.GetPage (printf "/%s" $name) }}{{ $url = .RelPermalink }}{{ end }}
+<section id="{{ $name }}" class="pb-14 sm:pb-20">
+    <div
+        class="flex items-baseline justify-between gap-4 border-b border-rule pb-3"
+    >
+        {{ $url := "" }} {{ with site.GetPage (printf "/%s" $name) }}{{ $url =
+        .RelPermalink }}{{ end }}
         <h2 class="text-xs font-semibold uppercase tracking-widest text-mute">
-          {{ with $url }}
-            <a href="{{ . }}" class="transition-colors hover:text-cobalt">{{ T $name | title }}</a>
-          {{ else }}
-            {{ T $name | title }}
-          {{ end }}
+            {{ with $url }}
+            <a href="{{ . }}" class="transition-colors hover:text-cobalt"
+                >{{ T $name | title }}</a
+            >
+            {{ else }} {{ T $name | title }} {{ end }}
         </h2>
-        <span class="text-sm font-semibold uppercase tracking-widest tabular-nums text-mute">{{ len $terms }}</span>
-      </div>
+        <span
+            class="text-sm font-semibold uppercase tracking-widest tabular-nums text-mute"
+            >{{ len $terms }}</span
+        >
+    </div>
 
-      {{ with $terms }}
-        {{ if eq $name "categories" }}
+    {{ with $terms }} {{ if eq $name "categories" }}
 
-          <div class="grid grid-cols-1 gap-6 py-10 sm:grid-cols-2">
-            {{ range .Alphabetical }}
-              <a href="{{ .Page.RelPermalink }}"
-                 class="group flex min-h-64 flex-col border border-rule p-7 transition-colors hover:border-cobalt">
-
-                <div class="flex items-center gap-4">
-                  {{ partial "monogram.html" (dict "name" .Page.Title "class" "size-12 text-sm") }}
-                  <div class="min-w-0">
-                    <h3 class="font-display text-xl font-semibold leading-snug tracking-normal transition-colors group-hover:text-cobalt sm:text-2xl">{{ .Page.Title }}</h3>
-                    <p class="mt-1 text-xs font-semibold uppercase tracking-widest text-mute">{{ T "category" }}</p>
-                  </div>
+    <div class="grid grid-cols-1 gap-6 py-10 sm:grid-cols-2">
+        {{ range .Alphabetical }}
+        <a
+            href="{{ .Page.RelPermalink }}"
+            class="group flex min-h-64 flex-col border border-rule p-7 transition-colors hover:border-cobalt"
+        >
+            <div class="flex items-center gap-4">
+                {{ partial "monogram.html" (dict "name" .Page.Title "class"
+                "size-12 text-sm") }}
+                <div class="min-w-0">
+                    <h3
+                        class="font-display text-xl font-semibold leading-snug tracking-normal transition-colors group-hover:text-cobalt sm:text-2xl"
+                    >
+                        {{ .Page.Title }}
+                    </h3>
+                    <p
+                        class="mt-1 text-xs font-semibold uppercase tracking-widest text-mute"
+                    >
+                        {{ T "category" }}
+                    </p>
                 </div>
+            </div>
 
-                {{ with .Page.Description }}
-                  <p class="mt-5 mb-6 text-mute line-clamp-3">{{ . }}</p>
-                {{ end }}
+            {{ with .Page.Description }}
+            <p class="mt-5 mb-6 text-mute line-clamp-3">{{ . }}</p>
+            {{ end }}
 
-                <div class="mt-auto flex items-baseline justify-between gap-4 pt-6">
-                  <span class="flex items-baseline gap-2">
-                    <span class="bg-linear-to-br from-cobalt via-iris to-flare bg-clip-text font-display text-4xl font-semibold leading-none tabular-nums text-transparent sm:text-5xl">
-                      {{- .Count -}}
+            <div class="mt-auto flex items-baseline justify-between gap-4 pt-6">
+                <span class="flex items-baseline gap-2">
+                    <span
+                        class="bg-linear-to-br from-cobalt via-iris to-flare bg-clip-text font-display text-4xl font-semibold leading-none tabular-nums text-transparent sm:text-5xl"
+                    >
+                        {{- .Count -}}
                     </span>
-                    <span class="text-xs font-semibold uppercase tracking-widest text-mute">{{ T "articles" }}</span>
-                  </span>
-                  <span aria-hidden="true" class="text-mute transition-transform group-hover:translate-x-1 group-hover:text-cobalt">&rarr;</span>
-                </div>
-
-              </a>
-            {{ end }}
-          </div>
-
-        {{ else }}
-
-          <ul class="flex flex-wrap items-center gap-2.5 pt-6">
-            {{ range .Alphabetical }}
-              <li>
-                <a href="{{ .Page.RelPermalink }}"
-                   class="flex items-baseline gap-2 rounded-full border border-rule px-4 py-2 text-sm transition-all duration-150 hover:-translate-y-0.5 hover:border-cobalt hover:bg-cobalt/5 hover:text-cobalt">
-                  {{ .Page.Title }}
-                  <span class="tabular-nums text-xs text-mute">{{ .Count }}</span>
-                </a>
-              </li>
-            {{ end }}
-          </ul>
-
+                    <span
+                        class="text-xs font-semibold uppercase tracking-widest text-mute"
+                        >{{ T "articles" }}</span
+                    >
+                </span>
+                <span
+                    aria-hidden="true"
+                    class="text-mute transition-transform group-hover:translate-x-1 group-hover:text-cobalt"
+                    >&rarr;</span
+                >
+            </div>
+        </a>
         {{ end }}
-      {{ else }}
-        {{ partial "empty.html" . }}
-      {{ end }}
-    </section>
-  {{ end }}
-{{ end }}
+    </div>
+
+    {{ else }}
+
+    <ul class="flex flex-wrap items-center gap-2.5 pt-6">
+        {{ range .Alphabetical }}
+        <li>
+            <a
+                href="{{ .Page.RelPermalink }}"
+                class="flex items-baseline gap-2 rounded-full border border-rule px-4 py-2 text-sm transition-all duration-150 hover:-translate-y-0.5 hover:border-cobalt hover:bg-cobalt/5 hover:text-cobalt"
+            >
+                {{ .Page.Title }}
+                <span class="tabular-nums text-xs text-mute">{{ .Count }}</span>
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+
+    {{ end }} {{ else }} {{ partial "empty.html" . }} {{ end }}
+</section>
+{{ end }} {{ end }}
