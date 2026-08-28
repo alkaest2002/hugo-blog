@@ -3,7 +3,7 @@ title: "La Scienza del Sonno"
 date: 2024-11-04
 draft: false
 categories: ["Scienza"]
-authors: ["Elena Moretti"]
+authors: ["Elena Rossi"]
 tags: ["sonno", "salute", "neuroscienze", "ritmo circadiano", "benessere"]
 description: "Il sonno non è un semplice tempo morto — è un processo biologico attivo ed essenziale. Ecco cosa accade davvero mentre siamo incoscienti."
 ---

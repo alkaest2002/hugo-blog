@@ -3,7 +3,7 @@ title: "Esplorare la Patagonia"
 date: 2025-01-12
 draft: false
 categories: ["Vita"]
-authors: ["Elena Moretti"]
+authors: ["Elena Rossi"]
 tags: ["patagonia", "trekking", "cile", "natura", "avventura"]
 description: "Torres del Paine è uno dei paesaggi più spettacolari del pianeta. Ecco com'è fare il W Trek e perché vale ogni chilometro faticoso."
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Elena Moretti"
+title: "Elena Rossi"
 role: "Cibo, salute e viaggi"
 description: "Scrive di quello che succede lontano dalla tastiera: cucine, sentieri lunghi e la scienza di prendersi cura di sé."
 ---

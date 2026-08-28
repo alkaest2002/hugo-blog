@@ -3,7 +3,7 @@ title: "Pasta Madre da Zero"
 date: 2024-05-22
 draft: false
 categories: ["Vita"]
-authors: ["Elena Moretti"]
+authors: ["Elena Rossi"]
 tags: ["baking", "sourdough", "bread", "fermentation", "cooking"]
 description: "Fare il pane a lievitazione naturale con una pasta madre coltivata da te è un processo lento, un po' imprevedibile, e assolutamente ne vale la pena."
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Elena Moretti"
+title: "Elena Rossi"
 role: "Food, health & travel"
 description: "Writes about what happens away from the keyboard — kitchens, long trails, and the science of taking care of yourself."
 ---
