@@ -11,15 +11,8 @@
     {{ with .Description }}
       <p class="mt-4 max-w-2xl text-lg text-mute">{{ . }}</p>
     {{ end }}
-    <p class="mt-6 flex items-center gap-3 text-sm text-mute">
-      <span class="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-cobalt to-iris"></span>
-      <span class="tabular-nums">{{ len $cats }}</span> {{ T "categories" }}
-      <span aria-hidden="true" class="text-rule">/</span>
-      <span class="tabular-nums">{{ len $tags }}</span> {{ T "tags" }}
-    </p>
   </header>
 
-  {{/* Both taxonomies on one page: categories as rows, tags as a weighted cloud. */}}
   {{ range slice "categories" "tags" }}
 
     {{ $name  := . }}
