@@ -27,15 +27,6 @@
                     {{ end }}
                 </div>
             </div>
-
-            <div class="shrink-0">
-                <span class="block bg-linear-to-br from-cobalt via-iris to-flare bg-clip-text font-display text-5xl font-semibold leading-none tabular-nums text-transparent sm:text-6xl">
-                    {{- $count -}}
-                </span>
-                <span class="mt-2 block text-xs font-semibold uppercase tracking-widest text-mute">
-                    {{ T "articles" }}
-                </span>
-            </div>
         </header>
 
         {{ with .Description }}
@@ -46,13 +37,9 @@
 
     <div class="mt-14 flex items-center justify-between border-b border-rule pb-3">
         <h2 class="text-xs font-semibold uppercase tracking-widest text-mute">{{ T "articles" | title }}</h2>
-        {{ with $articles }}
-            {{ $newest := (index . 0).Date.Format "2006" }}
-            {{ $oldest := (index (last 1 .) 0).Date.Format "2006" }}
-            <span class="text-xs font-semibold uppercase tracking-widest tabular-nums text-mute">
-                {{ if eq $newest $oldest }}{{ $newest }}{{ else }}{{ $oldest }}&ndash;{{ $newest }}{{ end }}
-            </span>
-        {{ end }}
+        <span class="text-sm font-semibold uppercase tracking-widest tabular-nums text-mute">
+            {{- $count -}}
+        </span>
     </div>
 
     {{ with $paginator.Pages }}
