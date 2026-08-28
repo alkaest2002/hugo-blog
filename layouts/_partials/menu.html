@@ -1,7 +1,5 @@
 {{- $page := .page }}
 {{- $menuID := .menuID }}
-{{/* foldable: true → burger button with dropdown panel below the md breakpoint.
-     false → a single flex bar that wraps and tightens on narrow viewports. */}}
 {{- $foldable := default true .foldable }}
 
 {{- with index site.Menus $menuID }}
@@ -10,14 +8,12 @@
 
   {{- if $foldable }}
 
-    {{/* ── Desktop: horizontal bar, children as hover/focus dropdowns ── */}}
     <nav class="hidden md:block" aria-label="{{ $label }}">
       <ul class="flex items-center gap-7">
         {{- partial "inline/menu/desktop.html" $args }}
       </ul>
     </nav>
 
-    {{/* ── Mobile: disclosure panel, children inlined and indented ── */}}
     <details class="group/panel relative md:hidden">
       <summary
         class="flex size-10 cursor-pointer list-none items-center justify-center rounded-lg text-ink transition-colors select-none hover:text-cobalt [&::-webkit-details-marker]:hidden"
@@ -40,7 +36,6 @@
 
   {{- else }}
 
-    {{/* ── Always-visible bar: wraps instead of folding, tighter when narrow ── */}}
     <nav class="min-w-0" aria-label="{{ $label }}">
       <ul class="flex flex-wrap items-center justify-end gap-x-4 gap-y-1 sm:gap-x-6 md:gap-x-7">
         {{- partial "inline/menu/desktop.html" $args }}
@@ -55,7 +50,6 @@
 {{- define "_partials/inline/menu/desktop.html" }}
   {{- $page := .page }}
   {{- $level := .level }}
-  {{/* Groups are named per level so a parent's hover never opens its grandchildren. */}}
   {{- $g := printf "lvl%d" (cond (gt $level 4) 4 $level) }}
   {{- range .menuEntries }}
 
@@ -80,7 +74,6 @@
       {{- partial "inline/menu/link.html" (dict "entry" . "page" $page "name" $name "class" $class "level" $level "chevron" true) }}
 
       {{- with $children }}
-        {{/* The padding on the wrapper bridges the gap so hover survives the trip. */}}
         <div class="invisible absolute z-50 translate-y-1 opacity-0 transition duration-150
           {{ if eq $level 1 }}left-0 top-full pt-3{{ else }}left-full top-0 pl-2{{ end }}
           group-hover/{{ $g }}:visible group-hover/{{ $g }}:translate-y-0 group-hover/{{ $g }}:opacity-100
@@ -123,7 +116,6 @@
     {{- end }}
 {{- end }}
 
-{{/* Renders an entry as a link, or as plain text when it is only a grouping label. */}}
 {{- define "_partials/inline/menu/link.html" }}
   {{- $current := .page.IsMenuCurrent .entry.Menu .entry }}
   {{- $chevron := and .chevron .entry.Children }}

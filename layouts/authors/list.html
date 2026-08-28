@@ -15,12 +15,9 @@
 
         <div class="flex items-center justify-between border-b border-rule pb-3">
             <h2 class="text-xs font-semibold uppercase tracking-widest text-mute">{{ T "authors" | title }}</h2>
-            <span class="text-xs font-semibold uppercase tracking-widest tabular-nums text-mute">{{ len . }}</span>
+            <span class="text-sm font-semibold uppercase tracking-widest tabular-nums text-mute">{{ len . }}</span>
         </div>
 
-        {{/* Author cards, same border-and-hover idiom as article-card.html. Each card ends in a
-             stat footer so the counts line up across the grid and stay comparable. Kept
-             identical to the category cards in topics.html — change both together. */}}
         <div class="grid grid-cols-1 gap-6 py-10 sm:grid-cols-2">
             {{ range $paginator.Pages }}
                 <a href="{{ .RelPermalink }}"
@@ -54,7 +51,6 @@
             {{ end }}
         </div>
 
-        {{/* Authors are alphabetical, so the date-flavoured default labels don't fit. */}}
         {{ partial "pagination.html" (dict "paginator" $paginator "prevLabel" (T "previous") "nextLabel" (T "next")) }}
 
     {{ else }}

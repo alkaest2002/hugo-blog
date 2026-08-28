@@ -20,7 +20,6 @@
 
     <section id="{{ $name }}" class="pb-14 sm:pb-20">
       <div class="flex items-baseline justify-between gap-4 border-b border-rule pb-3">
-        {{/* The taxonomy list pages set `build.render: never`, so only link when one exists. */}}
         {{ $url := "" }}
         {{ with site.GetPage (printf "/%s" $name) }}{{ $url = .RelPermalink }}{{ end }}
         <h2 class="text-xs font-semibold uppercase tracking-widest text-mute">
@@ -30,16 +29,12 @@
             {{ T $name | title }}
           {{ end }}
         </h2>
-        <span class="text-sm tabular-nums text-mute">{{ len $terms }}</span>
+        <span class="text-sm font-semibold uppercase tracking-widest tabular-nums text-mute">{{ len $terms }}</span>
       </div>
 
       {{ with $terms }}
         {{ if eq $name "categories" }}
 
-          {{/* ── Categories: deliberately identical to the author cards in
-                 authors/taxonomy.html — same monogram, type scale, clamp and stat footer —
-                 so the two index grids read as one component. Descriptions come from the
-                 term pages in content/<lang>/categories/<term>/_index.md. ── */}}
           <div class="grid grid-cols-1 gap-6 py-10 sm:grid-cols-2">
             {{ range .Alphabetical }}
               <a href="{{ .Page.RelPermalink }}"
@@ -73,7 +68,6 @@
 
         {{ else }}
 
-          {{/* ── Tags: a flat pill cloud — every tag reads at the same weight. ── */}}
           <ul class="flex flex-wrap items-center gap-2.5 pt-6">
             {{ range .Alphabetical }}
               <li>

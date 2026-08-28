@@ -17,6 +17,7 @@
       "head",
       "header",
       "html",
+      "lang",
       "li",
       "link",
       "main",
@@ -36,6 +37,7 @@
       "strong",
       "summary",
       "svg",
+      "term",
       "time",
       "title",
       "ul"
