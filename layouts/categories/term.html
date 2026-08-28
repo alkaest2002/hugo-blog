@@ -1,20 +1,25 @@
+
 {{ define "main" }}
 
+    {{ $pages := .Pages.ByDate.Reverse }}
+    {{ $paginator := .Paginate $pages }}
+
     <header class="py-14 sm:py-20">
-        <h1 class="mt-2 font-display text-4xl font-semibold tracking-wide sm:text-6xl">{{ .Title }}</h1>
+        <h1 class="font-display text-4xl font-semibold tracking-wide sm:text-6xl">{{ .Title | title }}</h1>
         {{ with .Description }}
-        <p class="mt-4 text-lg text-mute">{{ . }}</p>
+            <p class="mt-4 max-w-2xl text-lg text-mute">{{ . }}</p>
         {{ end }}
     </header>
 
-    {{ partial "list-header.html" (dict "label" "articles" "count" (len .Pages)) }}
+    {{ partial "list-header.html" (dict "label" "articles" "count" (len $pages)) }}
 
-    {{ with .Pages }}
+    {{ with $paginator.Pages }}
         <ul>
             {{ range . }}
                 {{ partial "article-row.html" . }}
             {{ end }}
         </ul>
+        {{ partial "pagination.html" $paginator }}
     {{ else }}
         {{ partial "empty.html" . }}
     {{ end }}

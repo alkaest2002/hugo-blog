@@ -8,6 +8,7 @@ it:
   pagination:
     path: pagina
   weight: 1
+
 en:
   languageLabel: English
   contentDir: content/en
