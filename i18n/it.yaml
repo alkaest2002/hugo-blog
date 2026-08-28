@@ -5,6 +5,9 @@ by: di
 categories: categorie
 category: categoria
 close: chiudi
+copyLink: condividi
+copyLinkDone: copiato
+copyLinkError: copia non riuscita
 empty: nessun contenuto disponibile
 mainMenu: menu principale
 more: leggi il blog

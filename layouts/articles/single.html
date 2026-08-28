@@ -51,8 +51,27 @@
             {{ .Content }}
         </div>
 
+        <div class="flex justify-center py-10" data-pagefind-ignore>
+            <button type="button"
+                data-copy-link="{{ .Permalink }}"
+                data-copied-label="{{ T "copyLinkDone" | title }}"
+                data-error-label="{{ T "copyLinkError" | title }}"
+                class="group inline-flex cursor-pointer items-center gap-3 rounded-full bg-linear-to-r from-cobalt via-iris to-flare px-8 py-4 font-display text-lg font-semibold text-paper shadow-lg shadow-iris/25 transition-all hover:shadow-xl hover:shadow-iris/40 hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cobalt">
+                <span data-copy-link-label aria-live="polite">{{ T "copyLink" | title }}</span>
+                {{/* Fixed slot so swapping in the checkmark never resizes the pill. */}}
+                <span class="relative size-5 shrink-0" aria-hidden="true">
+                    <svg class="absolute inset-0 size-5 transition-opacity group-data-[copy-state=copied]:opacity-0" viewBox="0 0 20 20" fill="none">
+                        <path d="M8.5 11.5a3 3 0 0 0 4.24 0l2.5-2.5a3 3 0 0 0-4.24-4.24l-.88.88M11.5 8.5a3 3 0 0 0-4.24 0l-2.5 2.5a3 3 0 0 0 4.24 4.24l.88-.88" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+                    </svg>
+                    <svg class="absolute inset-0 size-5 opacity-0 transition-opacity group-data-[copy-state=copied]:opacity-100" viewBox="0 0 20 20" fill="none">
+                        <path d="M4.5 10.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+            </button>
+        </div>
+
         {{ with .GetTerms "tags" }}
-            <div class="my-8 border-t border-rule pt-6">
+            <div class="mb-8">
             <h2 class="mb-3 text-xl font-medium">{{ T "tags" | title }}</h2>
             <ul class="flex flex-wrap gap-3">
                 {{ range . }}

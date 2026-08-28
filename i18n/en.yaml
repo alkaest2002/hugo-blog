@@ -5,6 +5,9 @@ by: by
 categories: categories
 category: category
 close: close
+copyLink: share
+copyLinkDone: copied
+copyLinkError: copy failed
 empty: no content available
 mainMenu: main menu
 more: read the blog
