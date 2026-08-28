@@ -1,8 +1,11 @@
 import '@pagefind/component-ui';
 
-const panel = document.querySelector('[data-search]');
+import { lockScroll, unlockScroll } from '../lib/scroll-lock.js';
 
-if (panel) {
+export function initSearch() {
+  const panel = document.querySelector('[data-search]');
+  if (!panel) return;
+
   const input = panel.querySelector('pagefind-input');
   const triggers = document.querySelectorAll('[data-search-open]');
 
@@ -13,9 +16,7 @@ if (panel) {
     lastFocused = document.activeElement;
     panel.setAttribute('data-open', '');
     panel.setAttribute('aria-hidden', 'false');
-    // Inline style rather than a utility class: Tailwind only emits classes it
-    // finds in the markup, and this one is only ever added at runtime.
-    document.documentElement.style.overflow = 'hidden';
+    lockScroll();
     triggers.forEach((t) => t.setAttribute('aria-expanded', 'true'));
     // The custom element may not have upgraded yet on a cold first open.
     if (input) customElements.whenDefined('pagefind-input').then(() => input.focus());
@@ -24,12 +25,14 @@ if (panel) {
   const close = () => {
     panel.removeAttribute('data-open');
     panel.setAttribute('aria-hidden', 'true');
-    document.documentElement.style.overflow = '';
+    unlockScroll();
     triggers.forEach((t) => t.setAttribute('aria-expanded', 'false'));
     if (lastFocused instanceof HTMLElement) lastFocused.focus();
   };
 
-  triggers.forEach((t) => t.addEventListener('click', () => (isOpen() ? close() : open())));
+  const toggle = () => (isOpen() ? close() : open());
+
+  triggers.forEach((t) => t.addEventListener('click', toggle));
   panel.querySelectorAll('[data-search-close]').forEach((el) => el.addEventListener('click', close));
 
   document.addEventListener('keydown', (e) => {
@@ -37,7 +40,7 @@ if (panel) {
     if (e.key === 'Escape' && isOpen() && !input?.contains(e.target)) close();
     if (e.key === 'k' && (e.metaKey || e.ctrlKey)) {
       e.preventDefault();
-      isOpen() ? close() : open();
+      toggle();
     }
   });
 
