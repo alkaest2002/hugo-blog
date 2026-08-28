@@ -1,10 +1,8 @@
 ---
 title: Categories
-layout: topics
-url: topics/categories
 build:
   render: never
 cascade:
-  layout: topics
+  layout: topic
   url: topics/categories/:slug
 ---

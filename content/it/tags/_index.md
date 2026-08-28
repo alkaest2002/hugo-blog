@@ -1,10 +1,8 @@
 ---
 title: Tag
-layout: topics
-url: argomenti/tag
 build:
   render: never
 cascade:
-  layout: topics
+  layout: topic
   url: argomenti/tag/:slug
 ---
