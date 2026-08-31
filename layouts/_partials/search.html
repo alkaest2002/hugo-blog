@@ -1,19 +1,62 @@
 {{- $title := T "searchTitle" | default "Search" }}
 {{- $close := T "close" | default "Close" }}
 
-<div id="search" data-search
+<script>
+  document.addEventListener('alpine:init', () => {
+    Alpine.store('search', {
+      open: false,
+      lastFocused: null,
+
+      show() {
+        // Inline style rather than a utility class: Tailwind only emits classes it
+        // finds in the markup, and this one is only ever added at runtime.
+        document.documentElement.style.overflow = 'hidden';
+        this.lastFocused = document.activeElement;
+        this.open = true;
+        // Make sure the custom element has upgraded before focusing.
+        const input = document.querySelector('#search pagefind-input');
+        if (input) customElements.whenDefined('pagefind-input').then(() => input.focus());
+      },
+
+      hide() {
+        document.documentElement.style.overflow = '';
+        this.open = false;
+        if (this.lastFocused instanceof HTMLElement) this.lastFocused.focus();
+      },
+
+      toggle() {
+        this.open ? this.hide() : this.show();
+      },
+
+      onKeydown(event) {
+        // pagefind-input claims Escape to clear the query, so close only from outside it.
+        if (event.key === 'Escape' && this.open && !event.target.closest('pagefind-input')) this.hide();
+        if (event.key === 'k' && (event.metaKey || event.ctrlKey)) {
+          event.preventDefault();
+          this.toggle();
+        }
+      },
+    });
+  });
+</script>
+
+<div id="search" x-data
+  :data-open="$store.search.open ? '' : false"
+  :aria-hidden="!$store.search.open"
+  @keydown.window="$store.search.onKeydown($event)"
+  @click="$event.target.closest('a[href]') && $store.search.hide()"
   class="group/search invisible fixed inset-0 z-100 data-[open]:visible"
   role="dialog" aria-modal="true" aria-label="{{ $title }}" aria-hidden="true">
 
-  <div data-search-close aria-hidden="true"
-    class="absolute inset-0 bg-void/30 opacity-0 backdrop-blur-sm transition-opacity duration-200 group-data-[open]/search:opacity-100"></div>
-
+  <div @click="$store.search.hide()" aria-hidden="true"
+    class="absolute inset-0 bg-void/30 opacity-0 backdrop-blur-sm transition-opacity duration-200 group-data-[open]/search:opacity-100">
+  </div>
   <div
     class="absolute inset-y-0 right-0 flex h-dvh w-full max-w-md translate-x-full flex-col border-l border-rule bg-paper shadow-2xl shadow-ink/20 transition-transform duration-300 ease-out group-data-[open]/search:translate-x-0">
 
     <div class="flex shrink-0 items-center justify-between gap-4 border-b border-rule px-5 py-4">
       <h2 class="font-display text-base font-semibold tracking-tight">{{ $title }}</h2>
-      <button type="button" data-search-close aria-label="{{ $close }}"
+      <button type="button" @click="$store.search.hide()" aria-label="{{ $close }}"
         class="flex size-9 items-center justify-center rounded-lg text-mute transition-colors hover:bg-rule/50 hover:text-cobalt">
         <svg class="size-5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
           <path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
@@ -27,7 +70,6 @@
       <pagefind-input class="block" placeholder="{{ T "search" }}"></pagefind-input>
       <pagefind-summary class="block text-xs text-mute" style="margin-top:12px"></pagefind-summary>
     </div>
-
     <div class="min-h-0 grow overflow-y-auto overscroll-contain px-5 pb-6">
       <pagefind-results class="block"></pagefind-results>
     </div>
