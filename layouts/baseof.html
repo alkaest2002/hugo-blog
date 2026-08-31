@@ -39,10 +39,11 @@
             {{ partialCached "footer.html" . }}
         </div>
         {{ partialCached "search.html" . }}
-        {{ partial "js.html" . }}
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
         <script type="module">
           import Swup from 'https://unpkg.com/swup@4?module';
           const swup = new Swup();
         </script>
+        {{ partial "js.html" . }}
     </body>
 </html>
