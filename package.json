@@ -8,8 +8,5 @@
     "@tailwindcss/typography": "^0.5.20",
     "pagefind": "^1.5.2",
     "tailwindcss": "^4.3.3"
-  },
-  "dependencies": {
-    "@pagefind/component-ui": "1.5.2"
   }
 }

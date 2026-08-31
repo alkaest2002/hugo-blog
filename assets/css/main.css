@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "@pagefind/component-ui/css";
 @plugin "@tailwindcss/typography";
 @source "hugo_stats.json";
 
