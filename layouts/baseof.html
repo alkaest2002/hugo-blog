@@ -39,6 +39,14 @@
             {{ partialCached "footer.html" . }}
         </div>
         {{ partialCached "search.html" . }}
+        <script>
+          document.addEventListener('alpine:init', () => {
+            Alpine.store('search', {
+              searchPanelOpen: false,
+              lastFocusedElement: null,
+            });
+          });
+        </script>
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
         <script type="module">
           import Swup from 'https://unpkg.com/swup@4?module';
