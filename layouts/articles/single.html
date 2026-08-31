@@ -55,40 +55,30 @@
             {{ $idle := T "copyLink" | title | jsonify }}
             {{ $copyLinkDone := T "copyLinkDone" | title | jsonify }}
             {{ $copyLinkError := T "copyLinkError" | title | jsonify }}
+            {{ $urlToCopy := .Permalink | jsonify }}
             <button type="button"
                 x-data="{
-                    idle: {{ $idle }},
                     label: '',
-                    state: null,
-                    reset: null,
-
+                    timer: null,
                     init() {
-                        this.label = this.idle;
+                        this.label = {{ $idle }};
                     },
-
                     async copy() {
                         try {
                             if (!navigator.clipboard?.writeText) throw new Error('clipboard unavailable');
-                            const url = new URL({{ .Permalink | jsonify }}, window.location.href).href;
+                            const url = new URL({{ $urlToCopy }}, window.location.href).href;
                             await navigator.clipboard.writeText(url);
-                            this.state = 'copied';
                             this.label = {{ $copyLinkDone }};
                         } catch {
-                            this.state = 'error';
                             this.label = {{ $copyLinkError }};
                         }
-                        clearTimeout(this.reset);
-                        this.reset = setTimeout(() => {
-                            this.state = null;
-                            this.label = this.idle;
-                        }, 1000);
+                        clearTimeout(this.timer);
+                        this.timer = setTimeout(() => this.label = {{ $idle }}, 1000);
                     },
                 }"
                 @click="copy"
-                :data-copy-state="state"
                 class="group inline-flex cursor-pointer items-center gap-3 rounded-full bg-linear-to-r from-cobalt via-iris to-flare px-8 py-4 font-display text-lg font-semibold text-paper shadow-lg shadow-iris/25 transition-all hover:shadow-xl hover:shadow-iris/40 hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cobalt">
                 <span aria-live="polite" x-text="label">{{ T "copyLink" | title }}</span>
-                {{/* Fixed slot so swapping in the checkmark never resizes the pill. */}}
                 <span class="relative size-5 shrink-0" aria-hidden="true">
                     <svg class="absolute inset-0 size-5 transition-opacity group-data-[copy-state=copied]:opacity-0" viewBox="0 0 20 20" fill="none">
                         <path d="M8.5 11.5a3 3 0 0 0 4.24 0l2.5-2.5a3 3 0 0 0-4.24-4.24l-.88.88M11.5 8.5a3 3 0 0 0-4.24 0l-2.5 2.5a3 3 0 0 0 4.24 4.24l.88-.88" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
