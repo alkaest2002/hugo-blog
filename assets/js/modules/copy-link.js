@@ -17,6 +17,7 @@ export function initCopyLink() {
     button.addEventListener('click', async () => {
       // Permalink is relative when the site has no absolute baseURL, so resolve
       // it against the current page to always copy a shareable link.
+      console.log("copy link clicked");
       const url = new URL(button.dataset.copyLink || '', window.location.href).href;
       let state = 'copied';
       try {

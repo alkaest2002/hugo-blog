@@ -30,7 +30,10 @@ export function initSearch() {
     if (lastFocused instanceof HTMLElement) lastFocused.focus();
   };
 
-  const toggle = () => (isOpen() ? close() : open());
+  const toggle = () => {
+    console.log("search toggle");
+    isOpen() ? close() : open();
+  };
 
   triggers.forEach((t) => t.addEventListener('click', toggle));
   panel.querySelectorAll('[data-search-close]').forEach((el) => el.addEventListener('click', close));
