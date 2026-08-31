@@ -6,7 +6,6 @@
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.3",
     "@tailwindcss/typography": "^0.5.20",
-    "pagefind": "1.5.2",
     "tailwindcss": "^4.3.3"
   },
   "dependencies": {
