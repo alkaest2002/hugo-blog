@@ -17,8 +17,21 @@
   --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
 }
-/* PageFinde custom vars */
+
+/* PageFind custom vars */
 :root {
     --pf-searchbox-max-width: 100%;
     --pf-input-height: 48px;
+}
+
+/* Swup custom classes */
+
+/* PageFinde custom vars */
+html.is-changing .transition-fade {
+  transition: opacity 0.25s;
+  opacity: 1;
+}
+/* Define the styles for the unloaded pages */
+html.is-animating .transition-fade {
+  opacity: 0;
 }

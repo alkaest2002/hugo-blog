@@ -33,7 +33,7 @@
     <body class="bg-paper font-sans text-ink">
         <div class="mx-auto flex min-h-dvh max-w-4xl flex-col px-6">
             {{ partial "header.html" . }}
-            <main id="content" class="grow pb-20">
+            <main id="#swup" class="grow pb-20 transition-fade">
                 {{ block "main" . }}{{ end }}
             </main>
             {{ partialCached "footer.html" . }}
@@ -41,4 +41,8 @@
         {{ partialCached "search.html" . }}
     </body>
     {{ partial "js.html" . }}
+    <script type="module">
+      import Swup from 'https://unpkg.com/swup@4?module';
+      const swup = new Swup();
+    </script>
 </html>

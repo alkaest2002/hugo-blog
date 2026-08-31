@@ -324,6 +324,7 @@
       "tracking-widest",
       "transition-all",
       "transition-colors",
+      "transition-fade",
       "transition-opacity",
       "transition-transform",
       "translate-x-full",
@@ -337,6 +338,7 @@
       "z-50"
     ],
     "ids": [
+      "#swup",
       "1-usa-il-grigio-scuro-non-il-nero-puro",
       "1-use-dark-gray-not-pure-black",
       "2-desatura-i-tuoi-colori",
