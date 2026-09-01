@@ -16,8 +16,8 @@ newer: newer
 older: older
 previous: previous
 readingTime:
-  one: about one minute to read
-  other: '{{ .Count }} minutes to read'
+    one: about one minute to read
+    other: "{{ .Count }} minutes to read"
 relatedArticles: related articles
 search: search...
 searchTitle: search

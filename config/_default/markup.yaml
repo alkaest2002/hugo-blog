@@ -1,6 +1,6 @@
 goldmark:
-  renderer:
-    unsafe: true
-  parser:
-    attribute:
-      title: true
+    renderer:
+        unsafe: true
+    parser:
+        attribute:
+            title: true

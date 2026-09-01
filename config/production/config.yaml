@@ -1,6 +1,6 @@
 enableRobotsTXT: true
 minify:
-  minifyOutput: true
+    minifyOutput: true
 caches:
-  images:
-    dir: :cacheDir/images
+    images:
+        dir: :cacheDir/images

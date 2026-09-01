@@ -3,27 +3,26 @@ threshold: 70
 toLower: false
 
 indices:
+    - name: tags
+      applyFilter: false
+      cardinalityThreshold: 0
+      pattern: ""
+      toLower: false
+      type: basic
+      weight: 90
 
-  - name: tags
-    applyFilter: false
-    cardinalityThreshold: 0
-    pattern: ""
-    toLower: false
-    type: basic
-    weight: 90
+    - name: categories
+      applyFilter: false
+      cardinalityThreshold: 0
+      pattern: ""
+      toLower: false
+      type: basic
+      weight: 60
 
-  - name: categories
-    applyFilter: false
-    cardinalityThreshold: 0
-    pattern: ""
-    toLower: false
-    type: basic
-    weight: 60
-
-  - name: date
-    applyFilter: false
-    cardinalityThreshold: 0
-    pattern: ""
-    toLower: false
-    type: basic
-    weight: 30
+    - name: date
+      applyFilter: false
+      cardinalityThreshold: 0
+      pattern: ""
+      toLower: false
+      type: basic
+      weight: 30

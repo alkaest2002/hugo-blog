@@ -1,8 +1,8 @@
 exec:
-  allow:
-    - ^(dart-)?sass$
-    - ^go$
-    - ^git$
-    - ^node$
-    - ^postcss$
-    - ^tailwindcss$
+    allow:
+        - ^(dart-)?sass$
+        - ^go$
+        - ^git$
+        - ^node$
+        - ^postcss$
+        - ^tailwindcss$

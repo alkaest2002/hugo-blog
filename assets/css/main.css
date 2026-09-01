@@ -4,17 +4,17 @@
 
 /* Design tokens only — all styling lives in Tailwind utility classes. */
 @theme {
-  --color-paper: #fcfcfd;
-  --color-ink: #14151a;
-  --color-mute: #757c8a;
-  --color-rule: #e7e8ee;
-  --color-cobalt: #1f3ae0;
-  --color-iris: #7b2ff2;
-  --color-flare: #f5386a;
-  --color-void: #0b0c0f;
+    --color-paper: #fcfcfd;
+    --color-ink: #14151a;
+    --color-mute: #757c8a;
+    --color-rule: #e7e8ee;
+    --color-cobalt: #1f3ae0;
+    --color-iris: #7b2ff2;
+    --color-flare: #f5386a;
+    --color-void: #0b0c0f;
 
-  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
-  --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
 }
 
 /* PageFind custom vars */
@@ -27,10 +27,10 @@
 
 /* PageFinde custom vars */
 html.is-changing .transition-fade {
-  transition: opacity 0.25s;
-  opacity: 1;
+    transition: opacity 0.25s;
+    opacity: 1;
 }
 /* Define the styles for the unloaded pages */
 html.is-animating .transition-fade {
-  opacity: 0;
+    opacity: 0;
 }
