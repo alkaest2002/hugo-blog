@@ -1,4 +1,4 @@
-export function menuPanel() {
+export function menuBurger() {
     return {
         close() {
             this.$root.open = false;
