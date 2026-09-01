@@ -14,7 +14,12 @@
       </ul>
     </nav>
 
-    <details class="group/panel relative md:hidden">
+    <details
+        class="group/panel relative md:hidden"
+        x-data
+        @click.outside="$el.open = false"
+        @keydown.escape.window="$el.open = false"
+    >
       <summary
         class="flex size-10 cursor-pointer list-none items-center justify-center rounded-lg text-ink transition-colors select-none hover:text-cobalt [&::-webkit-details-marker]:hidden"
         aria-label="{{ $label }}">
@@ -27,7 +32,9 @@
       </summary>
       <nav
         class="absolute right-0 top-full z-50 mt-3 w-64 rounded-2xl border border-rule bg-paper p-2 shadow-xl shadow-ink/10"
-        aria-label="{{ $label }}">
+        aria-label="{{ $label }}"
+        @click="if ($event.target.closest('a')) $root.open = false"
+      >
         <ul>
           {{- partial "inline/menu/mobile.html" $args }}
         </ul>
