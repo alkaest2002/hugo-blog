@@ -59,7 +59,7 @@
                 "url" .Permalink | jsonify }}
             <button type="button"
                 x-data="copyLink({{ $copy }})"
-                :data-copy-state="state"
+                :data-copy-state="copied ? 'copied' : false"
                 @click="copy()"
                 class="group inline-flex cursor-pointer items-center gap-3 rounded-full bg-linear-to-r from-cobalt via-iris to-flare px-8 py-4 font-display text-lg font-semibold text-paper shadow-lg shadow-iris/25 transition-all hover:shadow-xl hover:shadow-iris/40 hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cobalt">
                 <span aria-live="polite" x-text="label">{{ T "copyLink" | title }}</span>

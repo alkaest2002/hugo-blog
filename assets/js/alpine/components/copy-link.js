@@ -2,8 +2,9 @@ const RESET_DELAY = 1000;
 
 export function copyLink({ idle, done, error, url }) {
     return {
+
         label: idle,
-        state: "idle",
+        copied: false,
         timer: null,
 
         async copy() {
@@ -14,16 +15,16 @@ export function copyLink({ idle, done, error, url }) {
                     new URL(url, window.location.href).href,
                 );
                 this.label = done;
-                this.state = "copied";
+                this.copied = true;
             } catch {
                 this.label = error;
-                this.state = "error";
+                this.copied = false;
             }
 
             clearTimeout(this.timer);
             this.timer = setTimeout(() => {
                 this.label = idle;
-                this.state = "idle";
+                this.copied = false;
             }, RESET_DELAY);
         },
 
