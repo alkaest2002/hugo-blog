@@ -11,8 +11,8 @@
         <div class="flex items-center gap-1">
             {{ partial "menu.html" (dict "menuID" "main" "page" . "foldable" true) }}
             <button type="button" x-data
-                @click="$store.search.searchPanelOpen = !$store.search.searchPanelOpen"
-                aria-controls="search" :aria-expanded="$store.search.searchPanelOpen" aria-expanded="false"
+                @click="$store.search.toggle()"
+                aria-controls="search" :aria-expanded="$store.search.isOpen" aria-expanded="false"
                 aria-label="{{ T "searchTitle" | default "Search" }}"
                 class="flex size-10 cursor-pointer items-center justify-center rounded-lg text-ink transition-colors hover:text-cobalt">
                 <svg class="size-6" viewBox="0 0 20 20" fill="none" aria-hidden="true">

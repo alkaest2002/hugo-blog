@@ -1,39 +1,12 @@
 {{- $title := T "searchTitle" | default "Search" }}
 {{- $close := T "close" | default "Close" }}
 
-<div id="search" x-data="{
-    init() {
-      this.$watch('$store.search.searchPanelOpen', (open) => open ? this.onOpen() : this.onClose());
-    },
-    get open() {
-      return this.$store.search.searchPanelOpen;
-    },
-    close() {
-      this.$store.search.searchPanelOpen = false;
-    },
-    onOpen() {
-      document.documentElement.style.overflow = 'hidden';
-      this.$store.search.lastFocusedElement = document.activeElement;
-      const input = this.$el.querySelector('pagefind-input');
-      if (input) customElements.whenDefined('pagefind-input').then(() => input.focus());
-    },
-    onClose() {
-      document.documentElement.style.overflow = '';
-      const last = this.$store.search.lastFocusedElement;
-      if (last instanceof HTMLElement) last.focus();
-    },
-    onKeydown(event) {
-      if (event.key === 'Escape' && this.open && !event.target.closest('pagefind-input')) this.close();
-      if (event.key === 'k' && (event.metaKey || event.ctrlKey)) {
-        event.preventDefault();
-        this.$store.search.searchPanelOpen = !this.open;
-      }
-    },
-  }"
-  :data-open="open ? '' : false"
-  :aria-hidden="!open"
+<div id="search"
+  x-data="searchPanel"
+  :data-open="isOpen ? '' : false"
+  :aria-hidden="!isOpen"
   @keydown.window="onKeydown($event)"
-  @click="$event.target.closest('a[href]') && close()"
+  @click="closeOnLink($event)"
   class="group/search invisible fixed inset-0 z-100 data-[open]:visible"
   role="dialog" aria-modal="true" aria-label="{{ $title }}" aria-hidden="true">
 
@@ -56,7 +29,7 @@
     <pagefind-config bundle-path="{{ "pagefind/" | relURL }}"></pagefind-config>
 
     <div class="shrink-0 px-5 py-4">
-      <pagefind-input class="block" placeholder="{{ T "search" }}" ref="searchInput" ></pagefind-input>
+      <pagefind-input x-ref="input" class="block" placeholder="{{ T "search" }}"></pagefind-input>
       <pagefind-summary class="block text-xs text-mute" style="margin-top:12px"></pagefind-summary>
     </div>
     <div class="min-h-0 grow overflow-y-auto overscroll-contain px-5 pb-6">
