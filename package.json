@@ -8,5 +8,9 @@
     "@tailwindcss/typography": "^0.5.20",
     "pagefind": "^1.5.2",
     "tailwindcss": "^4.3.3"
+  },
+  "dependencies": {
+    "alpinejs": "^3.17.1",
+    "swup": "^4.9.2"
   }
 }
