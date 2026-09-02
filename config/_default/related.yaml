@@ -1,28 +1,34 @@
 includeNewer: true
-threshold: 70
-toLower: false
+threshold: 60
+toLower: true
 
 indices:
+
     - name: tags
+      type: basic
       applyFilter: false
       cardinalityThreshold: 0
       pattern: ""
       toLower: false
-      type: basic
       weight: 90
 
     - name: categories
+      type: basic
       applyFilter: false
       cardinalityThreshold: 0
       pattern: ""
       toLower: false
-      type: basic
-      weight: 60
+      weight: 90
 
     - name: date
+      type: basic
       applyFilter: false
       cardinalityThreshold: 0
       pattern: ""
       toLower: false
-      type: basic
-      weight: 30
+      weight: 10
+
+    - name: fragmentref
+      type: fragments
+      applyFilter: true
+      weight: 80

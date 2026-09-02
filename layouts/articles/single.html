@@ -89,22 +89,7 @@
 
     </article>
 
-    {{ $related := where (site.RegularPages.Related .).ByDate.Reverse "RelPermalink" "ne" .RelPermalink | first 3 }}
-    {{ with $related }}
-        <div class="my-8 border-t border-rule pt-6">
-        <h2 class="mb-4 text-xl font-medium">{{ T "relatedArticles" | title }}</h2>
-        <ul class="list-disc">
-            {{ range . }}
-            <li class="m-5">
-                <a href="{{ .RelPermalink }}" class="group flex flex-col hover:text-cobalt">
-                <span class="font-display font-medium tracking-normal">{{ .Title }}</span>
-                {{ with .Description }}<span class="mt-0.5 text-sm text-mute">{{ . }}</span>{{ end }}
-                </a>
-            </li>
-            {{ end }}
-        </ul>
-        </div>
-    {{ end }}
+    {{ partial "related.html" . }}
 
     {{ if or .PrevInSection .NextInSection }}
         <nav class="mt-12 grid gap-8 border-t border-rule pt-8 text-sm sm:grid-cols-2">

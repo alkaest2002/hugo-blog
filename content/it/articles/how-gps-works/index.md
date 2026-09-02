@@ -1,11 +1,11 @@
 ---
-title: "Come Funziona il GPS"
-date: 2024-05-07
 draft: false
+title: "Come Funziona il GPS"
+description: "Il tuo telefono sa dove ti trovi con una precisione di pochi metri, ovunque sulla Terra. Il meccanismo alla base di questa impresa coinvolge satelliti, orologi atomici e un trucco controintuitivo tratto dalla relatività generale."
+date: 2024-05-07
 categories: ["Tecnologia"]
 authors: ["Marcus Feldt"]
 tags: ["GPS", "navigazione", "satelliti", "fisica", "tecnologia"]
-description: "Il tuo telefono sa dove ti trovi con una precisione di pochi metri, ovunque sulla Terra. Il meccanismo alla base di questa impresa coinvolge satelliti, orologi atomici e un trucco controintuitivo tratto dalla relatività generale."
 ---
 
 ## Trenta Satelliti, Una Posizione

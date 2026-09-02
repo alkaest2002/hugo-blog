@@ -1,14 +1,16 @@
 ---
-title: "La Mia Settimana a Kyoto"
-date: 2024-04-18
 draft: false
+title: "La Mia Settimana a Kyoto"
+description: "Una settimana a vagabondare tra le strade antiche, i boschetti di bambù e le case da tè di Kyoto mi ha fatto ripensare a cosa può essere una città."
+date: 2024-04-18
 categories: ["Vita"]
 authors: ["Elena Rossi"]
 tags: ["japan", "kyoto", "travel", "culture", "temples"]
-description: "Una settimana a vagabondare tra le strade antiche, i boschetti di bambù e le case da tè di Kyoto mi ha fatto ripensare a cosa può essere una città."
+fragmentref:
+   - il-viaggio
 ---
 
-## Arrivo nell'Antica Capitale
+## Il viaggio
 
 Kyoto non si annuncia come fa Tokyo. Nessun sovraccarico di neon, nessun frenetico snodo dello Shinkansen a travolgerti all'arrivo. La città si svela lentamente — una lanterna di pietra coperta di muschio qui, un cachi che si sporge oltre un muro di argilla là. Sono arrivato un martedì di aprile, una settimana prima del picco della fioritura dei ciliegi, e il tempismo si è rivelato perfetto.
 

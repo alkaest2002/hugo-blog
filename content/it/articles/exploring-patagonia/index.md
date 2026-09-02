@@ -1,14 +1,16 @@
 ---
-title: "Esplorare la Patagonia"
-date: 2025-01-12
 draft: false
+title: "Esplorare la Patagonia"
+description: "Torres del Paine è uno dei paesaggi più spettacolari del pianeta. Ecco com'è fare il W Trek e perché vale ogni chilometro faticoso."
+date: 2025-01-12
 categories: ["Vita"]
 authors: ["Elena Rossi"]
 tags: ["patagonia", "trekking", "cile", "natura", "avventura"]
-description: "Torres del Paine è uno dei paesaggi più spettacolari del pianeta. Ecco com'è fare il W Trek e perché vale ogni chilometro faticoso."
+fragmentref:
+    - il-viaggio
 ---
 
-## Arrivare È Già Parte del Viaggio
+## Il Viaggio
 
 La Patagonia non si lascia raggiungere facilmente. La città più vicina con voli internazionali affidabili è Punta Arenas, da cui si prende un autobus di tre ore fino a Puerto Natales, che dista a sua volta circa due ore di strada dal Parco Nazionale Torres del Paine. Il viaggio fa parte dell'esperienza — si arriva dopo aver già attraversato un paesaggio che diventa progressivamente più remoto, più battuto dal vento, più simile alla soglia di qualcosa.
 

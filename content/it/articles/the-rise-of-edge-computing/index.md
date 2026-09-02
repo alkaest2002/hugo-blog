@@ -1,11 +1,11 @@
 ---
-title: "L'Avvento dell'Edge Computing"
-date: 2024-02-10
 draft: false
+title: "L'Avvento dell'Edge Computing"
+description: "L'edge computing sta ridisegnando il modo in cui pensiamo all'elaborazione dei dati, spostando il calcolo più vicino al punto in cui i dati vengono generati. Ecco cosa bisogna sapere."
+date: 2024-02-10
 categories: ["Tecnologia"]
 authors: ["Marcus Feldt"]
 tags: ["edge computing", "cloud", "infrastructure", "networking", "distributed systems"]
-description: "L'edge computing sta ridisegnando il modo in cui pensiamo all'elaborazione dei dati, spostando il calcolo più vicino al punto in cui i dati vengono generati. Ecco cosa bisogna sapere."
 ---
 
 ## Cos'è l'Edge Computing?

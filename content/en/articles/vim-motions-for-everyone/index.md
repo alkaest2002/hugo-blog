@@ -1,11 +1,11 @@
 ---
-title: "Vim Motions for Everyone"
-date: 2024-08-19
 draft: false
+title: "Vim Motions for Everyone"
+description: "You don't need to use Vim full-time to benefit from Vim motions. Here's a practical introduction to the movements that will change how you edit text."
+date: 2024-08-19
 categories: ["Technology"]
 authors: ["Priya Raghunathan"]
 tags: ["vim", "neovim", "editor", "productivity", "tools"]
-description: "You don't need to use Vim full-time to benefit from Vim motions. Here's a practical introduction to the movements that will change how you edit text."
 ---
 
 ## The Modal Editing Model

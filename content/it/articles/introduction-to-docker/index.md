@@ -1,11 +1,11 @@
 ---
-title: "Introduzione a Docker"
-date: 2024-03-20
 draft: false
+title: "Introduzione a Docker"
+description: "Docker ha reso i container mainstream e ha cambiato il modo in cui il software viene costruito, distribuito ed eseguito. Ecco cosa bisogna sapere per iniziare."
+date: 2024-03-20
 categories: ["Tecnologia"]
 authors: ["Marcus Feldt"]
 tags: ["docker", "containers", "devops", "infrastructure", "deployment"]
-description: "Docker ha reso i container mainstream e ha cambiato il modo in cui il software viene costruito, distribuito ed eseguito. Ecco cosa bisogna sapere per iniziare."
 ---
 
 ## Il Problema che Docker Risolve

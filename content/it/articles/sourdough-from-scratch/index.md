@@ -1,11 +1,11 @@
 ---
-title: "Pasta Madre da Zero"
-date: 2024-05-22
 draft: false
+title: "Pasta Madre da Zero"
+description: "Fare il pane a lievitazione naturale con una pasta madre coltivata da te è un processo lento, un po' imprevedibile, e assolutamente ne vale la pena."
+date: 2024-05-22
 categories: ["Vita"]
 authors: ["Elena Rossi"]
 tags: ["baking", "sourdough", "bread", "fermentation", "cooking"]
-description: "Fare il pane a lievitazione naturale con una pasta madre coltivata da te è un processo lento, un po' imprevedibile, e assolutamente ne vale la pena."
 ---
 
 ## Avviare la Pasta Madre

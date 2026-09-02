@@ -1,11 +1,11 @@
 ---
-title: "Exploring Patagonia"
-date: 2025-01-12
 draft: false
+title: "Exploring Patagonia"
+description: "Torres del Paine is one of the most dramatic landscapes on earth. Here's what it's like to hike the W Trek and why it's worth every difficult kilometer."
+date: 2025-01-12
 categories: ["Life"]
 authors: ["Elena Rossi"]
 tags: ["patagonia", "hiking", "chile", "nature", "adventure"]
-description: "Torres del Paine is one of the most dramatic landscapes on earth. Here's what it's like to hike the W Trek and why it's worth every difficult kilometer."
 ---
 
 ## Getting There Is Part of It

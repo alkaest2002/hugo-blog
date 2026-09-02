@@ -1,0 +1,30 @@
+{{ $related := site.RegularPages.Related . | first 5 }}
+{{ with $related }}
+    <div class="mt-12 border-t border-rule pt-8" data-pagefind-ignore>
+    <h2 class="mb-2 font-display text-sm font-semibold tracking-wide text-mute uppercase">{{ T "relatedArticles" | title }}</h2>
+    <ul>
+        {{ range . }}
+        {{ $p := . }}
+        <li class="border-b border-rule py-6">
+            <a href="{{ .RelPermalink }}" class="group block hover:text-cobalt">
+                <span class="block font-display text-xl font-medium tracking-normal">{{ .Title }}</span>
+                {{ with .Description }}<span class="mt-1 block text-mute">{{ . }}</span>{{ end }}
+            </a>
+            {{ with .HeadingsFiltered }}
+                <ul class="mt-3 ml-px flex flex-wrap gap-x-2 gap-y-1.5 border-l border-rule pl-4 text-sm">
+                    {{ range . }}
+                        <li>
+                            <a href="{{ printf "%s#%s" $p.RelPermalink .ID | safeURL }}"
+                                class="inline-flex items-baseline gap-1 text-mute transition-colors hover:text-cobalt">
+                                <span class="text-mute/50" aria-hidden="true">#</span>
+                                {{ .Title | safeHTML }}
+                            </a>
+                        </li>
+                    {{ end }}
+                </ul>
+            {{ end }}
+        </li>
+        {{ end }}
+    </ul>
+    </div>
+{{ end }}

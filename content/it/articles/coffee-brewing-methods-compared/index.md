@@ -1,11 +1,11 @@
 ---
-title: "Metodi di Preparazione del Caffè a Confronto"
-date: 2024-10-27
 draft: false
+title: "Metodi di Preparazione del Caffè a Confronto"
+description: "Dal French press al Chemex fino alla macchina per espresso casalinga, ogni metodo di estrazione tira fuori qualcosa di diverso dallo stesso chicco. Ecco come trovare quello giusto per te."
+date: 2024-10-27
 categories: ["Vita"]
 authors: ["Elena Rossi"]
 tags: ["coffee", "brewing", "pour-over", "espresso", "french press"]
-description: "Dal French press al Chemex fino alla macchina per espresso casalinga, ogni metodo di estrazione tira fuori qualcosa di diverso dallo stesso chicco. Ecco come trovare quello giusto per te."
 ---
 
 ## Tutto Parte dal Chicco

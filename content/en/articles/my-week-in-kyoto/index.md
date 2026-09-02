@@ -1,11 +1,11 @@
 ---
-title: "My Week in Kyoto"
-date: 2024-04-18
 draft: false
+title: "My Week in Kyoto"
+description: "A week wandering through Kyoto's ancient streets, bamboo groves, and tea houses left me rethinking what a city can be."
+date: 2024-04-18
 categories: ["Life"]
 authors: ["Elena Rossi"]
 tags: ["japan", "kyoto", "travel", "culture", "temples"]
-description: "A week wandering through Kyoto's ancient streets, bamboo groves, and tea houses left me rethinking what a city can be."
 ---
 
 ## Arriving in the Old Capital

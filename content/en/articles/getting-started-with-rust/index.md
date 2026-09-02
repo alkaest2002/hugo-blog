@@ -1,11 +1,11 @@
 ---
-title: "Getting Started with Rust: A Beginner's Guide"
-date: 2024-01-15
 draft: false
+title: "Getting Started with Rust: A Beginner's Guide"
+description: "A practical introduction to the Rust programming language for developers coming from other backgrounds."
+date: 2024-01-15
 categories: ["Technology"]
 authors: ["Marcus Feldt"]
 tags: ["rust", "systems-programming", "beginner", "memory-safety"]
-description: "A practical introduction to the Rust programming language for developers coming from other backgrounds."
 ---
 
 Rust has taken the programming world by storm, consistently topping developer satisfaction surveys. But what makes it worth learning?

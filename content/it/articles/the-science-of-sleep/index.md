@@ -1,11 +1,11 @@
 ---
-title: "La Scienza del Sonno"
-date: 2024-11-04
 draft: false
+title: "La Scienza del Sonno"
+description: "Il sonno non è un semplice tempo morto — è un processo biologico attivo ed essenziale. Ecco cosa accade davvero mentre siamo incoscienti."
+date: 2024-11-04
 categories: ["Scienza"]
 authors: ["Elena Rossi"]
 tags: ["sonno", "salute", "neuroscienze", "ritmo circadiano", "benessere"]
-description: "Il sonno non è un semplice tempo morto — è un processo biologico attivo ed essenziale. Ecco cosa accade davvero mentre siamo incoscienti."
 ---
 
 ## Il Sonno Non è Riposo

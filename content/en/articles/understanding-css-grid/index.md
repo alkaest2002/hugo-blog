@@ -1,11 +1,11 @@
 ---
-title: "Understanding CSS Grid"
-date: 2024-03-05
 draft: false
+title: "Understanding CSS Grid"
+description: "CSS Grid is the most powerful layout system the web has ever had. This post breaks down the core concepts so you can actually use it with confidence."
+date: 2024-03-05
 categories: ["Technology"]
 authors: ["Priya Raghunathan"]
 tags: ["css", "web development", "layout", "frontend", "design"]
-description: "CSS Grid is the most powerful layout system the web has ever had. This post breaks down the core concepts so you can actually use it with confidence."
 ---
 
 ## The Layout Problem Grid Solves

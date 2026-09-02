@@ -1,11 +1,11 @@
 ---
-title: "Coffee Brewing Methods Compared"
-date: 2024-10-27
 draft: false
+title: "Coffee Brewing Methods Compared"
+description: "From a French press to a Chemex to a home espresso machine, each brewing method pulls something different from the same bean. Here's how to pick your match."
+date: 2024-10-27
 categories: ["Life"]
 authors: ["Elena Rossi"]
 tags: ["coffee", "brewing", "pour-over", "espresso", "french press"]
-description: "From a French press to a Chemex to a home espresso machine, each brewing method pulls something different from the same bean. Here's how to pick your match."
 ---
 
 ## It Starts With the Bean

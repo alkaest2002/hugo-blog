@@ -1,11 +1,11 @@
 ---
-title: "Allenarmi per la Mia Prima Maratona"
-date: 2024-09-15
 draft: false
+title: "Allenarmi per la Mia Prima Maratona"
+description: "Diciotto settimane di mattine all'alba, lunghe corse e tanto, tanto apprendimento. Ecco cosa mi ha davvero preparato a correre 42 chilometri."
+date: 2024-09-15
 categories: ["Vita"]
 authors: ["Elena Rossi"]
 tags: ["corsa", "maratona", "allenamento", "salute", "resistenza"]
-description: "Diciotto settimane di mattine all'alba, lunghe corse e tanto, tanto apprendimento. Ecco cosa mi ha davvero preparato a correre 42 chilometri."
 ---
 
 ## Perché Mi Sono Iscritto

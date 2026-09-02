@@ -1,11 +1,11 @@
 ---
-title: "Introduction to Docker"
-date: 2024-03-20
 draft: false
+title: "Introduction to Docker"
+description: "Docker made containers mainstream and changed how software gets built, shipped, and run. Here's what you need to understand to get started."
+date: 2024-03-20
 categories: ["Technology"]
 authors: ["Marcus Feldt"]
 tags: ["docker", "containers", "devops", "infrastructure", "deployment"]
-description: "Docker made containers mainstream and changed how software gets built, shipped, and run. Here's what you need to understand to get started."
 ---
 
 ## The Problem Docker Solves

@@ -1,11 +1,11 @@
 ---
-title: "Writing Better Commit Messages"
-date: 2025-02-03
 draft: false
+title: "Writing Better Commit Messages"
+description: "A great commit message is a gift to your future self and your teammates. Here's how to write ones that actually communicate."
+date: 2025-02-03
 categories: ["Technology"]
 authors: ["Priya Raghunathan"]
 tags: ["git", "version control", "developer workflow", "best practices", "collaboration"]
-description: "A great commit message is a gift to your future self and your teammates. Here's how to write ones that actually communicate."
 ---
 
 ## The Cost of Bad Commit Messages

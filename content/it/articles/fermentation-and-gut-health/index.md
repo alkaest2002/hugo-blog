@@ -1,11 +1,11 @@
 ---
-title: "Fermentazione e Salute Intestinale"
-date: 2024-10-09
 draft: false
+title: "Fermentazione e Salute Intestinale"
+description: "Gli alimenti fermentati fanno parte dell'alimentazione umana da millenni. La scienza moderna sta finalmente scoprendo perché contano così tanto."
+date: 2024-10-09
 categories: ["Scienza"]
 authors: ["Elena Rossi"]
 tags: ["fermentazione", "salute intestinale", "probiotici", "microbioma", "nutrizione"]
-description: "Gli alimenti fermentati fanno parte dell'alimentazione umana da millenni. La scienza moderna sta finalmente scoprendo perché contano così tanto."
 ---
 
 ## Il Microbioma Intestinale, in Breve

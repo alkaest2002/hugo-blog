@@ -1,11 +1,11 @@
 ---
-title: "Costruire un Home Lab"
-date: 2024-12-01
 draft: false
+title: "Costruire un Home Lab"
+description: "Un home lab è in parte un campo giochi, in parte un ambiente di apprendimento. Ecco come ho configurato il mio e cosa ci faccio girare davvero."
+date: 2024-12-01
 categories: ["Tecnologia"]
 authors: ["Marcus Feldt"]
 tags: ["homelab", "self-hosting", "networking", "linux", "infrastructure"]
-description: "Un home lab è in parte un campo giochi, in parte un ambiente di apprendimento. Ecco come ho configurato il mio e cosa ci faccio girare davvero."
 ---
 
 ## Perché Farselo?

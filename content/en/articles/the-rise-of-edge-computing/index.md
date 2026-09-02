@@ -1,11 +1,11 @@
 ---
-title: "The Rise of Edge Computing"
-date: 2024-02-10
 draft: false
+title: "The Rise of Edge Computing"
+description: "Edge computing is reshaping how we think about data processing by moving computation closer to where it's generated. Here's what you need to know."
+date: 2024-02-10
 categories: ["Technology"]
 authors: ["Marcus Feldt"]
 tags: ["edge computing", "cloud", "infrastructure", "networking", "distributed systems"]
-description: "Edge computing is reshaping how we think about data processing by moving computation closer to where it's generated. Here's what you need to know."
 ---
 
 ## What Is Edge Computing?

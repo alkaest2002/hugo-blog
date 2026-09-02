@@ -1,11 +1,11 @@
 ---
-title: "How LLMs Actually Work"
-date: 2024-07-14
 draft: false
+title: "How LLMs Actually Work"
+description: "Large language models seem like magic, but the core mechanics are surprisingly graspable. Here's a plain-language breakdown of what's happening under the hood."
+date: 2024-07-14
 categories: ["Technology"]
 authors: ["Marcus Feldt"]
 tags: ["AI", "machine learning", "LLM", "transformers", "deep learning"]
-description: "Large language models seem like magic, but the core mechanics are surprisingly graspable. Here's a plain-language breakdown of what's happening under the hood."
 ---
 
 ## Tokens, Not Words

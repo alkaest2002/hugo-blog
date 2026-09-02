@@ -1,11 +1,11 @@
 ---
-title: "Scrivere Messaggi di Commit Migliori"
-date: 2025-02-03
 draft: false
+title: "Scrivere Messaggi di Commit Migliori"
+description: "Un buon messaggio di commit è un regalo al tuo sé futuro e ai tuoi colleghi. Ecco come scriverne di quelli che comunicano davvero."
+date: 2025-02-03
 categories: ["Tecnologia"]
 authors: ["Priya Raghunathan"]
 tags: ["git", "controllo versione", "flusso di lavoro per sviluppatori", "best practice", "collaborazione"]
-description: "Un buon messaggio di commit è un regalo al tuo sé futuro e ai tuoi colleghi. Ecco come scriverne di quelli che comunicano davvero."
 ---
 
 ## Il Costo dei Messaggi di Commit Scadenti

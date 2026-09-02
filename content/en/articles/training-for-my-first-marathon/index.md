@@ -1,11 +1,11 @@
 ---
-title: "Training for My First Marathon"
-date: 2024-09-15
 draft: false
+title: "Training for My First Marathon"
+description: "Eighteen weeks of early mornings, long runs, and a whole lot of learning. Here's what actually prepared me to run 26.2 miles."
+date: 2024-09-15
 categories: ["Life"]
 authors: ["Elena Rossi"]
 tags: ["running", "marathon", "training", "health", "endurance"]
-description: "Eighteen weeks of early mornings, long runs, and a whole lot of learning. Here's what actually prepared me to run 26.2 miles."
 ---
 
 ## Why I Signed Up

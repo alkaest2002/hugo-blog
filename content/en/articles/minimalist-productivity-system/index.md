@@ -1,11 +1,11 @@
 ---
-title: "My Minimalist Productivity System"
-date: 2024-08-03
 draft: false
+title: "My Minimalist Productivity System"
+description: "After years of bouncing between apps, frameworks, and notebooks, I landed on a system that's almost embarrassingly simple — and actually works."
+date: 2024-08-03
 categories: ["Life"]
 authors: ["Priya Raghunathan"]
 tags: ["productivity", "minimalism", "focus", "planning", "habits"]
-description: "After years of bouncing between apps, frameworks, and notebooks, I landed on a system that's almost embarrassingly simple — and actually works."
 ---
 
 ## The Trap of Productivity Optimization
