@@ -5,6 +5,8 @@ menus:
   main:
     weight: 1
 url: articoli
+cascade:
+    url: articoli/:slug
 ---
 
 Tutti gli articoli del blog

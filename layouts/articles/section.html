@@ -1,7 +1,6 @@
 {{ define "main" }}
 
     {{ $pages := where .Site.RegularPages "Section" "articles" }}
-    {{ $pages = $pages.ByDate.Reverse }}
     {{ $paginator := .Paginate $pages }}
 
     <header class="py-14 sm:py-20">

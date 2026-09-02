@@ -21,7 +21,7 @@
                 {{ partial "monogram.html" (dict "name" .Title "class" "size-16 text-lg sm:size-20 sm:text-xl") }}
                 <div class="min-w-0">
                     <h1 class="font-display text-3xl font-semibold tracking-wide sm:text-5xl">{{ .Title }}</h1>
-                    {{ with .Params.role }}
+                    {{ with .Params.interests }}
                         <p class="mt-2 text-xs font-semibold uppercase tracking-widest text-mute">{{ . }}</p>
                     {{ end }}
                 </div>

@@ -1,10 +1,6 @@
 it:
     languageLabel: Italiano
     contentDir: content/it
-    permalinks:
-        articles: articoli/:slug
-        categories: categorie/:slug
-        tags: tag/:slug
     pagination:
         path: pagina
     weight: 1

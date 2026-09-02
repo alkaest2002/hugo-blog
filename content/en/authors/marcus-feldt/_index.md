@@ -1,7 +1,9 @@
 ---
+draft: false
 title: "Marcus Feldt"
-role: "Infrastructure & systems"
 description: "Systems engineer with a weakness for networking gear and low-level explanations. Writes about containers, distributed systems, and how the machinery of the internet actually fits together."
+date: 2025-01-01
+interests: "Infrastructure & systems"
 ---
 
 Marcus spent a decade keeping other people's servers alive before deciding he

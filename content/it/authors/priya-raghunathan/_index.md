@@ -1,7 +1,9 @@
 ---
+draft: false
 title: "Priya Raghunathan"
-role: "Design e mestiere"
 description: "Designer front-end ossessionata dai caratteri, dal contrasto e dalle piccole abitudini di lavoro che si accumulano nel corso di una carriera."
+date: 2025-01-01
+interests: "Design e mestiere"
 ---
 
 Priya progetta interfacce per lavoro e discute di interlinea per divertimento.
